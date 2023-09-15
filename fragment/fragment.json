@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "self": {
+      "type": "object",
+      "oneOf": [
+        {
+          "$ref": "./classes/Base.json"
+        },
+        {
+          "$ref": "./classes/CallSwitch.json"
+        },
+        {
+          "$ref": "./classes/Cuboid.json"
+        },
+        {
+          "$ref": "./classes/MathMesh.json"
+        },
+        {
+          "$ref": "./classes/MeshSelector.json"
+        },
+        {
+          "$ref": "./classes/RenderableMath.json"
+        },
+        {
+          "$ref": "./classes/Selectable.json"
+        },
+        {
+          "$ref": "./classes/Scene.json"
+        },
+        {
+          "$ref": "./classes/Label.json"
+        },
+        {
+          "$ref": "./classes/UnitRoot.json"
+        },
+        {
+          "$ref": "./classes/ShaderMaterial.json"
+        },
+        {
+          "$ref": "./classes/ModelMesh.json"
+        },
+        {
+          "$ref": "./classes/TextMesh.json"
+        },
+        {
+          "$ref": "./classes/Room.json"
+        }
+      ]
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      }
+    }
+  },
+  "unevaluatedProperties": false,
+  "required": [
+    "self"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "oneOf": [
+    {
+      "properties": {
+        "concreteNumbers": {
+          "const": true
+        },
+        "position": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number",
+              "default": 0
+            },
+            "y": {
+              "type": "number",
+              "default": 0
+            },
+            "z": {
+              "type": "number",
+              "default": 0
+            }
+          },
+          "default": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "concreteNumbers": {
+        "const": false
+      },
+      "properties": {
+        "position": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "string",
+              "default": "0"
+            },
+            "y": {
+              "type": "string",
+              "default": "0"
+            },
+            "z": {
+              "type": "string",
+              "default": "0"
+            }
+          },
+          "default": {
+            "x": "0",
+            "y": "0",
+            "z": "0"
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "required": [
+    "position"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/shared.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "Scene"
+        },
+        "walkable": {
+          "type": "boolean",
+          "title": "Determines if the user can walk around the scene in a first-person mode or not."
+        },
+        "initialPosition": {
+          "$ref": "../partial/number-tuple3.json"
+        },
+        "initialLookAtTarget": {
+          "$ref": "../partial/number-tuple3.json"
+        }
+      }
+    }
+  ],
+  "required": [
+    "class"
+  ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "include": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^([^/]+/)*[^/]+(?:\\.jsonc?)?$"
+      }
+    },
+    "constants": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "$ref": "./partial/data-field.json"
+        }
+      },
+      "unevaluatedProperties": false,
+      "default": {}
+    },
+    "variables": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "$ref": "./partial/data-field.json"
+        }
+      },
+      "unevaluatedProperties": false,
+      "default": {}
+    },
+    "self": {
+      "type": "object",
+      "properties": {
+        "class": {
+          "const": "UnitRoot"
+        }
+      },
+      "required": [
+        "class"
+      ],
+      "additionalProperties": false
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "$ref": "./fragment.json"
+      }
+    }
+  },
+  "required": [
+    "self"
+  ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/shared.json"
+    },
+    {
+      "$ref": "../partial/statechart.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "type": "null"
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "$ref": "../partial/component.json"
+          }
+        },
+        "wrapperComponents": {
+          "type": "array",
+          "items": {
+            "$ref": "../partial/component.json"
+          }
+        },
+        "babylon": {
+          "type": "object"
+        },
+        "listen": {
+          "title": "The standard events which this class listens to from its associated DOM or 3D objects, as an array of strings. Conventionally, event names must be in UPPER_CASE letters.",
+          "type": "array",
+          "items": {
+            "$ref": "../partial/uppercase-identifier.json"
+          },
+          "default": []
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

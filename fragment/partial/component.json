@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/component.json",
+  "title": "Component Reference",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "props": {
+      "type": "object"
+    },
+    "bind": {
+      "type": "object"
+    }
+  }
+}

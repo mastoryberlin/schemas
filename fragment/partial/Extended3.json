@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "oneOf": [
+    {
+      "properties": {
+        "concreteNumbers": {
+          "const": false
+        },
+        "dimensions": {
+          "type": "object",
+          "oneOf": [
+            {
+              "properties": {
+                "width": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "string"
+                },
+                "length": {
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "properties": {
+        "concreteNumbers": {
+          "const": true
+        },
+        "dimensions": {
+          "type": "object",
+          "oneOf": [
+            {
+              "properties": {
+                "width": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "height": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "length": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "required": [
+    "dimensions"
+  ]
+}

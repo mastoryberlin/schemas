@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "position": {
+      "$ref": "../partial/number-tuple3.json"
+    },
+    "rotation": {
+      "$ref": "../partial/number-tuple3.json"
+    },
+    "scaling": {
+      "$ref": "../partial/number-tuple3.json"
+    }
+  }
+}

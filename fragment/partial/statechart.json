@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "statechart": {
+      "title": "A statechart describing the internal states of this fragment.",
+      "type": "object",
+      "properties": {
+        "initial": {
+          "type": "string"
+        },
+        "states": {
+          "type": "object"
+        }
+      },
+      "default": {}
+    },
+    "flow": {
+      "title": "The file name of a flow (with or without the .flow extension) which will be used to define the internal states of this fragment.",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+(\\.flow)?$",
+      "default": "MyFlowFile.flow"
+    },
+    "dynamicFlowSwitch": {
+      "$ref": "./identifier.json"
+    }
+  }
+}

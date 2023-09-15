@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/shared.json"
+    },
+    {
+      "$ref": "../partial/Positionable3.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "MeshSelector"
+        }
+      }
+    },
+    {
+      "properties": {
+        "presentation": {
+          "type": "string",
+          "enum": [
+            "carousel"
+          ],
+          "default": "carousel"
+        },
+        "radius": {
+          "oneOf": [
+            {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            {
+              "$ref": "../partial/identifier.json"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "properties": {
+        "bind": {
+          "type": "object",
+          "properties": {
+            "meshes": {
+              "$ref": "../partial/identifier.json"
+            },
+            "selectionState": {
+              "$ref": "../partial/identifier.json"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}

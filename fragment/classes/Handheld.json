@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "allOf": [
+      {
+        "properties": {
+          "class": {
+            "const": "Handheld"
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "collapsible": {
+            "type": "boolean"
+          },
+          "initiallyCollapsed": {
+            "type": "boolean"
+          },
+          "collapsedHeight": {
+            "type": ["number", "string"]
+          },
+          "width": {
+            "type": ["number", "string"]
+          },
+          "height": {
+            "type": ["number", "string"]
+          },
+          "align": {
+            "type": "string",
+            "values": ["left", "right", "center"]
+          },
+          "marginBottom": {
+            "type": ["number", "string"]
+          },
+          "marginHorizontal": {
+            "type": ["number", "string"]
+          },
+          "handVerticalAlign": {
+            "type": "string",
+            "values": ["top", "center"]
+          },
+          "handHorizontalAlign": {
+            "type": "string",
+            "values": ["left", "right", "center"]
+          },
+          "handSrc": {
+            "type": "string"
+          }
+        }
+      }
+    ],
+    "unevaluatedProperties": false,
+    "required": [
+      "class"
+    ]
+  }
