@@ -2,27 +2,37 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "gpt-4-1106-preview": {
-      "$ref": "#/definitions/info"
-    },
-    "gpt-4-1106-vision-preview": {
-      "$ref": "#/definitions/info"
-    },
-    "gpt-4-0613": {
-      "$ref": "#/definitions/info"
-    },
-    "gpt-4-32k-0613": {
-      "$ref": "#/definitions/info"
-    },
     "gpt-3.5-turbo-1106": {
-      "$ref": "#/definitions/info"
+      "$ref": "#/$defs/modelInfo"
     },
     "gpt-3.5-turbo-instruct": {
-      "$ref": "#/definitions/info"
+      "$ref": "#/$defs/modelInfo"
+    },
+    "gpt-4-0613": {
+      "$ref": "#/$defs/modelInfo"
+    },
+    "gpt-4-32k-0613": {
+      "$ref": "#/$defs/modelInfo"
+    },
+    "gpt-4-1106-preview": {
+      "$ref": "#/$defs/modelInfo"
+    },
+    "gpt-4-1106-vision-preview": {
+      "$ref": "#/$defs/modelInfo"
     }
   },
-  "definitions": {
-    "info": {
+  "$defs": {
+    "modelName": {
+      "enum": [
+        "gpt-3.5-turbo-1106",
+        "gpt-3.5-turbo-instruct",
+        "gpt-4-0613",
+        "gpt-4-32k-0613",
+        "gpt-4-1106-preview",
+        "gpt-4-1106-vision-preview"
+      ]
+    },
+    "modelInfo": {
       "type": "object",
       "properties": {
         "price": {
@@ -57,11 +67,11 @@
   },
   "additionalProperties": false,
   "required": [
-    "gpt-4-1106-preview",
-    "gpt-4-1106-vision-preview",
+    "gpt-3.5-turbo-1106",
+    "gpt-3.5-turbo-instruct",
     "gpt-4-0613",
     "gpt-4-32k-0613",
-    "gpt-3.5-turbo-1106",
-    "gpt-3.5-turbo-instruct"
+    "gpt-4-1106-preview",
+    "gpt-4-1106-vision-preview"
   ]
 }
