@@ -24,7 +24,9 @@
             "format": {
               "enum": [
                 "call",
-                "chat"
+                "chat",
+                "call or chat",
+                "wireIA"
               ]
             },
             "assets": {
@@ -50,11 +52,15 @@
                 },
                 "role": {
                   "enum": [
-                    "learningStoryFacts"
+                    "learningStoryFacts",
+                    "havingMoreOptions"
                   ]
                 },
-                "storyElement": {
-                  "type": "string"
+                "storyElements": {
+                  "type": "array",
+                  "items": {
+                      "type": "string"
+                  }
                 },
                 "marker": {
                   "type": "string"
@@ -62,6 +68,69 @@
                 "description": {
                   "type": "string",
                   "format": "style"
+                }
+              }
+            },
+            {
+                "properties": {
+                    "type": {
+                        "const": "storyElement"
+                    },
+                    "category": {
+                        "enum": [
+                            "subflow",
+                            "subsubflow"
+                        ]
+                    },
+                    "role": {
+                        "enum": [
+                            "learningStoryFacts",
+                            "havingMoreOptions"
+                        ]
+                    },
+                    "storyPiece": {
+                        "type": "string"
+                    },
+                    "marker": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string",
+                        "format": "style"
+                    }
+                }
+            },
+            {
+              "properties": {
+                "type": {
+                  "const": "joint"
+                },
+                "category": {
+                  "enum": [
+                    "subflow",
+                    "subsubflow"
+                  ]
+                },
+                "role": {
+                  "enum": [
+                    "continuity"
+                  ]
+                },
+                "callNr": {
+                  "type":"number"
+                },
+                "npcs": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "Nick",
+                      "VZ",
+                      "Alicia"
+                    ]
+                  }
+                }, 
+                "extra": {
+                  "type":"string"
                 }
               }
             },
@@ -83,7 +152,7 @@
                   "type": "string"
                 },
                 "noDecissionTriggers": {
-                  "type": "null"
+                  "type":"string"
                 },
                 "options": {
                   "oneOf": [
