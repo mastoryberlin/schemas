@@ -73,9 +73,6 @@
                 "name": {
                   "type": "string"
                 },
-                "apps": {
-                  "type": "string"
-                },
                 "format": {
                   "type": "string"
                 },
@@ -128,9 +125,6 @@
                   "const": "mathConversation"
                 },
                 "name": {
-                  "type": "string"
-                },
-                "apps": {
                   "type": "string"
                 },
                 "format": {
