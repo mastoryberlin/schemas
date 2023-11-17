@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mastory.io/schema/breakdown/detective-node.json",
+  "title": "Node of an Outline for a Detective Episode",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./node.json"
+    },
+    {
+      "properties": {
+        "suspicions": {
+          "type": "array",
+          "items": {
+            "$ref": "../story/statement.json"
+          }
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mastory.io/schema/breakdown/action-node.json",
+  "title": "Node of an Outline for an Action Plan Episode",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "./node.json"
+    },
+    {
+      "properties": {
+        "timeOfDay": {
+          "$ref": "../story/timeOfDay.json"
+        },
+        "location": {
+          "$ref": "../story/location.json"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/mood.json",
+  "title": "Mood",
+  "type": "string",
+  "enum": [
+    "aggressive",
+    "anxious",
+    "concerned",
+    "confident",
+    "confused",
+    "curious",
+    "determined",
+    "engaged",
+    "intrigued",
+    "helpful",
+    "hopeful",
+    "unwilling to help",
+    "worried",
+    "thoughtful"
+  ]
+}

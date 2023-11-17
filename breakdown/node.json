@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mastory.io/schema/breakdown/node.json",
+  "title": "Node",
+  "type": "object",
+  "properties": {
+    "characters": {
+      "$id": "#root/characters",
+      "title": "Characters",
+      "type": "array",
+      "default": [],
+      "items": {
+        "$ref": "../story/character.json"
+      }
+    },
+    "context": {
+      "$id": "#root/context",
+      "title": "Context",
+      "type": "string"
+    },
+    "props": {
+      "$id": "#root/props",
+      "title": "Props",
+      "type": "array",
+      "items": {
+        "$ref": "./instance.json"
+      }
+    },
+    "conversationSummary": {
+      "$id": "#root/conversationSummary",
+      "title": "Conversation Summary",
+      "type": "string"
+    },
+    "mathTopics": {
+      "type": "array",
+      "items": {
+        "$ref": "../math/concept.json"
+      }
+    },
+    "mathInsights": {
+      "type": "array",
+      "items": {
+        "$ref": "../math/statement.json"
+      }
+    },
+    "moods": {
+      "$id": "#root/moods",
+      "title": "Moods",
+      "type": "object",
+      "propertyNames": {
+        "$ref": "../story/character.json"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "../story/mood.json"
+        }
+      }
+    }
+  },
+  "definitions": {}
+}

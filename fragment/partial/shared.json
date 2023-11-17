@@ -6,7 +6,7 @@
       "$ref": "./identifier.json"
     },
     "model": {
-      "$ref": "./identifier.json"
+      "$ref": "./identifier-or-array-item.json"
     },
     "onlyInStates": {
       "title": "A string array of state names of the nearest parent state machine. If non-empty, limits this fragment's lifetime to when one of those states is active.",

@@ -9,22 +9,37 @@
       "type": "object",
       "oneOf": [
         {
+          "$ref": "./classes/Activity.json"
+        },
+        {
+          "$ref": "./classes/Arrange.json"
+        },
+        {
           "$ref": "./classes/Base.json"
         },
         {
           "$ref": "./classes/CallSwitch.json"
         },
         {
-          "$ref": "./classes/Cuboid.json"
+          "$ref": "./classes/Gizmo.json"
+        },
+        {
+          "$ref": "./classes/Intent.json"
+        },
+        {
+          "$ref": "./classes/Label.json"
         },
         {
           "$ref": "./classes/MathMesh.json"
         },
         {
-          "$ref": "./classes/MeshSelector.json"
+          "$ref": "./classes/ModelMesh.json"
         },
         {
-          "$ref": "./classes/RenderableMath.json"
+          "$ref": "./classes/MultiSelect.json"
+        },
+        {
+          "$ref": "./classes/Room.json"
         },
         {
           "$ref": "./classes/Selectable.json"
@@ -33,22 +48,22 @@
           "$ref": "./classes/Scene.json"
         },
         {
-          "$ref": "./classes/Label.json"
-        },
-        {
-          "$ref": "./classes/UnitRoot.json"
-        },
-        {
           "$ref": "./classes/ShaderMaterial.json"
         },
         {
-          "$ref": "./classes/ModelMesh.json"
+          "$ref": "./classes/TransformGroup.json"
         },
         {
           "$ref": "./classes/TextMesh.json"
         },
         {
-          "$ref": "./classes/Room.json"
+          "$ref": "./classes/UnitRoot.json"
+        },
+        {
+          "$ref": "./classes/PointLight.json"
+        },
+        {
+          "$ref": "./classes/BlinkLight.json"
         }
       ]
     },

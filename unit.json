@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/unit.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "mainFlow": {
+      "type": "string",
+      "pattern": "^(?:[^\\/]+\\.flow|[^\\/.]+)$"
+    },
+    "uiFlow": {
+      "type": "string",
+      "pattern": "^(?:[^\\/]+\\.flow|[^\\/.]+)$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "statement": {
+          "type": "string"
+        },
+        "sosVideo": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://.+\\.mp4$"
+        },
+        "sosThumbnail": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://.+\\.(?:png|jpe?g|gif)"
+        }
+      }
+    },
+    "skeleton": {
+      "$ref": "./skeleton-definition.json"
+    }
+  },
+  "required": [
+    "title",
+    "summary",
+    "mission",
+    "skeleton"
+  ]
+}

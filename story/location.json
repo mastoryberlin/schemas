@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/mood.json",
+  "title": "Location",
+  "type": "string",
+  "enum": [
+    "research facility.outside",
+    "research facility.inside"
+  ]
+}

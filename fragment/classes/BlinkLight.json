@@ -1,0 +1,163 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "properties": {
+        "class": {
+          "const": "BlinkLight"
+        },
+        "blinkRate": {
+          "type": "number",
+          "default": 1
+        },
+        "tags": {
+          "type": [
+            "null",
+            "object"
+          ]
+        },
+        "shadowAngle": {
+          "type": "number",
+          "default": 1.5707963267948966
+        },
+        "diffuse": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "default": [
+            1,
+            1,
+            1
+          ]
+        },
+        "specular": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "default": [
+            1,
+            1,
+            1
+          ]
+        },
+        "falloffType": {
+          "type": "number",
+          "default": 0
+        },
+        "intensity": {
+          "type": "number",
+          "default": 1
+        },
+        "range": {
+          "type": "number",
+          "default": 1.7976931348623157e+308
+        },
+        "intensityMode": {
+          "type": "number",
+          "default": 0
+        },
+        "radius": {
+          "type": "number",
+          "default": 0.00001
+        },
+        "_renderPriority": {
+          "type": "number",
+          "default": 0
+        },
+        "shadowEnabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "excludeWithLayerMask": {
+          "type": "number",
+          "default": 0
+        },
+        "includeOnlyWithLayerMask": {
+          "type": "number",
+          "default": 0
+        },
+        "lightmapMode": {
+          "type": "number",
+          "default": 0
+        },
+        "position": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "default": [
+            0,
+            10,
+            0
+          ]
+        },
+        "name": {
+          "type": "string",
+          "default": "light"
+        },
+        "id": {
+          "type": "string",
+          "default": "pointLight"
+        },
+        "state": {
+          "type": "string",
+          "default": ""
+        },
+        "type": {
+          "type": "number",
+          "default": 0
+        },
+        "animations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "default": []
+        },
+        "ranges": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "default": []
+        },
+        "isEnabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "excludedMeshesIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "includedOnlyMeshesIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "direction": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "default": [
+            0,
+            -1,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "required": [
+    "class"
+  ],
+  "unevaluatedProperties": false
+}

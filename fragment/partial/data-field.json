@@ -10,7 +10,9 @@
         "type": {
           "$ref": "./data-type.json"
         },
-        "value": true,
+        "value": {
+          "default": null
+        },
         "comment": {
           "type": "string",
           "pattern": "^[A-Z].*\\.$"

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schema/math/verb.json",
+  "title": "Math Verb",
+  "type": "string",
+  "enum": [
+    "isSpecialCaseOf",
+    "canBeRepresentedAs",
+    "canBeCalculatedAs",
+    "canBeInterpretedAs"
+  ]
+}

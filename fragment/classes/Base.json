@@ -13,6 +13,9 @@
         "class": {
           "type": "null"
         },
+        "context": {
+          "type": "object"
+        },
         "components": {
           "type": "array",
           "items": {

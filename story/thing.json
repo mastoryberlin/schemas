@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schema/story/thing.json",
+  "title": "A Thing in the Story",
+  "type": "string",
+  "enum": [
+    "Adam's access card for the Research Facility",
+    "Alicia's necklace",
+    "Drone",
+    "File",
+    "Folder",
+    "File Explorer App",
+    "Memory card in the drone",
+    "Nick's phone"
+  ]
+}

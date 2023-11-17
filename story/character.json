@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/character.json",
+  "type": "string",
+  "enum": [
+    "Nick",
+    "Alicia",
+    "Victoria",
+    "Dr Camarena",
+    "Dr Jackson",
+    "Adam"
+  ]
+}

@@ -3,21 +3,25 @@
     "type": "object",
     "allOf": [
         {
+            "$ref": "../partial/shared.json"
+        },
+        {
+            "$ref": "../partial/Transformable3.json"
+        },
+        {
             "properties": {
                 "class": {
                     "const": "Room"
                 },
-                "dimensions": {
-                    "type": "array"
-                },
-                "wallpapers": {
-                    "type": "array"
+                "wallpaper": {
+                    "type": "string"
                 }
             }
         }
     ],
     "unevaluatedProperties": false,
     "required": [
-        "class"
+        "class",
+        "wallpaper"
     ]
 }

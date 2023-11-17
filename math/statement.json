@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schema/math/statement.json",
+  "title": "Math Statement",
+  "$ref": "#/definitions/statement",
+  "definitions": {
+    "statement": {
+      "type": "array",
+      "oneOf": [
+        {
+          "items": [
+            {
+              "$ref": "./verb.json"
+            },
+            {
+              "$ref": "./concept.json"
+            },
+            {
+              "$ref": "./concept.json"
+            },
+            {
+              "$ref": "./concept.json"
+            },
+            {
+              "$ref": "./concept.json"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "$ref": "../logic/unary.json"
+            },
+            {
+              "$ref": "#/definitions/statement"
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "$ref": "../logic/binary.json"
+            },
+            {
+              "$ref": "#/definitions/statement"
+            },
+            {
+              "$ref": "#/definitions/statement"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

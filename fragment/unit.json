@@ -32,6 +32,17 @@
       "unevaluatedProperties": false,
       "default": {}
     },
+    "symbols": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "type":"string",
+          "pattern": "^[a-zA-Z_][a-zA-Z_0-9]*$"
+        }
+      },
+      "unevaluatedProperties": false,
+      "default": {}
+    },
     "self": {
       "type": "object",
       "properties": {

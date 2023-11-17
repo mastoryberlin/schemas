@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schema/story/statement.json",
+  "title": "Story Statement",
+  "$ref": "#/definitions/statement",
+  "definitions": {
+    "statement": {
+      "type": "object",
+      "properties": {
+        "bearsEvidenceThat": true,
+        "provesThat": true,
+        "is": true,
+        "isA": true,
+        "has": true,
+        "relatesTo": true,
+        "not": true
+      },
+      "additionalProperties": false,
+      "dependencies": {
+        "bearsEvidenceThat": {
+          "$ref": "./statement-signature/noun-statement.json"
+        },
+        "provesThat": {
+          "$ref": "./statement-signature/noun-statement.json"
+        },
+        "is": {
+          "$ref": "./statement-signature/noun-adjective.json"
+        },
+        "isA": {
+          "$ref": "./statement-signature/noun-noun.json"
+        },
+        "has": {
+          "$ref": "./statement-signature/noun-noun.json"
+        },
+        "relatesTo": {
+          "$ref": "./statement-signature/noun-noun.json"
+        },
+        "not": {
+          "$ref": "#/definitions/statement"
+        }
+      }
+    }
+  }
+}

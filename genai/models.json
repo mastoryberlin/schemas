@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "gpt-4-1106-preview": {
+      "$ref": "#/definitions/info"
+    },
+    "gpt-4-1106-vision-preview": {
+      "$ref": "#/definitions/info"
+    },
+    "gpt-4-0613": {
+      "$ref": "#/definitions/info"
+    },
+    "gpt-4-32k-0613": {
+      "$ref": "#/definitions/info"
+    },
+    "gpt-3.5-turbo-1106": {
+      "$ref": "#/definitions/info"
+    },
+    "gpt-3.5-turbo-instruct": {
+      "$ref": "#/definitions/info"
+    }
+  },
+  "definitions": {
+    "info": {
+      "type": "object",
+      "properties": {
+        "price": {
+          "type": "object",
+          "description": "Price in US-$ per 1k tokens",
+          "properties": {
+            "input": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "output": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "input",
+            "output"
+          ]
+        },
+        "tokenLimit": {
+          "type": "integer",
+          "description": "Max tokens allowed for this model in 1k",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "price",
+        "tokenLimit"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "gpt-4-1106-preview",
+    "gpt-4-1106-vision-preview",
+    "gpt-4-0613",
+    "gpt-4-32k-0613",
+    "gpt-3.5-turbo-1106",
+    "gpt-3.5-turbo-instruct"
+  ]
+}

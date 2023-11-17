@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mastory.io/schema/story/statement-signature/noun-statement.json",
+  "title": "Statement with (Noun, Statement) signature",
+  "type": "object",
+  "propertyNames": {
+    "enum": [
+      "bearsEvidenceThat",
+      "provesThat"
+    ]
+  },
+  "maxProperties": 1,
+  "additionalProperties": {
+    "type": "array",
+    "prefixItems": [
+      {
+        "$ref": "../noun.json"
+      },
+      {
+        "$ref": "../statement.json#/definitions/statement"
+      }
+    ],
+    "minItems": 2,
+    "maxItems": 2
+  }
+}

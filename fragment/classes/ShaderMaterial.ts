@@ -16,17 +16,16 @@ const schema = {
           "type": "string"
         },
         "uniforms": {
-            "type": "object"
+          "type": "object"
         },
         "defines": {
-            "type": "object"
+          "type": "object"
         }
       }
     }
   ],
   "required": [
-    "class",
-    "fileName"
+    "class"
   ],
   "unevaluatedProperties": false
 } as const satisfies JSONSchema

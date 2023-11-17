@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mastory.io/schema/breakdown/instance.json",
+  "oneOf": [
+    {
+      "type": "object",
+      "unevaluatedProperties": false,
+      "properties": {
+        "instanceOf": {
+          "oneOf": [
+            {
+              "$ref": "../math/concept.json"
+            },
+            {
+              "$ref": "../story/thing.json"
+            }
+          ]
+        },
+        "as": {
+          "$ref": "#/definition/concretenessLevel"
+        },
+        "properties": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "instanceOf",
+        "as"
+      ]
+    },
+    {
+      "type": "string",
+      "$ref": "../story/thing.json"
+    }
+  ],
+  "definition": {
+    "concretenessLevel": {
+      "type": "string",
+      "enum": [
+        "situative",
+        "visual",
+        "schematic",
+        "verbal",
+        "symbolic"
+      ]
+    }
+  }
+}

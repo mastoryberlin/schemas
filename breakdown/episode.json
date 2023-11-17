@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mastory.io/schema/breakdown/episode.json",
+  "type": "object",
+  "unevaluatedProperties": false,
+  "oneOf": [
+    {
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "genre": {
+          "const": "actionPlan"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "./action-node.json"
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "genre": {
+          "const": "detective"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "./detective-node.json"
+          }
+        }
+      }
+    }
+  ]
+}

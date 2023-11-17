@@ -1,0 +1,16 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://mastory.io/schemas/content/outline.json",
+  "title": "Outline",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "./node.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

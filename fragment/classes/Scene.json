@@ -23,8 +23,8 @@
       }
     }
   ],
+  "unevaluatedProperties": false,
   "required": [
     "class"
-  ],
-  "unevaluatedProperties": false
+  ]
 }

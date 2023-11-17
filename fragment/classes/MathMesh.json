@@ -15,5 +15,9 @@
         }
       }
     }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
   ]
 }

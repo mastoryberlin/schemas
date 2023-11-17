@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/skeleton-definition.json",
+  "$comment": "The definition of a skeleton in a unit's meta.json file",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "whatWeFound": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^\\w+$": {
+          "$ref": "#/definitions/whatWeFoundItem"
+        }
+      }
+    },
+    "whatItMeans": {
+      "$ref": "#/definitions/listOfStrings"
+    },
+    "actionPlan": {
+      "type": "object",
+      "$ref": "#/definitions/actionPlanNode"
+    },
+    "toDos": {
+      "$ref": "#/definitions/listOfStrings"
+    },
+    "results": {
+      "$ref": "#/definitions/listOfStrings"
+    },
+    "conclusions": {
+      "$ref": "#/definitions/listOfStrings"
+    }
+  },
+  "required": [
+    "actionPlan"
+  ],
+  "definitions": {
+    "listOfStrings": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^\\w+$": {
+          "type": "string"
+        }
+      }
+    },
+    "whatWeFoundItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        }
+      },
+      "required": [
+        "text",
+        "title",
+        "image"
+      ]
+    },
+    "actionPlanNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "children": {
+          "patternProperties": {
+            "^\\w+$": {
+              "$ref": "#/definitions/actionPlanNode"
+            }
+          }
+        }
+      },
+      "required": [
+        "value"
+      ]
+    }
+  }
+}

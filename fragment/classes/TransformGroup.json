@@ -6,24 +6,18 @@
       "$ref": "../partial/shared.json"
     },
     {
-      "$ref": "../partial/Structure.json"
-    },
-    {
-      "$ref": "../partial/Positionable3.json"
-    },
-    {
-      "$ref": "../partial/Extended3.json"
+      "$ref": "../partial/Transformable3.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Cuboid"
+          "const": "TransformGroup"
         }
       }
     }
   ],
-  "unevaluatedProperties": false,
   "required": [
     "class"
-  ]
+  ],
+  "unevaluatedProperties": false
 }

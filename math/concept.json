@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/math/concept.json",
+  "title": "Math Concept",
+  "type": "string",
+  "enum": [
+    "algebra",
+    "algebra.algebraicExpression",
+    "algebra.algebraicExpression.polynomialInOneVariable",
+    "algebra.algebraicExpression.polynomialInOneVariable.degree",
+    "geometry",
+    "geometry.stereometry",
+    "geometry.stereometry.solid",
+    "geometry.stereometry.solid.cuboid",
+    "geometry.stereometry.solid.cuboid.volume",
+    "geometry.stereometry.solid.cuboid.surfaceArea",
+    "geometry.stereometry.solid.cuboid.edge",
+    "geometry.stereometry.solid.cuboid.edge.length",
+    "geometry.stereometry.solid.cuboid.width",
+    "geometry.stereometry.solid.cuboid.height",
+    "geometry.stereometry.solid.cuboid.length",
+    "geometry.stereometry.solid.cube",
+    "geometry.stereometry.solid.cone",
+    "geometry.stereometry.solid.cylinder",
+    "geometry.stereometry.solid.pyramid",
+    "geometry.stereometry.solid.commonProperties",
+    "geometry.stereometry.solid.commonProperties.volume",
+    "geometry.stereometry.solid.commonProperties.surfaceArea"
+  ]
+}

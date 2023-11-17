@@ -12,16 +12,18 @@ const props = withDefaults(defineProps<{
   attach: (id: string, machine: AnyStateMachine) => AnyActorRef
   detach: (id: string) => void
   actor: AnyActorRef
-  data: { self: FragmentClass['TextMesh'], children: BaseFragment[] }
+  data: { self: FragmentClass['Intent'], children: BaseFragment[] }
 }>(), {})
 
 const fragmentData = computed(() => {
-  // access specialized properties of the TextMesh fragment class
+  // access specialized properties of the Intent fragment class
   const {
     self: {
       id,
       model,
       onlyInStates,
+      uiElements,
+      intendedEffectRadius,
     },
     children,
   } = props.data

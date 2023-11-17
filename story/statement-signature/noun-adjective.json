@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mastory.io/schema/story/statement-signature/noun-noun.json",
+  "title": "Statement with (Noun, Adjective) signature",
+  "type": "object",
+  "propertyNames": {
+    "enum": [
+      "is"
+    ]
+  },
+  "maxProperties": 1,
+  "additionalProperties": {
+    "type": "array",
+    "prefixItems": [
+      {
+        "$ref": "../noun.json"
+      },
+      {
+        "$ref": "../adjective.json"
+      }
+    ],
+    "minItems": 2,
+    "maxItems": 2
+  }
+}
