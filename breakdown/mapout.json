@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "patternProperties": {
+    "\\w+": {
+      "type": "object",
+      "allOf": [
+        {
+          "properties": {
+            "apps": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "home",
+                  "wire",
+                  "messenger",
+                  "log"
+                ]
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "format": {
+              "enum": [
+                "call"
+              ]
+            },
+            "assets": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "oneOf": [
+            {
+              "properties": {
+                "type": {
+                  "const": "storyPiece"
+                },
+                "category": {
+                  "enum": [
+                    "subflow",
+                    "video"
+                  ]
+                },
+                "role": {
+                  "enum": [
+                    "learningStoryFacts"
+                  ]
+                },
+                "storyElement": {
+                  "type": "string"
+                },
+                "marker": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string",
+                  "format": "style"
+                }
+              }
+            },
+            {
+              "properties": {
+                "type": {
+                  "const": "decision"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "apps": {
+                  "type": "string"
+                },
+                "format": {
+                  "type": "string"
+                },
+                "startOffer": {
+                  "type": "string"
+                },
+                "endOffer": {
+                  "type": "string"
+                },
+                "noDecissionTriggers": {
+                  "type": "null"
+                },
+                "options": {
+                  "type": "object",
+                  "properties": {
+                    "if inCall": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "else": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "required": [
+        "type"
+      ]
+    }
+  }
+}
