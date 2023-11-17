@@ -121,6 +121,58 @@
                   ]
                 }
               }
+            },
+            {
+              "properties": {
+                "type": {
+                  "const": "mathConversation"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "apps": {
+                  "type": "string"
+                },
+                "format": {
+                  "type": "string"
+                },
+                "assets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "marker": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "mathTopic": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "string",
+                      "enum": [
+                        "beginner",
+                        "intermediate",
+                        "advanced",
+                        "expert"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "level"
+                  ]
+                }
+              },
+              "required": [
+                "mathTopic"
+              ]
             }
           ]
         }
