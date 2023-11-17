@@ -10,6 +10,7 @@
             "apps": {
               "type": "array",
               "items": {
+                "type": "string",
                 "enum": [
                   "home",
                   "wire",
@@ -22,7 +23,8 @@
             },
             "format": {
               "enum": [
-                "call"
+                "call",
+                "chat"
               ]
             },
             "assets": {
@@ -87,21 +89,36 @@
                   "type": "null"
                 },
                 "options": {
-                  "type": "object",
-                  "properties": {
-                    "if inCall": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "else": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "patternProperties": {
+                        "if .*": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "required": [
+                        "else"
+                      ]
                     },
-                    "else": {
+                    {
                       "type": "array",
                       "items": {
                         "type": "string"
                       }
                     }
-                  }
+                  ]
                 }
               }
             }
