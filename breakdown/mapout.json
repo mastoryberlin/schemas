@@ -34,6 +34,12 @@
               "items": {
                 "type": "string"
               }
+            },
+            "markers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
             }
           },
           "required": [
@@ -42,38 +48,6 @@
         },
         {
           "oneOf": [
-            {
-              "properties": {
-                "type": {
-                  "const": "storyPiece"
-                },
-                "category": {
-                  "enum": [
-                    "subflow",
-                    "video"
-                  ]
-                },
-                "role": {
-                  "enum": [
-                    "learningStoryFacts",
-                    "havingMoreOptions"
-                  ]
-                },
-                "storyElements": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "marker": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string",
-                  "format": "style"
-                }
-              }
-            },
             {
               "properties": {
                 "type": {
@@ -91,11 +65,14 @@
                     "havingMoreOptions"
                   ]
                 },
-                "storyPiece": {
+                "parent": {
                   "type": "string"
                 },
-                "marker": {
-                  "type": "string"
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "description": {
                   "type": "string",
@@ -208,11 +185,104 @@
                     "type": "string"
                   }
                 },
-                "marker": {
-                  "type": "string"
-                },
                 "description": {
                   "type": "string"
+                },
+                "mathTopic": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "string",
+                      "enum": [
+                        "beginner",
+                        "intermediate",
+                        "advanced",
+                        "expert"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "level"
+                  ]
+                }
+              },
+              "required": [
+                "mathTopic"
+              ]
+            },
+            {
+              "properties": {
+                "type": {
+                  "const": "interactiveMathTask"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "markers": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "startOffer": {
+                  "type": "string"
+                },
+                "endOffer": {
+                  "type": "string"
+                },
+                "noSolutionTriggers": {
+                  "type": "string"
+                },
+                "uiElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "options": {
+                        "type": "array",
+                        "items": "object"
+                      }
+                    }
+                  }
+                },
+                "intents": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "representative": {
+                        "type": "string"
+                      },
+                      "scope": {
+                        "type": "string"
+                      },
+                      "reaction": {
+                        "type": "string"
+                      },
+                      "achievements": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      },
+                      "mistakes": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
                 },
                 "mathTopic": {
                   "type": "object",
