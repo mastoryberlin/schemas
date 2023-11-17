@@ -237,19 +237,10 @@
                 "noSolutionTriggers": {
                   "type": "string"
                 },
-                "uiElements": {
+                "fragments": {
                   "type": "array",
                   "items": {
-                    "type": "object",
-                    "properties": {
-                      "name": {
-                        "type": "string"
-                      },
-                      "options": {
-                        "type": "array",
-                        "items": "object"
-                      }
-                    }
+                    "$ref": "../fragment/fragment.json"
                   }
                 },
                 "intents": {
