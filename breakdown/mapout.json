@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "patternProperties": {
     "\\w+": {
@@ -35,7 +35,10 @@
                 "type": "string"
               }
             }
-          }
+          },
+          "required": [
+            "type"
+          ]
         },
         {
           "oneOf": [
@@ -59,7 +62,7 @@
                 "storyElements": {
                   "type": "array",
                   "items": {
-                      "type": "string"
+                    "type": "string"
                   }
                 },
                 "marker": {
@@ -72,33 +75,33 @@
               }
             },
             {
-                "properties": {
-                    "type": {
-                        "const": "storyElement"
-                    },
-                    "category": {
-                        "enum": [
-                            "subflow",
-                            "subsubflow"
-                        ]
-                    },
-                    "role": {
-                        "enum": [
-                            "learningStoryFacts",
-                            "havingMoreOptions"
-                        ]
-                    },
-                    "storyPiece": {
-                        "type": "string"
-                    },
-                    "marker": {
-                        "type": "string"
-                    },
-                    "description": {
-                        "type": "string",
-                        "format": "style"
-                    }
+              "properties": {
+                "type": {
+                  "const": "storyElement"
+                },
+                "category": {
+                  "enum": [
+                    "subflow",
+                    "subsubflow"
+                  ]
+                },
+                "role": {
+                  "enum": [
+                    "learningStoryFacts",
+                    "havingMoreOptions"
+                  ]
+                },
+                "storyPiece": {
+                  "type": "string"
+                },
+                "marker": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string",
+                  "format": "style"
                 }
+              }
             },
             {
               "properties": {
@@ -117,7 +120,7 @@
                   ]
                 },
                 "callNr": {
-                  "type":"number"
+                  "type": "number"
                 },
                 "npcs": {
                   "type": "array",
@@ -128,9 +131,9 @@
                       "Alicia"
                     ]
                   }
-                }, 
+                },
                 "extra": {
-                  "type":"string"
+                  "type": "string"
                 }
               }
             },
@@ -152,7 +155,7 @@
                   "type": "string"
                 },
                 "noDecissionTriggers": {
-                  "type":"string"
+                  "type": "string"
                 },
                 "options": {
                   "oneOf": [
@@ -240,6 +243,7 @@
           ]
         }
       ],
+      "unevaluatedProperties": false,
       "required": [
         "type"
       ]
