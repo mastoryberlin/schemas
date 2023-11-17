@@ -13,15 +13,7 @@
         "model": {
           "type": "string",
           "description": "ID of the model to use. See the [model endpoint compatibility](https://platform.openai.com/docs/models/model-endpoint-compatibility) table for details on which models work with the Chat API.",
-          "enum": [
-            "gpt-4",
-            "gpt-4-1106-preview",
-            "gpt-4-vision-preview",
-            "gpt-4-32k",
-            "gpt-3.5-turbo",
-            "gpt-3.5-turbo-1106",
-            "gpt-3.5-turbo-16k"
-          ],
+          "$ref": "../models.json#/$defs/modelName",
           "default": "gpt-3.5-turbo-1106"
         },
         "frequency_penalty": {
@@ -82,5 +74,6 @@
       },
       "additionalProperties": false
     }
-  }
+  },
+  "additionalProperties": false
 }
