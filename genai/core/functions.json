@@ -7,7 +7,7 @@
       "properties": {
         "description": {
           "type": "string",
-          "maxLength": 50
+          "maxLength": 250
         },
         "parameters": {
           "type": "object",
