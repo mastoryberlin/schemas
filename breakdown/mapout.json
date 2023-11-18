@@ -1,349 +1,354 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "array",
-  "patternProperties": {
-    "\\w+": {
-      "type": "object",
-      "oneOf": [
-        {
-          "properties": {
-            "type": {
-              "const": "storyElement"
-            },
-            "format": {
-              "enum": [
-                "call",
-                "chat",
-                "call or chat",
-                "wireIA"
-              ]
-            },
-            "assets": {
-              "type": "array",
-              "items": {
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "oneOf": [
+          {
+            "properties": {
+              "name": {
                 "type": "string"
-              }
-            },
-            "markers": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "category": {
-              "enum": [
-                "subflow",
-                "subsubflow"
-              ]
-            },
-            "role": {
-              "enum": [
-                "learningStoryFacts",
-                "havingMoreOptions"
-              ]
-            },
-            "parent": {
-              "type": "string"
-            },
-            "children": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "description": {
-              "type": "string",
-              "format": "style"
-            }
-          }
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "joint"
-            },
-            "format": {
-              "enum": [
-                "call",
-                "chat",
-                "call or chat",
-                "wireIA"
-              ]
-            },
-            "assets": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "markers": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "category": {
-              "enum": [
-                "subflow",
-                "subsubflow"
-              ]
-            },
-            "role": {
-              "enum": [
-                "continuity"
-              ]
-            },
-            "callNr": {
-              "type": "number"
-            },
-            "npcs": {
-              "type": "array",
-              "items": {
+              },
+              "type": {
+                "const": "storyElement"
+              },
+              "format": {
                 "enum": [
-                  "Nick",
-                  "VZ",
-                  "Alicia"
+                  "call",
+                  "chat",
+                  "call or chat",
+                  "wireIA"
                 ]
-              }
-            },
-            "extra": {
-              "type": "string"
-            }
-          }
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "decision"
-            },
-            "format": {
-              "enum": [
-                "call",
-                "chat",
-                "call or chat",
-                "wireIA"
-              ]
-            },
-            "assets": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "markers": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "name": {
-              "type": "string"
-            },
-            "startOffer": {
-              "type": "string"
-            },
-            "endOffer": {
-              "type": "string"
-            },
-            "noDecissionTriggers": {
-              "type": "string"
-            },
-            "options": {
-              "oneOf": [
-                {
-                  "type": "object",
-                  "properties": {
-                    "else": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "patternProperties": {
-                    "if .*": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "required": [
-                    "else"
-                  ]
-                },
-                {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "mathConversation"
-            },
-            "format": {
-              "enum": [
-                "call",
-                "chat",
-                "call or chat",
-                "wireIA"
-              ]
-            },
-            "assets": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "markers": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "name": {
-              "type": "string"
-            },
-            "description": {
-              "type": "string"
-            },
-            "mathTopic": {
-              "type": "object",
-              "properties": {
-                "name": {
+              },
+              "assets": {
+                "type": "array",
+                "items": {
                   "type": "string"
-                },
-                "level": {
-                  "type": "string",
+                }
+              },
+              "markers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "category": {
+                "enum": [
+                  "subflow",
+                  "subsubflow"
+                ]
+              },
+              "role": {
+                "enum": [
+                  "learningStoryFacts",
+                  "havingMoreOptions"
+                ]
+              },
+              "parent": {
+                "type": "string"
+              },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": {
+                "type": "string",
+                "format": "style"
+              }
+            }
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "joint"
+              },
+              "format": {
+                "enum": [
+                  "call",
+                  "chat",
+                  "call or chat",
+                  "wireIA"
+                ]
+              },
+              "assets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "markers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "category": {
+                "enum": [
+                  "subflow",
+                  "subsubflow"
+                ]
+              },
+              "role": {
+                "enum": [
+                  "continuity"
+                ]
+              },
+              "callNr": {
+                "type": "number"
+              },
+              "npcs": {
+                "type": "array",
+                "items": {
                   "enum": [
-                    "beginner",
-                    "intermediate",
-                    "advanced",
-                    "expert"
+                    "Nick",
+                    "VZ",
+                    "Alicia"
                   ]
                 }
               },
-              "required": [
-                "name",
-                "level"
-              ]
-            }
-          },
-          "required": [
-            "mathTopic"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "interactiveMathTask"
-            },
-            "category": {
-              "type": "string",
-              "enum": [
-                "activity",
-                "fragment"
-              ]
-            },
-            "assets": {
-              "type": "array",
-              "items": {
-                "type": "object"
-              }
-            },
-            "markers": {
-              "type": "array",
-              "items": {
+              "extra": {
                 "type": "string"
               }
-            },
-            "name": {
-              "type": "string"
-            },
-            "startOffer": {
-              "type": "string"
-            },
-            "endOffer": {
-              "type": "string"
-            },
-            "noSolutionTriggers": {
-              "type": "string"
-            },
-            "fragments": {
-              "type": "array",
-              "items": {
-                "$ref": "../fragment/fragment.json"
+            }
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "decision"
+              },
+              "format": {
+                "enum": [
+                  "call",
+                  "chat",
+                  "call or chat",
+                  "wireIA"
+                ]
+              },
+              "assets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "markers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "startOffer": {
+                "type": "string"
+              },
+              "endOffer": {
+                "type": "string"
+              },
+              "noDecissionTriggers": {
+                "type": "string"
+              },
+              "options": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "else": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "patternProperties": {
+                      "if .*": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "else"
+                    ]
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
               }
-            },
-            "intents": {
-              "type": "array",
-              "items": {
+            }
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "mathConversation"
+              },
+              "format": {
+                "enum": [
+                  "call",
+                  "chat",
+                  "call or chat",
+                  "wireIA"
+                ]
+              },
+              "assets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "markers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "mathTopic": {
                 "type": "object",
                 "properties": {
                   "name": {
                     "type": "string"
                   },
-                  "representative": {
-                    "type": "string"
-                  },
-                  "scope": {
-                    "type": "string"
-                  },
-                  "reaction": {
-                    "type": "string"
-                  },
-                  "achievements": {
-                    "type": "array",
-                    "items": {
-                      "type": "object"
-                    }
-                  },
-                  "mistakes": {
-                    "type": "array",
-                    "items": {
-                      "type": "object"
+                  "level": {
+                    "type": "string",
+                    "enum": [
+                      "beginner",
+                      "intermediate",
+                      "advanced",
+                      "expert"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "level"
+                ]
+              }
+            },
+            "required": [
+              "mathTopic"
+            ]
+          },
+          {
+            "properties": {
+              "type": {
+                "const": "interactiveMathTask"
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "activity",
+                  "fragment"
+                ]
+              },
+              "assets": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              },
+              "markers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "name": {
+                "type": "string"
+              },
+              "startOffer": {
+                "type": "string"
+              },
+              "endOffer": {
+                "type": "string"
+              },
+              "noSolutionTriggers": {
+                "type": "string"
+              },
+              "fragments": {
+                "type": "array",
+                "items": {
+                  "$ref": "../fragment/fragment.json"
+                }
+              },
+              "intents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "representative": {
+                      "type": "string"
+                    },
+                    "scope": {
+                      "type": "string"
+                    },
+                    "reaction": {
+                      "type": "string"
+                    },
+                    "achievements": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "mistakes": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
                     }
                   }
                 }
+              },
+              "mathTopic": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "level": {
+                    "type": "string",
+                    "enum": [
+                      "beginner",
+                      "intermediate",
+                      "advanced",
+                      "expert"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "level"
+                ]
               }
             },
-            "mathTopic": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "level": {
-                  "type": "string",
-                  "enum": [
-                    "beginner",
-                    "intermediate",
-                    "advanced",
-                    "expert"
-                  ]
-                }
-              },
-              "required": [
-                "name",
-                "level"
-              ]
-            }
-          },
-          "required": [
-            "mathTopic"
-          ]
-        }
-      ],
-      "unevaluatedProperties": false,
-      "required": [
-        "type"
-      ]
+            "required": [
+              "mathTopic"
+            ]
+          }
+        ],
+        "unevaluatedProperties": false,
+        "required": [
+          "type"
+        ]
+      }
     }
   }
 }
