@@ -173,6 +173,24 @@
           }
         }
       }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "in": {},
+          "out": {}
+        },
+        "required": [
+          "in",
+          "out"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "additionalProperties": false
