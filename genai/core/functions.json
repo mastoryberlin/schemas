@@ -10,23 +10,7 @@
           "maxLength": 250
         },
         "parameters": {
-          "type": "object",
-          "patternProperties": {
-            "^\\w+$": {
-              "type": "object",
-              "properties": {
-                "type": {
-                  "enum": [
-                    "string",
-                    "number",
-                    "boolean",
-                    "object",
-                    "array"
-                  ]
-                }
-              }
-            }
-          }
+          "$ref": "http://json-schema.org/draft-07/schema#"
         }
       },
       "required": [

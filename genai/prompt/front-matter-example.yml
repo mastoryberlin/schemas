@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=./front-matter.json
+functions:
+  available:
+    - get_flow_syntax
+  call:
+    - name: get_component_code
+      parameters:
+        name: bluestuff
+    - name: get_flow_syntax
+    - name: get_component_code
+      parameters:
+        name: stuffy
