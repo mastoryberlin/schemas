@@ -3,7 +3,14 @@
   "type": "object",
   "properties": {
     "unit": {
-      "$ref": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/content/unit-slug.json"
+      "$comment": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/content/unit-slug.json",
+      "type": "string",
+      "enum": [
+        "Coordinates",
+        "CoordinatesShort",
+        "Key",
+        "VariablesShort"
+      ]
     }
   },
   "required": [
