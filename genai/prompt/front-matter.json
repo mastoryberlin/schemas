@@ -1,7 +1,10 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "gpt-params": {
       "type": "object",
       "properties": {
@@ -30,7 +33,7 @@
         "max_tokens": {
           "type": "number",
           "description": "The maximum number of [tokens](https://platform.openai.com/tokenizer) to generate in the chat completion. The total length of input tokens and generated tokens is limited by the model's context length. [Example Python code for counting tokens.](https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken) Defaults to `Infinity`",
-          "default": 1e10
+          "default": 10000000000
         },
         "presence_penalty": {
           "type": "number",
@@ -73,6 +76,121 @@
         }
       },
       "additionalProperties": false
+    },
+    "functions": {
+      "type": "object",
+      "properties": {
+        "available": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "get_component_code",
+              "get_components",
+              "get_flow_syntax",
+              "get_main_ts",
+              "get_npcs"
+            ]
+          }
+        },
+        "call": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_component_code"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_component_code/params.json"
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_components"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_components/params.json"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_flow_syntax"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_flow_syntax/params.json"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_main_ts"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_main_ts/params.json"
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_npcs"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_npcs/params.json"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "in": {},
+          "out": {}
+        },
+        "required": [
+          "in",
+          "out"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "additionalProperties": false

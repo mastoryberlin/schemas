@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "unit": {
+      "$comment": "https://raw.githubusercontent.com/mastoryberlin/schemas/main/content/unit-slug.json",
+      "type": "string",
+      "enum": [
+        "Coordinates",
+        "CoordinatesShort",
+        "Key",
+        "VariablesShort"
+      ]
+    }
+  },
+  "required": [
+    "unit"
+  ],
+  "additionalProperties": false
+}
