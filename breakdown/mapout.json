@@ -19,7 +19,8 @@
                   "call",
                   "chat",
                   "call or chat",
-                  "wireIA"
+                  "wireIA",
+                  "script"
                 ]
               },
               "assets": {
@@ -54,6 +55,27 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "npcs": {
+                "type": "string",
+                "enum": [
+                  "Nick",
+                  "Alicia",
+                  "VZ",
+                  "User",
+                  "Priest",
+                  "Librarian",
+                  "Paleontologist"
+                ]
+              }, 
+              "context": {
+                "type": "string"
+              },
+              "topic": {
+                "type": "string"
+              },
+              "scope": {
+                "type": "string"
               },
               "description": {
                 "type": "string",
