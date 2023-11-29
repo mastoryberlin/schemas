@@ -88,8 +88,12 @@
               "get_component_code",
               "get_components",
               "get_flow_syntax",
+              "get_main_jsonc",
               "get_main_ts",
-              "get_npcs"
+              "get_math_class",
+              "get_math_classes",
+              "get_npcs",
+              "get_type_info"
             ]
           }
         },
@@ -144,6 +148,21 @@
                 "type": "object",
                 "properties": {
                   "name": {
+                    "const": "get_main_jsonc"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_main_jsonc/params.json"
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
                     "const": "get_main_ts"
                   },
                   "parameters": {
@@ -159,6 +178,35 @@
                 "type": "object",
                 "properties": {
                   "name": {
+                    "const": "get_math_class"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_math_class/params.json"
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_math_classes"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_math_classes/params.json"
+                  }
+                },
+                "required": [
+                  "name"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
                     "const": "get_npcs"
                   },
                   "parameters": {
@@ -167,6 +215,21 @@
                 },
                 "required": [
                   "name"
+                ]
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "get_type_info"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/get_type_info/params.json"
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
                 ]
               }
             ]

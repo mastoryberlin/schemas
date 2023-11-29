@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "tolerance": {
+      "type": "object",
+      "properties": {
+        "global": {
+          "type": "number",
+          "default": 0.01,
+          "minimum": 0
+        },
+        "coordinatesAndNumberLine": {
+          "type": "number",
+          "default": 0.05,
+          "minimum": 0
+        },
+        "visualPixelTolerance": {
+          "type": "number",
+          "default": 3,
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
