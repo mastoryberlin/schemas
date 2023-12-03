@@ -9,7 +9,7 @@
       "type": "object",
       "oneOf": [
         {
-          "$ref": "./classes/Input.json"
+          "$ref": "./classes/Activity.json"
         },
         {
           "$ref": "./classes/Arrange.json"
