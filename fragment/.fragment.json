@@ -13,31 +13,40 @@
     "self": {
       "oneOf": [
         {
-          "$ref": "./classes/Input.json"
+          "$ref": "./classes/Base.json"
         },
         {
-          "$ref": "./classes/NumberInput.json"
+          "$ref": "./classes/Accordion.json"
         },
         {
-          "$ref": "./classes/Activity.json"
+          "$ref": "./classes/Image.json"
+        },
+        {
+          "$ref": "./classes/Call.json"
         },
         {
           "$ref": "./classes/Arrange.json"
         },
         {
-          "$ref": "./classes/Base.json"
-        },
-        {
-          "$ref": "./classes/CallSwitch.json"
-        },
-        {
           "$ref": "./classes/Gizmo.json"
         },
         {
-          "$ref": "./classes/Intent.json"
+          "$ref": "./classes/BlinkLight.json"
+        },
+        {
+          "$ref": "./classes/Activity.json"
+        },
+        {
+          "$ref": "./classes/ImageBox.json"
+        },
+        {
+          "$ref": "./classes/Input.json"
         },
         {
           "$ref": "./classes/Label.json"
+        },
+        {
+          "$ref": "./classes/Layout.json"
         },
         {
           "$ref": "./classes/MathMesh.json"
@@ -49,34 +58,34 @@
           "$ref": "./classes/MultiSelect.json"
         },
         {
-          "$ref": "./classes/Room.json"
+          "$ref": "./classes/NumberInput.json"
         },
         {
-          "$ref": "./classes/Selectable.json"
+          "$ref": "./classes/PointLight.json"
+        },
+        {
+          "$ref": "./classes/Room.json"
         },
         {
           "$ref": "./classes/Scene.json"
         },
         {
+          "$ref": "./classes/Selectable.json"
+        },
+        {
           "$ref": "./classes/ShaderMaterial.json"
         },
         {
-          "$ref": "./classes/TransformGroup.json"
+          "$ref": "./classes/TextMesh.json"
         },
         {
-          "$ref": "./classes/TextMesh.json"
+          "$ref": "./classes/TransformGroup.json"
         },
         {
           "$ref": "./classes/UiElement.json"
         },
         {
           "$ref": "./classes/UnitRoot.json"
-        },
-        {
-          "$ref": "./classes/PointLight.json"
-        },
-        {
-          "$ref": "./classes/BlinkLight.json"
         }
       ],
       "type": "object"

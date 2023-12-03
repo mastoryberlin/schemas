@@ -9,14 +9,12 @@
       "$ref": "../partial/UiElement.json"
     },
     {
+      "$ref": "../partial/Input.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Input"
-        },
-        "readonly": {
-          "type": "boolean",
-          "description": "Whether the input field is read-only initially.",
-          "default": false
         }
       }
     }
