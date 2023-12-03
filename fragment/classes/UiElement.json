@@ -7,17 +7,12 @@
       "$ref": "../partial/shared.json"
     },
     {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "UiElement"
-        },
-        "visible": {
-          "type": "boolean",
-          "description": "Whether the fragment is initially visible."
-        },
-        "collapseWhenHidden": {
-          "type": "boolean",
-          "description": "If `true`, the area occupied by this fragment will collapse to zero-height and -width when the element is hidden. If `false` or not set, the empty area remains visible."
         }
       }
     }

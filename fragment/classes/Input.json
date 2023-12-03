@@ -6,7 +6,7 @@
       "$ref": "../partial/shared.json"
     },
     {
-      "$ref": "../partial/Hideable.json"
+      "$ref": "../partial/UiElement.json"
     },
     {
       "properties": {
