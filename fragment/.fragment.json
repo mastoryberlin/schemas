@@ -1,13 +1,23 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "type": "object",
   "properties": {
     "$schema": {
       "type": "string"
     },
+    "children": {
+      "items": {
+        "$ref": "#"
+      },
+      "type": "array"
+    },
     "self": {
-      "type": "object",
       "oneOf": [
+        {
+          "$ref": "./classes/Input.json"
+        },
+        {
+          "$ref": "./classes/NumberInput.json"
+        },
         {
           "$ref": "./classes/Activity.json"
         },
@@ -68,17 +78,13 @@
         {
           "$ref": "./classes/BlinkLight.json"
         }
-      ]
-    },
-    "children": {
-      "type": "array",
-      "items": {
-        "$ref": "#"
-      }
+      ],
+      "type": "object"
     }
   },
-  "unevaluatedProperties": false,
   "required": [
     "self"
-  ]
+  ],
+  "type": "object",
+  "unevaluatedProperties": false
 }
