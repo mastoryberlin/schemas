@@ -57,6 +57,9 @@
           "$ref": "./classes/TextMesh.json"
         },
         {
+          "$ref": "./classes/UiElement.json"
+        },
+        {
           "$ref": "./classes/UnitRoot.json"
         },
         {
