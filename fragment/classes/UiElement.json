@@ -2,21 +2,28 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "object",
   "description": "Makes a fragment a possible target for .show and .hide directives. (This is only useful when `id` is set.)",
-  "properties": {
-    "class": {
-      "const": "UiElement"
+  "allOf": [
+    {
+      "$ref": "../partial/shared.json"
     },
-    "visible": {
-      "type": "boolean",
-      "description": "Whether the fragment is initially visible."
-    },
-    "collapseWhenHidden": {
-      "type": "boolean",
-      "description": "If `true`, the area occupied by this fragment will collapse to zero-height and -width when the element is hidden. If `false` or not set, the empty area remains visible."
+    {
+      "properties": {
+        "class": {
+          "const": "UiElement"
+        },
+        "visible": {
+          "type": "boolean",
+          "description": "Whether the fragment is initially visible."
+        },
+        "collapseWhenHidden": {
+          "type": "boolean",
+          "description": "If `true`, the area occupied by this fragment will collapse to zero-height and -width when the element is hidden. If `false` or not set, the empty area remains visible."
+        }
+      }
     }
-  },
+  ],
+  "unevaluatedProperties": false,
   "required": [
     "class"
-  ],
-  "additionalProperties": false
+  ]
 }
