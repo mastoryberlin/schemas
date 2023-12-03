@@ -35,7 +35,7 @@
           "title": "The standard events which this class listens to from its associated DOM or 3D objects, as an array of strings. Conventionally, event names must be in UPPER_CASE letters.",
           "type": "array",
           "items": {
-            "$ref": "../partial/uppercase-identifier.json"
+            "$ref": "../partial/event-identifier.json"
           },
           "default": []
         }
