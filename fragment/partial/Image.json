@@ -1,0 +1,60 @@
+    {
+      "$schema": "http://json-schema.org/draft-07/schema",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "../partial/shared.json"
+        },
+        {
+          "$ref": "../partial/UiElement.json"
+        },
+        {
+          "$ref": "../partial/Labeled.json"
+        },
+        {
+          "properties": {
+            "src": {
+              "type": "string",
+              "description": "The URL of the displayed image.",
+              "pattern": "https?://\\S+"
+            },
+            "size": {
+              "type": "string",
+              "description": "How to size the image within the available area: it can `cover` the entire spot (possibly hiding parts of the image), be fully `contain`ed in it (so that the entire image is always visible), or you can set two numeric values (x y) in either pixels `px` or percents `%` of the available area (to determine only one dimension use `auto` for the other).",
+              "examples": [
+                "contain",
+                "cover",
+                "200px 150px",
+                "50% auto"
+              ]
+            },
+            "repeat": {
+              "type": "string",
+              "description": "How the image is repeated: along the horizontal and vertical axes, or not repeated at all. Use `space` to distribute remaining space between the images evenly.",
+              "enum": [
+                "repeat-x",
+                "repeat-y",
+                "repeat",
+                "space",
+                "round",
+                "no-repeat"
+              ]
+            },
+            "position": {
+              "type": "string",
+              "description": "How the image should be positioned relative to the container.",
+              "examples": [
+                "top",
+                "bottom",
+                "left",
+                "right",
+                "center",
+                "0 0",
+                "25px 40px",
+                "25% 75%"
+              ]
+            }
+          }
+        }
+      ]
+    }
