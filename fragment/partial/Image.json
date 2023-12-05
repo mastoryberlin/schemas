@@ -16,7 +16,8 @@
             "src": {
               "type": "string",
               "description": "The URL of the displayed image.",
-              "pattern": "https?://\\S+"
+              "pattern": "https?://\\S+",
+              "default": "https://storage.googleapis.com/mastory-content/units/"
             },
             "size": {
               "type": "string",

@@ -1,5 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "string",
-  "pattern": "^(number|string|boolean|object|Formula|Cuboids?|('[^']*'\\s*\\|\\s*)*'[^']*')(\\[\\])*$"
+  "pattern": "^(number|string|boolean|object|Formula|Cuboids?|Point|Sprite|('[^']*'\\s*\\|\\s*)*'[^']*')(\\[\\])*$"
 }
