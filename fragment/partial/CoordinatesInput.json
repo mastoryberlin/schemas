@@ -1,0 +1,68 @@
+  {
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "../partial/shared.json"
+      },
+      {
+        "$ref": "../partial/Input.json"
+      },
+      {
+        "$ref": "../partial/UiElement.json"
+      },
+      {
+        "$ref": "../partial/Input.json"
+      },
+      {
+        "$ref": "../partial/UiElement.json"
+      },
+      {
+        "$ref": "../partial/Labeled.json"
+      },
+      {
+        "properties": {
+          "minX": {
+            "type": "number",
+            "description": "The lowest possible value accepted as input in the field for the X coordinate.",
+            "default": -100
+          },
+          "minY": {
+            "type": "number",
+            "description": "The lowest possible value accepted as input in the field for the Y coordinate.",
+            "default": -100
+          },
+          "maxX": {
+            "type": "number",
+            "description": "The highest possible value accepted as input in the field for the X coordinate.",
+            "default": 100
+          },
+          "maxY": {
+            "type": "number",
+            "description": "The highest possible value accepted as input in the field for the Y coordinate.",
+            "default": 100
+          },
+          "stepX": {
+            "type": "number",
+            "description": "The increment by which the current number is changed when the user clicks one of the arrow buttons in the field for the X coordinate.",
+            "exclusiveMinimum": 0,
+            "examples": [
+              0.1,
+              5,
+              10
+            ]
+          },
+          "stepY": {
+            "type": "number",
+            "description": "The increment by which the current number is changed when the user clicks one of the arrow buttons in the field for the Y coordinate.",
+            "exclusiveMinimum": 0,
+            "examples": [
+              0.1,
+              5,
+              10
+            ]
+          }
+        }
+      }
+    ]
+  }

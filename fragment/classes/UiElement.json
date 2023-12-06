@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "description": "Makes a fragment a possible target for .show and .hide directives. (This is only useful when `id` is set.)",
+  "allOf": [
+    {
+      "$ref": "../partial/shared.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "UiElement"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}

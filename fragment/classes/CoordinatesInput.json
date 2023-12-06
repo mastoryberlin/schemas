@@ -1,0 +1,22 @@
+  {
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$comment": "An input field for a numeric pair of coordinates on the UI.",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "../partial/CoordinatesInput.json"
+      },
+      {
+        "properties": {
+          "class": {
+            "const": "CoordinatesInput",
+            "description": "An input field for a numeric pair of coordinates on the UI."
+          }
+        }
+      }
+    ],
+    "unevaluatedProperties": false,
+    "required": [
+      "class"
+    ]
+  }

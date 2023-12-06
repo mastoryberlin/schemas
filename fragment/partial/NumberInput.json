@@ -1,0 +1,59 @@
+  {
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "../partial/shared.json"
+      },
+      {
+        "$ref": "../partial/UiElement.json"
+      },
+      {
+        "$ref": "../partial/Input.json"
+      },
+      {
+        "$ref": "../partial/Labeled.json"
+      },
+      {
+        "properties": {
+          "questionMark": {
+            "type": "boolean",
+            "description": "If `true`, displays a '?' mark placeholder inside the input field to indicate that it is about something to be found out.",
+            "default": true
+          },
+          "unitSuffix": {
+            "type": "string",
+            "description": "If set to a string, this text will be displayed at the right edge of the input field, to indicate the real-world units of the current input.",
+            "examples": [
+              "in",
+              "ft",
+              "mi",
+              "cm",
+              "m",
+              "km"
+            ]
+          },
+          "min": {
+            "type": "number",
+            "description": "The lowest possible value accepted as input.",
+            "default": -100
+          },
+          "max": {
+            "type": "number",
+            "description": "The highest possible value accepted as input.",
+            "default": 100
+          },
+          "step": {
+            "type": "number",
+            "description": "The increment by which the current number is changed when the user clicks one of the arrow buttons.",
+            "exclusiveMinimum": 0,
+            "examples": [
+              0.1,
+              5,
+              10
+            ]
+          }
+        }
+      }
+    ]
+  }

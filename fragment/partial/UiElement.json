@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "visible": {
+      "type": "boolean",
+      "description": "Whether the fragment is initially visible.",
+      "default": true
+    },
+    "collapseWhenHidden": {
+      "type": "boolean",
+      "description": "If `true`, the area occupied by this fragment will collapse to zero-height and -width when the element is hidden. If `false` or not set, the empty area remains visible.",
+      "default": false
+    }
+  }
+}
