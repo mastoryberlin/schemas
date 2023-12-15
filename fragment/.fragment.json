@@ -19,22 +19,22 @@
           "$ref": "./classes/Accordion.json"
         },
         {
-          "$ref": "./classes/Image.json"
-        },
-        {
-          "$ref": "./classes/Call.json"
+          "$ref": "./classes/Activity.json"
         },
         {
           "$ref": "./classes/Arrange.json"
         },
         {
-          "$ref": "./classes/Gizmo.json"
-        },
-        {
           "$ref": "./classes/BlinkLight.json"
         },
         {
-          "$ref": "./classes/Activity.json"
+          "$ref": "./classes/Call.json"
+        },
+        {
+          "$ref": "./classes/CoordinatesInput.json"
+        },
+        {
+          "$ref": "./classes/Gizmo.json"
         },
         {
           "$ref": "./classes/ImageBox.json"

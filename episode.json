@@ -21,8 +21,20 @@
     "title": {
       "type": "string",
       "minLength": 1
+    },
+    "thumbnailUrl": {
+      "type": "string",
+      "pattern": "\\w+://\\w+"
+    },
+    "thumbnailPosition": {
+      "type": "string",
+      "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"
     }
   },
   "additionalProperties": false,
-  "required": []
+  "required": [
+    "unit",
+    "title",
+    "thumbnailUrl"
+  ]
 }
