@@ -29,15 +29,16 @@ function resolve_schema() {
   # Create a map of references to resolved paths
   declare -A refs
   while IFS= read -r ref; do
-    refs["$ref"]="$(resolve_ref "$ref" "$base_dir")"
+    local resolved_ref_path=$(resolve_ref "$ref" "$base_dir")
+    refs["$ref"]="$resolved_ref_path"
   done < <(jq -r '.. | objects | select(has("$ref")) | .["$ref"]' "$schema_path")
 
   # Copy the schema to the resolved path and replace refs
   cp "$schema_path" "$resolved_path"
   for ref in "${!refs[@]}"; do
-    resolved_ref_content=$(jq -c '.' "${refs[$ref]}")
+    local resolved_ref_content=$(jq -c '.' "${refs[$ref]}")
     jq --arg ref "$ref" --argjson content "$resolved_ref_content" \
-      '(.. | objects | select(has("$ref")))."$ref" |= if . == $ref then $content else . end' \
+      '(.. | objects | select(has("$ref")) | select(."$ref" == $ref)) |= $content' \
       "$resolved_path" > "$resolved_path.tmp" && mv "$resolved_path.tmp" "$resolved_path"
   done
 }
