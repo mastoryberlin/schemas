@@ -1,0 +1,75 @@
+#!/bin/bash
+
+function resolve_ref() {
+  local ref_path="$1"
+  local base_dir="$2"
+  local ref_resolved_path="resolved/${ref_path}"
+
+  # Adjust relative path
+  if [[ $ref_path == ./* ]]; then
+    ref_resolved_path="resolved/${base_dir}/${ref_path:2}"
+  elif [[ $ref_path == ../* ]]; then
+    ref_resolved_path="resolved/$(dirname "$base_dir")/${ref_path:3}"
+  fi
+
+  # Resolve the schema if necessary
+  if [ ! -f "$ref_resolved_path" ] || [ "$ref_path" -nt "$ref_resolved_path" ]; then
+    resolve_schema "$ref_path"
+  fi
+
+  echo "$ref_resolved_path"
+}
+
+function resolve_schema() {
+  local schema_path=$1
+  local base_dir=$(dirname "$schema_path")
+  local resolved_path="resolved/${schema_path}"
+  mkdir -p "$(dirname "$resolved_path")"
+
+  # Create a map of references to resolved paths
+  declare -A refs
+  while IFS= read -r ref; do
+    refs["$ref"]="$(resolve_ref "$ref" "$base_dir")"
+  done < <(jq -r '.. | objects | select(has("$ref")) | .["$ref"]' "$schema_path")
+
+  # Copy the schema to the resolved path and replace refs
+  cp "$schema_path" "$resolved_path"
+  for ref in "${!refs[@]}"; do
+    resolved_ref_content=$(jq -c '.' "${refs[$ref]}")
+    jq --arg ref "$ref" --argjson content "$resolved_ref_content" \
+      '(.. | objects | select(has("$ref")))."$ref" |= if . == $ref then $content else . end' \
+      "$resolved_path" > "$resolved_path.tmp" && mv "$resolved_path.tmp" "$resolved_path"
+  done
+}
+
+function usage() {
+  echo -e "\nUSAGE: resolve <schema_path>\n"
+  echo '<schema_path>    The path to the schema to be resolved, relative to the repository root'
+  echo '                 OR (equivalently) to the target schema relative to the `resolved` folder.'
+}
+
+# Entry point of the script
+function main() {
+  case "$1" in
+  "")
+    echo "Nothing to resolve; exiting."
+    usage
+    exit 0
+    ;;
+  -h|--help)
+    usage
+    exit 0
+    ;;
+  *)
+    schema_path="$1"
+    if [ ! -f "$schema_path" ]; then
+      echo "Cannot find schema file at $schema_path; exiting."
+      exit 1
+    fi
+  esac
+
+  echo "Resolving $schema_path ..."
+  resolve_schema "$schema_path"
+}
+
+main "$@"
