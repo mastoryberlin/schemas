@@ -8,8 +8,10 @@ function resolve_ref() {
   # Adjust relative path
   if [[ $ref_path == ./* ]]; then
     ref_resolved_path="resolved/${base_dir}/${ref_path:2}"
+    ref_path="${base_dir}/${ref_path:2}"
   elif [[ $ref_path == ../* ]]; then
     ref_resolved_path="resolved/$(dirname "$base_dir")/${ref_path:3}"
+    ref_path="$(dirname "$base_dir")/${ref_path:3}"
   fi
 
   # Resolve the schema if necessary
@@ -26,17 +28,17 @@ function resolve_schema() {
   local resolved_path="resolved/${schema_path}"
   mkdir -p "$(dirname "$resolved_path")"
 
-  # Create a map of references to resolved paths
-  declare -A refs
-  while IFS= read -r ref; do
-    local resolved_ref_path=$(resolve_ref "$ref" "$base_dir")
-    refs["$ref"]="$resolved_ref_path"
-  done < <(jq -r '.. | objects | select(has("$ref")) | .["$ref"]' "$schema_path")
+  # First, resolve all referenced schemas
+  local refs=$(jq -r '.. | objects | select(has("$ref")) | .["$ref"]' "$schema_path")
+  for ref in $refs; do
+    resolve_ref "$ref" "$base_dir" >/dev/null
+  done
 
   # Copy the schema to the resolved path and replace refs
   cp "$schema_path" "$resolved_path"
-  for ref in "${!refs[@]}"; do
-    local resolved_ref_content=$(jq -c '.' "${refs[$ref]}")
+  for ref in $refs; do
+    local resolved_ref_path=$(resolve_ref "$ref" "$base_dir")
+    local resolved_ref_content=$(jq -c '.' "$resolved_ref_path")
     jq --arg ref "$ref" --argjson content "$resolved_ref_content" \
       '(.. | objects | select(has("$ref")) | select(."$ref" == $ref)) |= $content' \
       "$resolved_path" > "$resolved_path.tmp" && mv "$resolved_path.tmp" "$resolved_path"
