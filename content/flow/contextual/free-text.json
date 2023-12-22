@@ -23,13 +23,29 @@
       "type": "string"
     },
     "intents": {
-      "type": "array",
-      "items": {
+      "type": "object",
+      "properties": {
+        "*": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string",
+              "default": "Everything that doesn't fit into any of the other intent categories."
+            },
+            "examples": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": []
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
@@ -38,12 +54,9 @@
             "items": {
               "type": "string"
             }
-          }
-        },
-        "required": [
-          "id"
-        ],
-        "additionalProperties": false
+          },
+          "additionalProperties": false
+        }
       }
     }
   },
