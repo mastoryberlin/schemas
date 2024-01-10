@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$comment": "A list of objectives to be integrated as a fragment. Objectives are expected as child fragments and will be displayed as a to-do list.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/ObjectivesList.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "ObjectivesList",
+          "description": "A list of objectives to be integrated as a fragment. Objectives are expected as child fragments and will be displayed as a to-do list."
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}
