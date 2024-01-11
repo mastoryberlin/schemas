@@ -1,0 +1,23 @@
+    {
+      "$schema": "http://json-schema.org/draft-07/schema",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "../partial/shared.json"
+        },
+        {
+          "$ref": "../partial/UiElement.json"
+        },
+        {
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "checked": {
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      ]
+    }

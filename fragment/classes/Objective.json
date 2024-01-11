@@ -1,0 +1,22 @@
+    {
+      "$schema": "http://json-schema.org/draft-07/schema",
+      "$comment": "A simple ToDo checkbox that can serve as an item in a mission objectives list.",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "../partial/Objective.json"
+        },
+        {
+          "properties": {
+            "class": {
+              "const": "Objective",
+              "description": "A simple ToDo checkbox that can serve as an item in a mission objectives list."
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false,
+      "required": [
+        "class"
+      ]
+    }

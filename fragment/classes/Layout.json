@@ -3,27 +3,16 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "../partial/shared.json"
+    },
+    {
+      "$ref": "../partial/Layout.json"
+    },
+    {
       "properties": {
         "class": {
-          "const": "Layout"
-        },
-        "layout": {
-          "type": "string",
-          "enum": [
-            "grid",
-            "stack",
-            "equal-spacing"
-          ]
-        },
-        "direction": {
-          "type": "string",
-          "enum": [
-            "row",
-            "column"
-          ]
-        },
-        "gap": {
-          "type": "number"
+          "const": "Layout",
+          "description": "Arranges the child fragments in a horizontal or vertical layout."
         }
       }
     }
