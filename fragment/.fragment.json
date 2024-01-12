@@ -37,6 +37,9 @@
           "$ref": "./classes/Gizmo.json"
         },
         {
+          "$ref": "./classes/Image.json"
+        },
+        {
           "$ref": "./classes/ImageBox.json"
         },
         {
@@ -59,6 +62,12 @@
         },
         {
           "$ref": "./classes/NumberInput.json"
+        },
+        {
+          "$ref": "./classes/Objective.json"
+        },
+        {
+          "$ref": "./classes/ObjectivesList.json"
         },
         {
           "$ref": "./classes/PointLight.json"

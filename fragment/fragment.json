@@ -67,6 +67,9 @@
           "$ref": "./classes/Objective.json"
         },
         {
+          "$ref": "./classes/ObjectivesGroup.json"
+        },
+        {
           "$ref": "./classes/ObjectivesList.json"
         },
         {
