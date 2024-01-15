@@ -16,6 +16,9 @@
             "checked": {
               "type": "boolean",
               "default": true
+            },
+            "supportFlow": {
+              "$ref": "../partial/flow.json"
             }
           }
         }
