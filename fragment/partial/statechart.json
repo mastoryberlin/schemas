@@ -16,10 +16,14 @@
       "default": {}
     },
     "flow": {
-      "title": "The file name of a flow (with or without the .flow extension) which will be used to define the internal states of this fragment.",
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9_-]+(\\.flow)?$",
-      "default": "MyFlowFile.flow"
+      "allOf": [
+        {
+          "title": "The file name of a flow (with or without the .flow extension) which will be used to define the internal states of this fragment."
+        },
+        {
+          "$ref": "./flow.json"
+        }
+      ]
     },
     "dynamicFlowSwitch": {
       "$ref": "./identifier.json"
