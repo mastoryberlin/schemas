@@ -3,12 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/CoordinatesInput.json"
+      "$ref": "../partial/Navigation.json"
     },
     {
       "properties": {
         "class": {
-          "const": "CoordinatesInput"
+          "const": "Navigation"
         }
       }
     }

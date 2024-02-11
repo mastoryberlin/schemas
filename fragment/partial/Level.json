@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "number"
+    },
+    "intro": {
+      "type": "object",
+      "properties": {
+        "flow": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "untouched",
+            "started",
+            "done"
+          ],
+          "default": "untouched"
+        },
+        "entryPoint": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "inaccessible",
+        "inactive",
+        "activeFocused",
+        "activeIdle"
+      ],
+      "default": "inaccessible"
+    },
+    "currentlyFocusedObjective": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "intro",
+    "title",
+    "order"
+  ]
+}

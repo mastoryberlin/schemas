@@ -1,0 +1,143 @@
+{
+  "type": "object",
+  "properties": {
+    "generalContext": {
+      "type": "string"
+    },
+    "intents": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "intent": {
+              "type": "string"
+            },
+            "requireTopics": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "excludeTopics": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "relevantActions": {
+              "type": "array"
+            },
+            "description": {
+              "type": "string"
+            },
+            "examples": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "evaluation": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string"
+                },
+                "demonstratesProficiencyIn": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                },
+                "showsPossibleProblemsWith": {
+                  "type": "string"
+                }
+              }
+            },
+            "reaction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "intent",
+            "description"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "intent": {
+                "type": "string"
+              },
+              "requireTopics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "excludeTopics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "relevantActions": {
+                "type": "array"
+              },
+              "description": {
+                "type": "string"
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "evaluation": {
+                "type": "object",
+                "properties": {
+                  "category": {
+                    "type": "string"
+                  },
+                  "demonstratesProficiencyIn": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "showsPossibleProblemsWith": {
+                    "type": "string"
+                  }
+                }
+              },
+              "reaction": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "intent",
+              "description"
+            ]
+          }
+        }
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "inactive",
+        "activeIdle",
+        "userIsTyping",
+        "processingAnswer",
+        "answeredIdle",
+        "feedbackIsRunning",
+        "done"
+      ]
+    }
+  },
+  "required": [
+    "intents",
+    "generalContext"
+  ]
+}

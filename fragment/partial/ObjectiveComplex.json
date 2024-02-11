@@ -1,11 +1,11 @@
 {
   "type": "object",
   "properties": {
-    "label": {
+    "learnable": {
       "type": "string"
     }
   },
   "required": [
-    "label"
+    "learnable"
   ]
 }

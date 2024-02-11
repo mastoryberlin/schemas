@@ -1,28 +1,25 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "allOf": [
-    {
-      "properties": {
-        "layout": {
-          "type": "string",
-          "enum": [
-            "grid",
-            "stack",
-            "equal-spacing"
-          ]
-        },
-        "direction": {
-          "type": "string",
-          "enum": [
-            "row",
-            "column"
-          ]
-        },
-        "gap": {
-          "type": "number"
-        }
-      }
+  "properties": {
+    "myProperty1": {
+      "type": "string",
+      "maxLength": 120,
+      "$title": "An interesting property"
+    },
+    "anotherProp": {
+      "type": "boolean",
+      "$title": "Another Property"
+    },
+    "coolNumber": {
+      "type": "number",
+      "$title": "A numeric value"
+    },
+    "hello": {
+      "type": "string",
+      "$title": "Greeting message"
     }
+  },
+  "required": [
+    "myProperty1"
   ]
 }

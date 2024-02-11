@@ -13,52 +13,40 @@
     "self": {
       "oneOf": [
         {
-          "$ref": "./classes/Base.json"
-        },
-        {
           "$ref": "./classes/Accordion.json"
         },
         {
           "$ref": "./classes/Activity.json"
         },
         {
-          "$ref": "./classes/Arrange.json"
+          "$ref": "./classes/Button.json"
         },
         {
-          "$ref": "./classes/BlinkLight.json"
-        },
-        {
-          "$ref": "./classes/Call.json"
+          "$ref": "./classes/Component.json"
         },
         {
           "$ref": "./classes/CoordinatesInput.json"
         },
         {
-          "$ref": "./classes/Gizmo.json"
+          "$ref": "./classes/DetachedInput.json"
+        },
+        {
+          "$ref": "./classes/Flow.json"
         },
         {
           "$ref": "./classes/Image.json"
         },
         {
-          "$ref": "./classes/ImageBox.json"
-        },
-        {
-          "$ref": "./classes/Input.json"
-        },
-        {
-          "$ref": "./classes/Label.json"
+          "$ref": "./classes/InteractiveUiElement.json"
         },
         {
           "$ref": "./classes/Layout.json"
         },
         {
-          "$ref": "./classes/MathMesh.json"
+          "$ref": "./classes/Level.json"
         },
         {
-          "$ref": "./classes/ModelMesh.json"
-        },
-        {
-          "$ref": "./classes/MultiSelect.json"
+          "$ref": "./classes/Navigation.json"
         },
         {
           "$ref": "./classes/NumberInput.json"
@@ -67,37 +55,108 @@
           "$ref": "./classes/Objective.json"
         },
         {
+          "$ref": "./classes/ObjectiveComplex.json"
+        },
+        {
+          "$ref": "./classes/ObjectiveSimple.json"
+        },
+        {
           "$ref": "./classes/ObjectivesGroup.json"
         },
         {
-          "$ref": "./classes/ObjectivesList.json"
+          "$ref": "./classes/OpenQuestion.json"
         },
         {
-          "$ref": "./classes/PointLight.json"
+          "$ref": "./classes/SampleSolve.json"
         },
         {
-          "$ref": "./classes/Room.json"
+          "$ref": "./classes/Selector.json"
         },
         {
-          "$ref": "./classes/Scene.json"
-        },
-        {
-          "$ref": "./classes/Selectable.json"
-        },
-        {
-          "$ref": "./classes/ShaderMaterial.json"
-        },
-        {
-          "$ref": "./classes/TextMesh.json"
-        },
-        {
-          "$ref": "./classes/TransformGroup.json"
+          "$ref": "./classes/TextInput.json"
         },
         {
           "$ref": "./classes/UiElement.json"
         },
         {
+          "$ref": "./classes/UnitComponent.json"
+        },
+        {
           "$ref": "./classes/UnitRoot.json"
+        }
+      ],
+      "examples": [
+        {
+          "class": "Accordion"
+        },
+        {
+          "class": "Activity"
+        },
+        {
+          "class": "Button"
+        },
+        {
+          "class": "Component"
+        },
+        {
+          "class": "CoordinatesInput"
+        },
+        {
+          "class": "DetachedInput"
+        },
+        {
+          "class": "Flow"
+        },
+        {
+          "class": "Image"
+        },
+        {
+          "class": "InteractiveUiElement"
+        },
+        {
+          "class": "Layout"
+        },
+        {
+          "class": "Level"
+        },
+        {
+          "class": "Navigation"
+        },
+        {
+          "class": "NumberInput"
+        },
+        {
+          "class": "Objective"
+        },
+        {
+          "class": "ObjectiveComplex"
+        },
+        {
+          "class": "ObjectiveSimple"
+        },
+        {
+          "class": "ObjectivesGroup"
+        },
+        {
+          "class": "OpenQuestion"
+        },
+        {
+          "class": "SampleSolve"
+        },
+        {
+          "class": "Selector"
+        },
+        {
+          "class": "TextInput"
+        },
+        {
+          "class": "UiElement"
+        },
+        {
+          "class": "UnitComponent"
+        },
+        {
+          "class": "UnitRoot"
         }
       ],
       "type": "object"

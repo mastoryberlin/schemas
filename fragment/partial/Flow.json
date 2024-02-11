@@ -1,11 +1,11 @@
 {
   "type": "object",
   "properties": {
-    "label": {
+    "path": {
       "type": "string"
     }
   },
   "required": [
-    "label"
+    "path"
   ]
 }

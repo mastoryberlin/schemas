@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "label": {
+      "oneOf": [
+        {
+          "description": "A label text displayed next to this UI element. To customize the text position, set `label` to an object and use the `position` subproperty.",
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "text": {
+              "description": "A label text displayed next to this UI element. You can customize its position with the `position` property.",
+              "type": "string",
+              "default": ""
+            },
+            "hidden": {
+              "type": "boolean",
+              "default": false
+            },
+            "position": {
+              "type": "string",
+              "enum": [
+                "left",
+                "right",
+                "top",
+                "bottom"
+              ],
+              "description": "Determines the position of the label text relative to the UI element."
+            }
+          },
+          "required": [
+            "text"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "./unit.json",
+  "self": {
+    "class": "UnitRoot"
+  },
+  "children": [
+    {
+      "self": {
+        "class": "Button"
+      }
+    }
+  ]
+}
