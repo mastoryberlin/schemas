@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "mandatory",
+        "supportive",
+        "optional"
+      ]
+    },
+    "activityId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "text"
+  ]
+}
