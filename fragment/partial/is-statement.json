@@ -1,62 +1,55 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "definitions": {
+  "$defs": {
     "statement": {
       "type": "array",
-      "oneOf": [
+      "items": [
         {
-          "items": [
-            {
-              "const": "topic"
-            },
-            {
-              "type": "object",
-              "additionalProperties": {
-                "type": "object",
-                "properties": {
-                  "synonyms": {
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "additionalProperties": false
-              }
-            }
+          "type": "string",
+          "enum": [
+            "nameOf",
+            "visualInstanceOf",
+            "schematicInstanceOf",
+            "symbolicInstanceOf",
+            "verbalInstanceOf"
           ]
         },
         {
-          "items": [
+          "oneOf": [
             {
-              "type": "string",
-              "enum": [
-                "nameOf",
-                "visualInstanceOf",
-                "schematicInstanceOf",
-                "symbolicInstanceOf",
-                "verbalInstanceOf"
-              ]
+              "type": "string"
             },
             {
-              "oneOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/definitions/statement"
-                }
-              ]
+              "$ref": "#/$defs/statement"
             }
           ]
         }
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "examples": [
+        [
+          "nameOf"
+        ],
+        [
+          "visualInstanceOf"
+        ],
+        [
+          "schematicInstanceOf"
+        ],
+        [
+          "symbolicInstanceOf"
+        ],
+        [
+          "verbalInstanceOf"
+        ]
       ]
     }
   },
   "type": "object",
   "properties": {
     "is": {
-      "$ref": "#/definitions/statement"
+      "$ref": "#/$defs/statement"
     }
   }
 }

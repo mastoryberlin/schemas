@@ -6,6 +6,9 @@
       "$ref": "../partial/Selector.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Selector"

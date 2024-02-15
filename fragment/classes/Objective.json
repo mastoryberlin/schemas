@@ -6,6 +6,9 @@
       "$ref": "../partial/Objective.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Objective"

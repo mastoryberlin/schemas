@@ -6,6 +6,9 @@
       "$ref": "../partial/Image.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Image"

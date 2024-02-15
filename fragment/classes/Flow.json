@@ -6,6 +6,9 @@
       "$ref": "../partial/Flow.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Flow"

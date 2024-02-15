@@ -6,6 +6,9 @@
       "$ref": "../partial/UiElement.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "UiElement"

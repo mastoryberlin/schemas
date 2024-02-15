@@ -3,6 +3,9 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "ModelMesh"

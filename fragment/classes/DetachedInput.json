@@ -6,6 +6,9 @@
       "$ref": "../partial/DetachedInput.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "DetachedInput"

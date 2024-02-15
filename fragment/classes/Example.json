@@ -7,6 +7,9 @@
       "$ref": "../partial/Example.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Example",

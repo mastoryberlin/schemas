@@ -9,6 +9,9 @@
       "$ref": "../partial/statechart.json"
     },
     {
+      "$ref": "../partial/is-statement.json"
+    },
+    {
       "properties": {
         "class": {
           "type": "null"

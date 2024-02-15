@@ -4,6 +4,8 @@
     "allOf": [
       {
         "$ref": "../partial/shared.json"
+      },{
+        "$ref": "../partial/is-statement.json"
       },
       {
         "properties": {
