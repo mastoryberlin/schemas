@@ -6,6 +6,18 @@
       "$ref": "../partial/SampleSolve.json"
     },
     {
+      "$ref": "../partial/_SampleSolve.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/_Activity.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "SampleSolve"

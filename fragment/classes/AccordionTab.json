@@ -3,12 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Activity.json"
+      "$ref": "../partial/AccordionTab.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Activity"
+          "const": "AccordionTab"
         }
       }
     }

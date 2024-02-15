@@ -3,12 +3,18 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Activity.json"
+      "$ref": "../partial/Derived.json"
+    },
+    {
+      "$ref": "../partial/Fraggy.json"
+    },
+    {
+      "$ref": "../partial/Basey.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Activity"
+          "const": "Derived"
         }
       }
     }

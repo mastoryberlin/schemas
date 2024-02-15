@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "statement": {
+      "type": "array",
+      "oneOf": [
+        {
+          "items": [
+            {
+              "const": "topic"
+            },
+            {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "synonyms": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "type": "string",
+              "enum": [
+                "nameOf",
+                "visualInstanceOf",
+                "schematicInstanceOf",
+                "symbolicInstanceOf",
+                "verbalInstanceOf"
+              ]
+            },
+            {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/definitions/statement"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "is": {
+      "$ref": "#/definitions/statement"
+    }
+  }
+}

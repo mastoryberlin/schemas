@@ -165,9 +165,8 @@
     }
   },
   "required": [
-    "mission",
-    "skeleton",
     "self"
   ],
-  "unevaluatedProperties": false
+  "unevaluatedProperties": false,
+  "unevaluatedItems": false
 }

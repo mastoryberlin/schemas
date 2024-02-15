@@ -6,6 +6,15 @@
       "$ref": "../partial/OpenQuestion.json"
     },
     {
+      "$ref": "../partial/_OpenQuestion.json"
+    },
+    {
+      "$ref": "../partial/_SampleSolve.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "OpenQuestion"

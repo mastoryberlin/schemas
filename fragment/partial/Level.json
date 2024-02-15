@@ -28,16 +28,6 @@
     "title": {
       "type": "string"
     },
-    "state": {
-      "type": "string",
-      "enum": [
-        "inaccessible",
-        "inactive",
-        "activeFocused",
-        "activeIdle"
-      ],
-      "default": "inaccessible"
-    },
     "currentlyFocusedObjective": {
       "type": "string"
     }

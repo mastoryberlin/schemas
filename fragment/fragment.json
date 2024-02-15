@@ -16,13 +16,7 @@
           "$ref": "./classes/Accordion.json"
         },
         {
-          "$ref": "./classes/Activity.json"
-        },
-        {
           "$ref": "./classes/Button.json"
-        },
-        {
-          "$ref": "./classes/Component.json"
         },
         {
           "$ref": "./classes/CoordinatesInput.json"
@@ -31,10 +25,19 @@
           "$ref": "./classes/DetachedInput.json"
         },
         {
+          "$ref": "./classes/EmptyArea.json"
+        },
+        {
           "$ref": "./classes/Flow.json"
         },
         {
+          "$ref": "./classes/Fragment.json"
+        },
+        {
           "$ref": "./classes/Image.json"
+        },
+        {
+          "$ref": "./classes/Input.json"
         },
         {
           "$ref": "./classes/InteractiveUiElement.json"
@@ -52,24 +55,6 @@
           "$ref": "./classes/NumberInput.json"
         },
         {
-          "$ref": "./classes/Objective.json"
-        },
-        {
-          "$ref": "./classes/ObjectiveComplex.json"
-        },
-        {
-          "$ref": "./classes/ObjectiveSimple.json"
-        },
-        {
-          "$ref": "./classes/ObjectivesGroup.json"
-        },
-        {
-          "$ref": "./classes/OpenQuestion.json"
-        },
-        {
-          "$ref": "./classes/SampleSolve.json"
-        },
-        {
           "$ref": "./classes/Selector.json"
         },
         {
@@ -77,9 +62,6 @@
         },
         {
           "$ref": "./classes/UiElement.json"
-        },
-        {
-          "$ref": "./classes/UnitComponent.json"
         },
         {
           "$ref": "./classes/UnitRoot.json"
@@ -90,13 +72,7 @@
           "class": "Accordion"
         },
         {
-          "class": "Activity"
-        },
-        {
           "class": "Button"
-        },
-        {
-          "class": "Component"
         },
         {
           "class": "CoordinatesInput"
@@ -105,10 +81,19 @@
           "class": "DetachedInput"
         },
         {
+          "class": "EmptyArea"
+        },
+        {
           "class": "Flow"
         },
         {
+          "class": "Fragment"
+        },
+        {
           "class": "Image"
+        },
+        {
+          "class": "Input"
         },
         {
           "class": "InteractiveUiElement"
@@ -126,24 +111,6 @@
           "class": "NumberInput"
         },
         {
-          "class": "Objective"
-        },
-        {
-          "class": "ObjectiveComplex"
-        },
-        {
-          "class": "ObjectiveSimple"
-        },
-        {
-          "class": "ObjectivesGroup"
-        },
-        {
-          "class": "OpenQuestion"
-        },
-        {
-          "class": "SampleSolve"
-        },
-        {
           "class": "Selector"
         },
         {
@@ -151,9 +118,6 @@
         },
         {
           "class": "UiElement"
-        },
-        {
-          "class": "UnitComponent"
         },
         {
           "class": "UnitRoot"

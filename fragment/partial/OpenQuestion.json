@@ -1,6 +1,8 @@
 {
-  "type": "object",
   "properties": {
+    "text": {
+      "type": "string"
+    },
     "generalContext": {
       "type": "string"
     },
@@ -60,7 +62,8 @@
           "required": [
             "intent",
             "description"
-          ]
+          ],
+          "additionalProperties": false
         },
         {
           "type": "array",
@@ -118,26 +121,20 @@
             "required": [
               "intent",
               "description"
-            ]
+            ],
+            "additionalProperties": false
           }
         }
       ]
     },
-    "state": {
-      "type": "string",
-      "enum": [
-        "inactive",
-        "activeIdle",
-        "userIsTyping",
-        "processingAnswer",
-        "answeredIdle",
-        "feedbackIsRunning",
-        "done"
-      ]
+    "sampleSolution": {
+      "type": "string"
     }
   },
   "required": [
+    "text",
+    "generalContext",
     "intents",
-    "generalContext"
+    "sampleSolution"
   ]
 }

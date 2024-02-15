@@ -3,12 +3,6 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/shared.json"
-    },
-    {
-      "$ref": "../partial/UiElement.json"
-    },
-    {
       "$ref": "../partial/Input.json"
     },
     {

@@ -3,16 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/shared.json"
-    },
-    {
       "$ref": "../partial/Layout.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Layout",
-          "description": "Arranges the child fragments in a horizontal or vertical layout."
+          "const": "Layout"
         }
       }
     }

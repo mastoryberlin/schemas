@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "./identifier.json"
+    },
+    "support": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "patternProperties": {
+            "^S_": {
+              "type": "object",
+              "properties": {
+                "order": {
+                  "type": "number"
+                },
+                "flow": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "inheritFrom": {
+                  "type": "string"
+                },
+                "noNeedIndicatesProficiencyIn": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "is": {
+      "$ref": "./is-statement.json"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

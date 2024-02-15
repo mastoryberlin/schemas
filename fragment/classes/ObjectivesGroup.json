@@ -1,22 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
     {
-      "$schema": "http://json-schema.org/draft-07/schema",
-      "$comment": "Groups multiple mission objectives under a common header. Will display a tree-like indentation when nested.",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "../partial/ObjectivesGroup.json"
-        },
-        {
-          "properties": {
-            "class": {
-              "const": "ObjectivesGroup",
-              "description": "Groups multiple mission objectives under a common header. Will display a tree-like indentation when nested."
-            }
-          }
+      "$ref": "../partial/ObjectivesGroup.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "ObjectivesGroup"
         }
-      ],
-      "unevaluatedProperties": false,
-      "required": [
-        "class"
-      ]
+      }
     }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}

@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$comment": "An image displayed on the UI.",
   "type": "object",
   "allOf": [
     {
@@ -9,8 +8,7 @@
     {
       "properties": {
         "class": {
-          "const": "Image",
-          "description": "An image displayed on the UI."
+          "const": "Image"
         }
       }
     }

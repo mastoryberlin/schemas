@@ -1,4 +1,10 @@
 {
-  "type": "object",
-  "unevaluatedProperties": false
+  "properties": {
+    "sampleSolution": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "sampleSolution"
+  ]
 }
