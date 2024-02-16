@@ -1,1 +1,141 @@
-{}
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "allOf": [
+        {
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[a-zA-Z_][a-zA-Z_0-9]*$"
+            },
+            "stopEventPropagation": {
+              "oneOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "INTERACT",
+                      "CLICK",
+                      "MOUSE_ENTER",
+                      "MOUSE_LEAVE"
+                    ]
+                  }
+                }
+              ],
+              "default": true
+            },
+            "support": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object",
+                  "patternProperties": {
+                    "^S_": {
+                      "type": "object",
+                      "properties": {
+                        "order": {
+                          "type": "number"
+                        },
+                        "flow": {
+                          "type": "string"
+                        },
+                        "text": {
+                          "type": "string"
+                        },
+                        "inheritFrom": {
+                          "type": "string"
+                        },
+                        "noNeedIndicatesProficiencyIn": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "required": [
+            "id"
+          ]
+        },
+        {
+          "properties": {
+            "backgroundImage": {
+              "type": "object",
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "string"
+                },
+                "repeat": {
+                  "type": "string"
+                },
+                "position": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "src"
+              ]
+            },
+            "absolute": {
+              "type": "object",
+              "properties": {
+                "left": {
+                  "type": "number"
+                },
+                "top": {
+                  "type": "number"
+                },
+                "right": {
+                  "type": "number"
+                },
+                "bottom": {
+                  "type": "number"
+                }
+              }
+            },
+            "highlighted": {
+              "type": "boolean"
+            },
+            "span": {
+              "type": "number"
+            },
+            "childrenLayout": {
+              "type": "string",
+              "enum": [
+                "horizontal",
+                "vertical",
+                "auto"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "properties": {
+        "value": {},
+        "model": {
+          "$ref": "./identifier"
+        }
+      },
+      "required": []
+    }
+  ]
+}

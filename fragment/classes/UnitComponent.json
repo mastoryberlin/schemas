@@ -6,7 +6,13 @@
       "$ref": "../partial/UnitComponent.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../partial/UnitComponent.json"
+    },
+    {
+      "$ref": "../partial/Component.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {

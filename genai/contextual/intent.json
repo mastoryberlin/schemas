@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$defs": {
+    "requiredTopic": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "patternProperties": {
+            "oneOf|allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/requiredTopic"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "requiredAction": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "patternProperties": {
+            "oneOf|allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/requiredAction"
+              }
+            }
+          }
+        },
+        {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "#/$defs/requiredAction"
+            },
+            {
+              "$ref": "#/$defs/requiredTopic"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "default": "Everything that doesn't fit into any of the other intent categories."
+    },
+    "requireTopics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/requiredTopic"
+      }
+    },
+    "requireActions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/requiredAction"
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "additionalProperties": false
+  }
+}

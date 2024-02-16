@@ -16,6 +16,9 @@
           "$ref": "./classes/Accordion.json"
         },
         {
+          "$ref": "./classes/AccordionTab.json"
+        },
+        {
           "$ref": "./classes/Activity.json"
         },
         {
@@ -23,6 +26,9 @@
         },
         {
           "$ref": "./classes/Button.json"
+        },
+        {
+          "$ref": "./classes/Component.json"
         },
         {
           "$ref": "./classes/CoordinatesInput.json"
@@ -108,6 +114,9 @@
           "class": "Accordion"
         },
         {
+          "class": "AccordionTab"
+        },
+        {
           "class": "Activity"
         },
         {
@@ -115,6 +124,9 @@
         },
         {
           "class": "Button"
+        },
+        {
+          "class": "Component"
         },
         {
           "class": "CoordinatesInput"

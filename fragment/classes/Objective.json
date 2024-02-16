@@ -6,19 +6,10 @@
       "$ref": "../partial/Objective.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
-    },
-    {
-      "$ref": "../partial/_Objective.json"
-    },
-    {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../partial/Objective.json"
     },
     {
       "$ref": "../partial/Fragment.json"
-    },
-    {
-      "$ref": "../partial/is-statement.json"
     },
     {
       "properties": {

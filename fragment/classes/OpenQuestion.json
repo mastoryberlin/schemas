@@ -6,10 +6,19 @@
       "$ref": "../partial/OpenQuestion.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../partial/OpenQuestion.json"
+    },
+    {
+      "$ref": "../partial/SampleSolve.json"
     },
     {
       "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {

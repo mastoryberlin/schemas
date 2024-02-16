@@ -1,18 +1,54 @@
 {
-  "type": "object",
   "properties": {
-    "highlighted": {
-      "type": "boolean"
+    "childrenLayout": {
+      "type": "string",
+      "enum": {
+        "type": "string",
+        "enum": [
+          "auto",
+          "horizontal",
+          "vertical"
+        ]
+      }
     },
     "span": {
       "type": "number"
     },
-    "childrenLayout": {
-      "type": "string",
-      "enum": [
-        "horizontal",
-        "vertical",
-        "auto"
+    "absolute": {
+      "type": "object",
+      "properties": {
+        "left": {
+          "type": "number"
+        },
+        "top": {
+          "type": "number"
+        },
+        "right": {
+          "type": "number"
+        },
+        "bottom": {
+          "type": "number"
+        }
+      }
+    },
+    "backgroundImage": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "type": "string"
+        },
+        "size": {
+          "type": "string"
+        },
+        "repeat": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "src"
       ]
     }
   },

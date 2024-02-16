@@ -6,9 +6,6 @@
       "$ref": "../partial/EmptyArea.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
-    },
-    {
       "properties": {
         "class": {
           "const": "EmptyArea"

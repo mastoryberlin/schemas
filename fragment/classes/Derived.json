@@ -6,9 +6,6 @@
       "$ref": "../partial/Derived.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
-    },
-    {
       "$ref": "../partial/Fraggy.json"
     },
     {

@@ -6,7 +6,10 @@
       "$ref": "../partial/Navigation.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../partial/Navigation.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {

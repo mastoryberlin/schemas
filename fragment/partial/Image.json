@@ -1,4 +1,33 @@
 {
-  "type": "object",
-  "unevaluatedProperties": false
+  "properties": {
+    "src": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "examples": [
+        "cover",
+        "contain",
+        "50% 50%",
+        "250px 400px"
+      ],
+      "default": "contain"
+    },
+    "position": {
+      "type": "string",
+      "examples": [
+        "center",
+        "213px -60px",
+        "calc(50% - 40px) calc(50% + 86px)"
+      ],
+      "default": "x-offset y-offset"
+    },
+    "repeat": {
+      "type": "string",
+      "default": "no-repeat"
+    }
+  },
+  "required": [
+    "src"
+  ]
 }

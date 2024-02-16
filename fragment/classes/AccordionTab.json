@@ -6,9 +6,6 @@
       "$ref": "../partial/AccordionTab.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
-    },
-    {
       "properties": {
         "class": {
           "const": "AccordionTab"

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "allOf": [
+    {
+      "properties": {
+        "intent": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "$ref": "../../genai/contextual/intent.json"
+    }
+  ],
+  "required": [
+    "intent"
+  ]
+}

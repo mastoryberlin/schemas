@@ -1,8 +1,10 @@
 {
-  "type": "object",
   "properties": {
     "order": {
       "type": "number"
+    },
+    "title": {
+      "type": "string"
     },
     "intro": {
       "type": "object",
@@ -25,16 +27,13 @@
       },
       "additionalProperties": false
     },
-    "title": {
-      "type": "string"
-    },
     "currentlyFocusedObjective": {
       "type": "string"
     }
   },
   "required": [
-    "intro",
     "title",
+    "intro",
     "order"
   ]
 }
