@@ -3,18 +3,9 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Flow.json"
-    },
-    {
-      "$ref": "../partial/Flow.json"
-    },
-    {
-      "$ref": "../partial/Fragment.json"
-    },
-    {
       "properties": {
         "class": {
-          "const": "Flow"
+          "const": "ClickableElement"
         }
       }
     }

@@ -6,7 +6,10 @@
       "$ref": "../partial/Input.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {

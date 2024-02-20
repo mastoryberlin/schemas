@@ -13,9 +13,6 @@
     "self": {
       "oneOf": [
         {
-          "$ref": "./classes/Accordion.json"
-        },
-        {
           "$ref": "./classes/AccordionTab.json"
         },
         {
@@ -26,6 +23,9 @@
         },
         {
           "$ref": "./classes/Button.json"
+        },
+        {
+          "$ref": "./classes/ClickableElement.json"
         },
         {
           "$ref": "./classes/Component.json"
@@ -56,6 +56,9 @@
         },
         {
           "$ref": "./classes/Image.json"
+        },
+        {
+          "$ref": "./classes/Input.json"
         },
         {
           "$ref": "./classes/Input.json"
@@ -111,9 +114,6 @@
       ],
       "examples": [
         {
-          "class": "Accordion"
-        },
-        {
           "class": "AccordionTab"
         },
         {
@@ -124,6 +124,9 @@
         },
         {
           "class": "Button"
+        },
+        {
+          "class": "ClickableElement"
         },
         {
           "class": "Component"
@@ -154,6 +157,9 @@
         },
         {
           "class": "Image"
+        },
+        {
+          "class": "Input"
         },
         {
           "class": "Input"

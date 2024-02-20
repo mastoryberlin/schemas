@@ -18,16 +18,19 @@
       "type": "object",
       "properties": {
         "left": {
-          "type": "number"
+          "$ref": "./dimension.json"
         },
         "top": {
-          "type": "number"
+          "$ref": "./dimension.json"
         },
         "right": {
-          "type": "number"
+          "$ref": "./dimension.json"
         },
         "bottom": {
-          "type": "number"
+          "$ref": "./dimension.json"
+        },
+        "scaled": {
+          "type": "boolean"
         }
       }
     },

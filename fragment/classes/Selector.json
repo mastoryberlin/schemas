@@ -6,7 +6,16 @@
       "$ref": "../partial/Selector.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../partial/Selector.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {

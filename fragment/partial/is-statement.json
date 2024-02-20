@@ -2,47 +2,62 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$defs": {
     "statement": {
-      "type": "array",
-      "items": [
+      "oneOf": [
         {
-          "type": "string",
-          "enum": [
-            "nameOf",
-            "visualInstanceOf",
-            "schematicInstanceOf",
-            "symbolicInstanceOf",
-            "verbalInstanceOf"
+          "type": "array",
+          "items": [
+            {
+              "type": "string",
+              "enum": [
+                "nameOf",
+                "visualInstanceOf",
+                "schematicInstanceOf",
+                "symbolicInstanceOf",
+                "verbalInstanceOf"
+              ]
+            },
+            {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/$defs/statement"
+                }
+              ]
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2,
+          "examples": [
+            [
+              "nameOf"
+            ],
+            [
+              "visualInstanceOf"
+            ],
+            [
+              "schematicInstanceOf"
+            ],
+            [
+              "symbolicInstanceOf"
+            ],
+            [
+              "verbalInstanceOf"
+            ]
           ]
         },
         {
-          "oneOf": [
-            {
-              "type": "string"
+          "type": "object",
+          "properties": {
+            "oneOf": {
+              "$ref": "#/$defs/statement"
             },
-            {
+            "allOf": {
               "$ref": "#/$defs/statement"
             }
-          ]
+          }
         }
-      ],
-      "minItems": 2,
-      "maxItems": 2,
-      "examples": [
-        [
-          "nameOf"
-        ],
-        [
-          "visualInstanceOf"
-        ],
-        [
-          "schematicInstanceOf"
-        ],
-        [
-          "symbolicInstanceOf"
-        ],
-        [
-          "verbalInstanceOf"
-        ]
       ]
     }
   },

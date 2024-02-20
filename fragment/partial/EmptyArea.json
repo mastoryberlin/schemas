@@ -1,4 +1,36 @@
 {
-  "type": "object",
-  "unevaluatedProperties": false
+  "properties": {
+    "absolute": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "height": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        }
+      },
+      "required": [
+        "width",
+        "height"
+      ]
+    }
+  },
+  "required": [
+    "absolute"
+  ]
 }
