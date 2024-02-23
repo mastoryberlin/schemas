@@ -6,6 +6,18 @@
       "$ref": "../partial/Accordion.json"
     },
     {
+      "$ref": "../partial/Selector.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Accordion"

@@ -6,7 +6,7 @@
   "children": [
     {
       "self": {
-        "class": "Input"
+        "class": "Selector"
       }
     }
   ]

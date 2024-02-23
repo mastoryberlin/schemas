@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "multiSelect": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "multiSelect"
+  ]
+}

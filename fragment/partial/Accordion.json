@@ -1,4 +1,19 @@
 {
-  "type": "object",
-  "unevaluatedProperties": false
+  "properties": {
+    "tabsPosition": {
+      "type": "string",
+      "enum": {
+        "type": "string",
+        "enum": [
+          "top",
+          "left",
+          "right",
+          "bottom"
+        ]
+      }
+    }
+  },
+  "required": [
+    "tabsPosition"
+  ]
 }

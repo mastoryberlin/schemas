@@ -6,9 +6,6 @@
       "$ref": "../partial/Selector.json"
     },
     {
-      "$ref": "../partial/Selector.json"
-    },
-    {
       "$ref": "../partial/Input.json"
     },
     {
