@@ -21,142 +21,149 @@
     }
   },
   "type": "object",
-  "properties": {
-    "$schema": {
-      "type": "string"
-    },
-    "constants": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
-          "$ref": "./partial/data-field.json"
-        }
-      },
-      "unevaluatedProperties": false,
-      "default": {}
-    },
-    "variables": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
-          "$ref": "./partial/data-field.json"
-        }
-      },
-      "unevaluatedProperties": false,
-      "default": {}
-    },
-    "symbols": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
-          "type": "string",
-          "pattern": "^[a-zA-Z_][a-zA-Z_0-9]*$"
-        }
-      },
-      "unevaluatedProperties": false,
-      "default": {}
-    },
-    "mission": {
-      "type": "object",
+  "allOf": [
+    {
       "properties": {
-        "sosVideo": {
-          "$ref": "./partial/url.json"
+        "$schema": {
+          "type": "string"
         },
-        "sosThumbnail": {
-          "$ref": "./partial/url.json"
-        },
-        "statement": {
-          "type": "string",
-          "maxLength": 120
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "sosVideo",
-        "sosThumbnail",
-        "statement"
-      ]
-    },
-    "skeleton": {
-      "type": "object",
-      "properties": {
-        "whatWeFound": {
+        "constants": {
           "type": "object",
-          "additionalProperties": {
-            "type": "object",
-            "properties": {
-              "text": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "image": {
-                "$ref": "./partial/url.json"
-              }
+          "patternProperties": {
+            "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+              "$ref": "./partial/data-field.json"
             }
-          }
+          },
+          "unevaluatedProperties": false,
+          "default": {}
         },
-        "whatItMeans": {
+        "variables": {
           "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "patternProperties": {
+            "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+              "$ref": "./partial/data-field.json"
+            }
+          },
+          "unevaluatedProperties": false,
+          "default": {}
         },
-        "actionPlan": {
-          "$ref": "#/definitions/actionPlanItem"
+        "symbols": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+              "type": "string",
+              "pattern": "^[a-zA-Z_][a-zA-Z_0-9]*$"
+            }
+          },
+          "unevaluatedProperties": false,
+          "default": {}
         },
-        "toDos": {
+        "mission": {
           "type": "object",
           "properties": {
-            "text": {
-              "type": "string"
+            "sosVideo": {
+              "$ref": "./partial/url.json"
             },
-            "icons": {
-              "type": "array",
-              "items": {
-                "$ref": "./partial/url.json"
+            "sosThumbnail": {
+              "$ref": "./partial/url.json"
+            },
+            "statement": {
+              "type": "string",
+              "maxLength": 120
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "sosVideo",
+            "sosThumbnail",
+            "statement"
+          ]
+        },
+        "skeleton": {
+          "type": "object",
+          "properties": {
+            "whatWeFound": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "$ref": "./partial/url.json"
+                  }
+                }
+              }
+            },
+            "whatItMeans": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "actionPlan": {
+              "$ref": "#/definitions/actionPlanItem"
+            },
+            "toDos": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "icons": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "./partial/url.json"
+                  }
+                }
+              }
+            },
+            "results": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "conclusions": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
               }
             }
-          }
+          },
+          "additionalProperties": false,
+          "required": [
+            "actionPlan"
+          ]
         },
-        "results": {
+        "self": {
           "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
+          "properties": {
+            "class": {
+              "const": "UnitRoot"
+            }
+          },
+          "required": [
+            "class"
+          ],
+          "additionalProperties": false
         },
-        "conclusions": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "./fragment.json"
           }
         }
-      },
-      "additionalProperties": false,
-      "required": [
-        "actionPlan"
-      ]
-    },
-    "self": {
-      "type": "object",
-      "properties": {
-        "class": {
-          "const": "UnitRoot"
-        }
-      },
-      "required": [
-        "class"
-      ],
-      "additionalProperties": false
-    },
-    "children": {
-      "type": "array",
-      "items": {
-        "$ref": "./fragment.json"
       }
+    },
+    {
+      "$ref": "./include.json"
     }
-  },
+  ],
   "required": [
     "self"
   ],

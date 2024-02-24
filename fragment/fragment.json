@@ -1,254 +1,255 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$defs": {
-    "jsoncFile": {
-      "type": "string",
-      "pattern": "^(?:\\./)?[\\w\\d-_]+(?:/[\\w\\d-_]+)?(?:\\.jsonc?)?$"
-    }
-  },
-  "properties": {
-    "$schema": {
-      "type": "string"
-    },
-    "children": {
-      "items": {
-        "$ref": "#"
-      },
-      "type": "array"
-    },
-    "self": {
-      "oneOf": [
-        {
-          "$ref": "./classes/Accordion.json"
-        },
-        {
-          "$ref": "./classes/AccordionTab.json"
-        },
-        {
-          "$ref": "./classes/Activity.json"
-        },
-        {
-          "$ref": "./classes/Basey.json"
-        },
-        {
-          "$ref": "./classes/Button.json"
-        },
-        {
-          "$ref": "./classes/ClickableElement.json"
-        },
-        {
-          "$ref": "./classes/Component.json"
-        },
-        {
-          "$ref": "./classes/CoordinatesInput.json"
-        },
-        {
-          "$ref": "./classes/Derived.json"
-        },
-        {
-          "$ref": "./classes/DetachedInput.json"
-        },
-        {
-          "$ref": "./classes/EmptyArea.json"
-        },
-        {
-          "$ref": "./classes/Flow.json"
-        },
-        {
-          "$ref": "./classes/Fraggy.json"
-        },
-        {
-          "$ref": "./classes/Fragment.json"
-        },
-        {
-          "$ref": "./classes/Fragment.json"
-        },
-        {
-          "$ref": "./classes/Image.json"
-        },
-        {
-          "$ref": "./classes/Input.json"
-        },
-        {
-          "$ref": "./classes/Input.json"
-        },
-        {
-          "$ref": "./classes/InteractiveUiElement.json"
-        },
-        {
-          "$ref": "./classes/Layout.json"
-        },
-        {
-          "$ref": "./classes/Level.json"
-        },
-        {
-          "$ref": "./classes/Level.json"
-        },
-        {
-          "$ref": "./classes/Navigation.json"
-        },
-        {
-          "$ref": "./classes/Navigation.json"
-        },
-        {
-          "$ref": "./classes/NumberInput.json"
-        },
-        {
-          "$ref": "./classes/Objective.json"
-        },
-        {
-          "$ref": "./classes/ObjectivesGroup.json"
-        },
-        {
-          "$ref": "./classes/OpenQuestion.json"
-        },
-        {
-          "$ref": "./classes/SampleSolve.json"
-        },
-        {
-          "$ref": "./classes/SelectImagePart.json"
-        },
-        {
-          "$ref": "./classes/Selector.json"
-        },
-        {
-          "$ref": "./classes/TextInput.json"
-        },
-        {
-          "$ref": "./classes/UiElement.json"
-        },
-        {
-          "$ref": "./classes/UnitComponent.json"
-        },
-        {
-          "$ref": "./classes/UnitRoot.json"
-        }
-      ],
-      "examples": [
-        {
-          "class": "Accordion"
-        },
-        {
-          "class": "AccordionTab"
-        },
-        {
-          "class": "Activity"
-        },
-        {
-          "class": "Basey"
-        },
-        {
-          "class": "Button"
-        },
-        {
-          "class": "ClickableElement"
-        },
-        {
-          "class": "Component"
-        },
-        {
-          "class": "CoordinatesInput"
-        },
-        {
-          "class": "Derived"
-        },
-        {
-          "class": "DetachedInput"
-        },
-        {
-          "class": "EmptyArea"
-        },
-        {
-          "class": "Flow"
-        },
-        {
-          "class": "Fraggy"
-        },
-        {
-          "class": "Fragment"
-        },
-        {
-          "class": "Fragment"
-        },
-        {
-          "class": "Image"
-        },
-        {
-          "class": "Input"
-        },
-        {
-          "class": "Input"
-        },
-        {
-          "class": "InteractiveUiElement"
-        },
-        {
-          "class": "Layout"
-        },
-        {
-          "class": "Level"
-        },
-        {
-          "class": "Level"
-        },
-        {
-          "class": "Navigation"
-        },
-        {
-          "class": "Navigation"
-        },
-        {
-          "class": "NumberInput"
-        },
-        {
-          "class": "Objective"
-        },
-        {
-          "class": "ObjectivesGroup"
-        },
-        {
-          "class": "OpenQuestion"
-        },
-        {
-          "class": "SampleSolve"
-        },
-        {
-          "class": "SelectImagePart"
-        },
-        {
-          "class": "Selector"
-        },
-        {
-          "class": "TextInput"
-        },
-        {
-          "class": "UiElement"
-        },
-        {
-          "class": "UnitComponent"
-        },
-        {
-          "class": "UnitRoot"
-        }
-      ],
-      "type": "object"
-    },
-    "include": {
-      "oneOf": [
-        {
-          "$ref": "#/$defs/jsoncFile"
-        },
-        {
-          "type": "array",
+  "allOf": [
+    {
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "children": {
           "items": {
-            "$ref": "#/$defs/jsoncFile"
-          }
+            "$ref": "#"
+          },
+          "type": "array"
+        },
+        "self": {
+          "oneOf": [
+            {
+              "$ref": "./classes/Accordion.json"
+            },
+            {
+              "$ref": "./classes/AccordionTab.json"
+            },
+            {
+              "$ref": "./classes/Activity.json"
+            },
+            {
+              "$ref": "./classes/Basey.json"
+            },
+            {
+              "$ref": "./classes/Button.json"
+            },
+            {
+              "$ref": "./classes/ClickableElement.json"
+            },
+            {
+              "$ref": "./classes/Component.json"
+            },
+            {
+              "$ref": "./classes/CoordinatesInput.json"
+            },
+            {
+              "$ref": "./classes/Derived.json"
+            },
+            {
+              "$ref": "./classes/DetachedInput.json"
+            },
+            {
+              "$ref": "./classes/EmptyArea.json"
+            },
+            {
+              "$ref": "./classes/Flow.json"
+            },
+            {
+              "$ref": "./classes/Fraggy.json"
+            },
+            {
+              "$ref": "./classes/Fragment.json"
+            },
+            {
+              "$ref": "./classes/Fragment.json"
+            },
+            {
+              "$ref": "./classes/Image.json"
+            },
+            {
+              "$ref": "./classes/Input.json"
+            },
+            {
+              "$ref": "./classes/Input.json"
+            },
+            {
+              "$ref": "./classes/InteractiveUiElement.json"
+            },
+            {
+              "$ref": "./classes/Layout.json"
+            },
+            {
+              "$ref": "./classes/Level.json"
+            },
+            {
+              "$ref": "./classes/Level.json"
+            },
+            {
+              "$ref": "./classes/Navigation.json"
+            },
+            {
+              "$ref": "./classes/Navigation.json"
+            },
+            {
+              "$ref": "./classes/NumberInput.json"
+            },
+            {
+              "$ref": "./classes/Objective.json"
+            },
+            {
+              "$ref": "./classes/ObjectivesGroup.json"
+            },
+            {
+              "$ref": "./classes/OpenQuestion.json"
+            },
+            {
+              "$ref": "./classes/SampleSolve.json"
+            },
+            {
+              "$ref": "./classes/SelectImagePart.json"
+            },
+            {
+              "$ref": "./classes/Selector.json"
+            },
+            {
+              "$ref": "./classes/TextInput.json"
+            },
+            {
+              "$ref": "./classes/UiElement.json"
+            },
+            {
+              "$ref": "./classes/UnitComponent.json"
+            },
+            {
+              "$ref": "./classes/UnitRoot.json"
+            }
+          ],
+          "examples": [
+            {
+              "class": "Accordion"
+            },
+            {
+              "class": "AccordionTab"
+            },
+            {
+              "class": "Activity"
+            },
+            {
+              "class": "Basey"
+            },
+            {
+              "class": "Button"
+            },
+            {
+              "class": "ClickableElement"
+            },
+            {
+              "class": "Component"
+            },
+            {
+              "class": "CoordinatesInput"
+            },
+            {
+              "class": "Derived"
+            },
+            {
+              "class": "DetachedInput"
+            },
+            {
+              "class": "EmptyArea"
+            },
+            {
+              "class": "Flow"
+            },
+            {
+              "class": "Fraggy"
+            },
+            {
+              "class": "Fragment"
+            },
+            {
+              "class": "Fragment"
+            },
+            {
+              "class": "Image"
+            },
+            {
+              "class": "Input"
+            },
+            {
+              "class": "Input"
+            },
+            {
+              "class": "InteractiveUiElement"
+            },
+            {
+              "class": "Layout"
+            },
+            {
+              "class": "Level"
+            },
+            {
+              "class": "Level"
+            },
+            {
+              "class": "Navigation"
+            },
+            {
+              "class": "Navigation"
+            },
+            {
+              "class": "NumberInput"
+            },
+            {
+              "class": "Objective"
+            },
+            {
+              "class": "ObjectivesGroup"
+            },
+            {
+              "class": "OpenQuestion"
+            },
+            {
+              "class": "SampleSolve"
+            },
+            {
+              "class": "SelectImagePart"
+            },
+            {
+              "class": "Selector"
+            },
+            {
+              "class": "TextInput"
+            },
+            {
+              "class": "UiElement"
+            },
+            {
+              "class": "UnitComponent"
+            },
+            {
+              "class": "UnitRoot"
+            }
+          ],
+          "type": "object"
+        },
+        "include": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/jsoncFile"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/jsoncFile"
+              }
+            }
+          ]
         }
+      },
+      "required": [
+        "self"
       ]
+    },
+    {
+      "$ref": "./include.json"
     }
-  },
-  "required": [
-    "self"
   ],
   "type": "object",
   "unevaluatedProperties": false

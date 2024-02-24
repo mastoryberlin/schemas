@@ -7,7 +7,16 @@
     {
       "self": {
         "class": "Selector"
-      }
+      },
+      "children": [
+        {
+          "self": {
+            "class": "Button"
+          },
+          "include": []
+        }
+      ]
     }
-  ]
+  ],
+  "include": "erblau/bla"
 }
