@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$defs": {
-    "requiredTopic": {
+    "relevantTopic": {
       "oneOf": [
         {
           "type": "string"
@@ -12,14 +12,14 @@
             "oneOf|allOf": {
               "type": "array",
               "items": {
-                "$ref": "#/$defs/requiredTopic"
+                "$ref": "#/$defs/relevantTopic"
               }
             }
           }
         }
       ]
     },
-    "requiredAction": {
+    "relevantAction": {
       "oneOf": [
         {
           "type": "string"
@@ -30,7 +30,7 @@
             "oneOf|allOf": {
               "type": "array",
               "items": {
-                "$ref": "#/$defs/requiredAction"
+                "$ref": "#/$defs/relevantAction"
               }
             }
           }
@@ -39,12 +39,30 @@
           "type": "array",
           "items": [
             {
-              "$ref": "#/$defs/requiredAction"
+              "$ref": "#/$defs/relevantAction"
             },
             {
-              "$ref": "#/$defs/requiredTopic"
+              "$ref": "#/$defs/relevantTopic"
             }
           ]
+        }
+      ]
+    },
+    "relevantIntention": {
+      "oneOf": [
+        {
+          "$ref": "./intention.json"
+        },
+        {
+          "type": "object",
+          "patternProperties": {
+            "oneOf|allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/relevantIntention"
+              }
+            }
+          }
         }
       ]
     }
@@ -58,13 +76,37 @@
     "requireTopics": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/requiredTopic"
+        "$ref": "#/$defs/relevantTopic"
       }
     },
     "requireActions": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/requiredAction"
+        "$ref": "#/$defs/relevantAction"
+      }
+    },
+    "requireIntentions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relevantIntention"
+      }
+    },
+    "excludeTopics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relevantTopic"
+      }
+    },
+    "excludeActions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relevantAction"
+      }
+    },
+    "excludeIntentions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relevantIntention"
       }
     },
     "examples": {

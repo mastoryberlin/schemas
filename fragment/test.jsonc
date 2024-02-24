@@ -6,12 +6,42 @@
   "children": [
     {
       "self": {
-        "class": "Selector"
+        "class": "Selector",
+        "is": {
+          "allOf": [
+            [
+              "nameOf",
+              "world"
+            ],
+            [
+              "symbolicInstanceOf",
+              "function"
+            ],
+            [
+              "verbalInstanceOf",
+              "myself"
+            ]
+          ]
+        }
       },
       "children": [
         {
           "self": {
-            "class": "Button"
+            "class": "Image",
+            "src": "bla.jpg",
+            "asSupportIntent": [
+              {
+                "intent": "susu",
+                "requireIntentions": [
+                  {
+                    "oneOf": [
+                      "shareFeelings",
+                      "howTo"
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           "include": []
         }
