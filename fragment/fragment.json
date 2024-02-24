@@ -228,19 +228,6 @@
             }
           ],
           "type": "object"
-        },
-        "include": {
-          "oneOf": [
-            {
-              "$ref": "#/$defs/jsoncFile"
-            },
-            {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/jsoncFile"
-              }
-            }
-          ]
         }
       },
       "required": [
