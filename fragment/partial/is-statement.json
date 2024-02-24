@@ -49,12 +49,12 @@
         },
         {
           "type": "object",
-          "properties": {
-            "oneOf": {
-              "$ref": "#/$defs/statement"
-            },
-            "allOf": {
-              "$ref": "#/$defs/statement"
+          "patternProperties": {
+            "oneOf|allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/statement"
+              }
             }
           }
         }
