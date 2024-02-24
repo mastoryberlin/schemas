@@ -22,8 +22,7 @@
               "INTERACT",
               "CLICK",
               "MOUSE_ENTER",
-              "MOUSE_LEAVE",
-              "RESIZE"
+              "MOUSE_LEAVE"
             ]
           }
         }
@@ -33,26 +32,15 @@
     "support": {
       "oneOf": [
         {
-          "type": "string"
+          "$ref": "./file.json"
         },
         {
-          "type": "object",
-          "patternProperties": {
-            "^S_": {
-              "type": "object",
+          "allOf": [
+            {
+              "$ref": "./flow.json"
+            },
+            {
               "properties": {
-                "order": {
-                  "type": "number"
-                },
-                "flow": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "inheritFrom": {
-                  "type": "string"
-                },
                 "noNeedIndicatesProficiencyIn": {
                   "type": "array",
                   "items": {
@@ -61,7 +49,7 @@
                 }
               }
             }
-          }
+          ]
         }
       ]
     },

@@ -4,7 +4,5 @@
       "type": "boolean"
     }
   },
-  "required": [
-    "multiSelect"
-  ]
+  "required": []
 }

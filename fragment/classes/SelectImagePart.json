@@ -3,6 +3,12 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "../partial/SelectImagePart.json"
+    },
+    {
+      "$ref": "../partial/SampleSolve.json"
+    },
+    {
       "$ref": "../partial/Activity.json"
     },
     {
@@ -11,7 +17,7 @@
     {
       "properties": {
         "class": {
-          "const": "Activity"
+          "const": "SelectImagePart"
         }
       }
     }

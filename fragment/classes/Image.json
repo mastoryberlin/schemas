@@ -6,9 +6,6 @@
       "$ref": "../partial/Image.json"
     },
     {
-      "$ref": "../partial/Image.json"
-    },
-    {
       "$ref": "../partial/UiElement.json"
     },
     {

@@ -3,7 +3,7 @@
   "$defs": {
     "jsoncFile": {
       "type": "string",
-      "pattern": "^(?:[^/]+/)*[^/]+(?:\\.jsonc?)?$"
+      "pattern": "^(?:\\./)?[\\w\\d-_]+(?:/[\\w\\d-_]+)?(?:\\.jsonc?)?$"
     }
   },
   "properties": {
@@ -104,6 +104,9 @@
         },
         {
           "$ref": "./classes/SampleSolve.json"
+        },
+        {
+          "$ref": "./classes/SelectImagePart.json"
         },
         {
           "$ref": "./classes/Selector.json"
@@ -208,6 +211,9 @@
         },
         {
           "class": "SampleSolve"
+        },
+        {
+          "class": "SelectImagePart"
         },
         {
           "class": "Selector"

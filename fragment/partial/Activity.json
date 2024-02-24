@@ -2,13 +2,11 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": {
-        "type": "string",
-        "enum": [
-          "problemSolving",
-          "exploration"
-        ]
-      }
+      "enum": [
+        "problemSolving",
+        "exploration",
+        "training"
+      ]
     },
     "relatedUi": {
       "oneOf": [

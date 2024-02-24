@@ -1,10 +1,12 @@
 {
   "properties": {
-    "sampleSolution": {
-      "type": "string"
+    "sampleSolution": {},
+    "watchedInput": {
+      "$ref": "./identifier.json"
     }
   },
   "required": [
-    "sampleSolution"
+    "sampleSolution",
+    "watchedInput"
   ]
 }

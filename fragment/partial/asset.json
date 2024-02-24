@@ -3,16 +3,10 @@
   "type": "object",
   "properties": {
     "src": {
-      "$ref": "./file.json"
+      "$ref": "./url-or-file.json"
     },
     "alt": {
       "type": "string"
-    },
-    "params": {
-      "type": "object",
-      "propertyNames": {
-        "$ref": "./identifier.json"
-      }
     }
   },
   "required": [

@@ -6,12 +6,6 @@
       "$ref": "../partial/SampleSolve.json"
     },
     {
-      "$ref": "../partial/SampleSolve.json"
-    },
-    {
-      "$ref": "../partial/Activity.json"
-    },
-    {
       "$ref": "../partial/Activity.json"
     },
     {
