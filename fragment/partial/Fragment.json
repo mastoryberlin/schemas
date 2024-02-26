@@ -1,7 +1,7 @@
 {
   "properties": {
     "id": {
-      "$ref": "./identifier.json"
+      "$ref": "../../core/identifier.json"
     },
     "blockedBy": {
       "type": "array",
@@ -29,27 +29,10 @@
       ],
       "default": true
     },
-    "support": {
-      "oneOf": [
+    "supportFlow": {
+      "allOf": [
         {
-          "$ref": "./file.json"
-        },
-        {
-          "allOf": [
-            {
-              "$ref": "./flow.json"
-            },
-            {
-              "properties": {
-                "noNeedIndicatesProficiencyIn": {
-                  "type": "array",
-                  "items": {
-                    "type": "object"
-                  }
-                }
-              }
-            }
-          ]
+          "$ref": "../../core/flow.json"
         }
       ]
     },
@@ -62,17 +45,17 @@
       "default": true
     },
     "is": {
-      "$ref": "./is-statement.json"
+      "$ref": "../../meta/is-statement.json"
     },
     "asSupportIntent": {
       "oneOf": [
         {
-          "$ref": "./as-intent.json"
+          "$ref": "../../meta/as-intent.json"
         },
         {
           "type": "array",
           "items": {
-            "$ref": "./as-intent.json"
+            "$ref": "../../meta/as-intent.json"
           }
         }
       ]

@@ -1,0 +1,12 @@
+{
+  "$schema": "./learnable.json",
+  "defines": "church",
+  "as": [
+    "nameOf",
+    "an interesting building"
+  ],
+  "supportFlow": "someFile",
+  "asSupportIntent": {
+    "intent": ""
+  }
+}

@@ -36,6 +36,9 @@
     },
     "instructions": {
       "type": "string"
+    },
+    "does": {
+      "type": "array"
     }
   },
   "required": [

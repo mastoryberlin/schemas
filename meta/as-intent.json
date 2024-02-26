@@ -10,7 +10,7 @@
       }
     },
     {
-      "$ref": "../../genai/contextual/intent.json"
+      "$ref": "../genai/contextual/intent.json"
     }
   ],
   "required": [

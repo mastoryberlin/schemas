@@ -6,7 +6,7 @@
       "$ref": "../partial/shared.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../../meta/is-statement.json"
     },
     {
       "$ref": "../partial/Mesh.json"

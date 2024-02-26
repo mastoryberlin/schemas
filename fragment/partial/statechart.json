@@ -21,12 +21,12 @@
           "title": "The file name of a flow (with or without the .flow extension) which will be used to define the internal states of this fragment."
         },
         {
-          "$ref": "./flow.json"
+          "$ref": "../../core/flow.json"
         }
       ]
     },
     "dynamicFlowSwitch": {
-      "$ref": "./identifier.json"
+      "$ref": "../../core/identifier.json"
     }
   }
 }

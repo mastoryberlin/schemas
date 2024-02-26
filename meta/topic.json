@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "synonyms": {
+      "description": "A list of synonymous references for this topic, possibly conditional on the situation.",
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "if": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "present": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "../genai/contextual/intent.json#/$defs/relevantTopic"
+                        }
+                      }
+                    },
+                    "required": [
+                      "present"
+                    ]
+                  }
+                ],
+                "unevaluatedProperties": false
+              },
+              "then": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "minItems": 1
+                  }
+                ]
+              }
+            },
+            "required": [
+              "if",
+              "then"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "human": {
+      "description": "Human-readable texts and media provided for broad or intuitive understanding of the topic.",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "visualDescription": {
+          "type": "string"
+        },
+        "media": {
+          "oneOf": [
+            {
+              "$ref": "../core/asset.json"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "../core/asset.json"
+              }
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "include": {
+      "description": "A list of IDs of other topics which will be automatically introduced to the situation when this topic is added.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "additionalProperties": false
+}

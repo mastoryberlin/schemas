@@ -15,7 +15,8 @@
                 "$ref": "#/$defs/relevantTopic"
               }
             }
-          }
+          },
+          "unevaluatedProperties": false
         }
       ]
     },

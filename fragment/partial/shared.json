@@ -3,10 +3,10 @@
   "type": "object",
   "properties": {
     "id": {
-      "$ref": "./identifier.json"
+      "$ref": "../../core/identifier.json"
     },
     "model": {
-      "$ref": "./identifier-or-array-item.json"
+      "$ref": "../../core/identifier-or-array-item.json"
     },
     "onlyInStates": {
       "title": "A string array of state names of the nearest parent state machine. If non-empty, limits this fragment's lifetime to when one of those states is active.",

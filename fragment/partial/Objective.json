@@ -13,6 +13,20 @@
     },
     "activityId": {
       "type": "string"
+    },
+    "showSupportives": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "atOnce",
+            "oneByOne"
+          ]
+        }
+      ]
     }
   },
   "required": [

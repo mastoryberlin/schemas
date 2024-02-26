@@ -1,0 +1,38 @@
+{
+  "$schema": "./topic.json",
+  "id": "old man",
+  "synonyms": [
+    {
+      "if": {
+        "present": [
+          "bva",
+          {
+            "oneOf": [
+              {
+                "allOf": [
+                  "3"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "then": [
+        "somesynonym"
+      ]
+    }
+  ],
+  "human": {
+    "definition": "",
+    "name": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "https://bla.png"
+      }
+    ]
+  },
+  "include": [
+    "bla"
+  ]
+}

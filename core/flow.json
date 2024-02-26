@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "oneOf": [
+    {
+      "$ref": "./file.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "./file.json"
+        },
+        "alt": {
+          "type": "string"
+        },
+        "params": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "../../core/identifier.json"
+          }
+        }
+      },
+      "required": [
+        "src"
+      ]
+    }
+  ]
+}

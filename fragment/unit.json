@@ -62,10 +62,10 @@
           "type": "object",
           "properties": {
             "sosVideo": {
-              "$ref": "./partial/url.json"
+              "$ref": "../core/url.json"
             },
             "sosThumbnail": {
-              "$ref": "./partial/url.json"
+              "$ref": "../core/url.json"
             },
             "statement": {
               "type": "string",
@@ -94,7 +94,7 @@
                     "type": "string"
                   },
                   "image": {
-                    "$ref": "./partial/url.json"
+                    "$ref": "../core/url.json"
                   }
                 }
               }
@@ -117,7 +117,7 @@
                 "icons": {
                   "type": "array",
                   "items": {
-                    "$ref": "./partial/url.json"
+                    "$ref": "../core/url.json"
                   }
                 }
               }

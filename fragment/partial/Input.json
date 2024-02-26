@@ -2,7 +2,7 @@
   "properties": {
     "value": {},
     "model": {
-      "$ref": "./identifier.json"
+      "$ref": "../../core/identifier.json"
     }
   },
   "required": []

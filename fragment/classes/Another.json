@@ -7,7 +7,7 @@
       "$ref": "../partial/Another.json"
     },
     {
-      "$ref": "../partial/is-statement.json"
+      "$ref": "../../meta/is-statement.json"
     },
     {
       "properties": {

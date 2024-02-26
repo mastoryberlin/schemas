@@ -1,51 +1,52 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "type": "object",
-    "allOf": [
-      {
-        "$ref": "../partial/shared.json"
-      },{
-        "$ref": "../partial/is-statement.json"
-      },
-      {
-        "properties": {
-          "class": {
-            "const": "Label"
-          },
-          "text": {
-            "type": "string"
-          },
-          "labelPosition": {
-            "type": "string",
-            "enum": [
-              "left",
-              "right",
-              "top",
-              "bottom"
-            ]
-          },
-          "bold": {
-            "type": "boolean"
-          },
-          "fontSize": {
-            "type": "string"
-          },
-          "whiteSpace": {
-            "type": "string",
-            "enum": [
-              "normal",
-              "nowrap",
-              "pre",
-              "pre-wrap",
-              "pre-line"
-            ]
-          }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/shared.json"
+    },
+    {
+      "$ref": "../../meta/is-statement.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "Label"
+        },
+        "text": {
+          "type": "string"
+        },
+        "labelPosition": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right",
+            "top",
+            "bottom"
+          ]
+        },
+        "bold": {
+          "type": "boolean"
+        },
+        "fontSize": {
+          "type": "string"
+        },
+        "whiteSpace": {
+          "type": "string",
+          "enum": [
+            "normal",
+            "nowrap",
+            "pre",
+            "pre-wrap",
+            "pre-line"
+          ]
         }
       }
-    ],
-    "required": [
-        "class",
-        "text"
-    ],
-    "unevaluatedProperties": false
-  }
+    }
+  ],
+  "required": [
+    "class",
+    "text"
+  ],
+  "unevaluatedProperties": false
+}
