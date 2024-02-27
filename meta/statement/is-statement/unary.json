@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": [
+    {
+      "$ref": "./verbs/unary.json"
+    },
+    {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "./is-statement.json#/$defs/statement"
+        }
+      ]
+    }
+  ],
+  "minItems": 2,
+  "maxItems": 2,
+  "examples": [
+    [
+      "unique",
+      ""
+    ],
+    [
+      "person",
+      ""
+    ],
+    [
+      "pictorialInstanceOf",
+      ""
+    ],
+    [
+      "schematicInstanceOf",
+      ""
+    ],
+    [
+      "symbolicInstanceOf",
+      ""
+    ],
+    [
+      "verbalInstanceOf",
+      ""
+    ]
+  ]
+}

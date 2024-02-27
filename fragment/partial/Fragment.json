@@ -29,12 +29,8 @@
       ],
       "default": true
     },
-    "supportFlow": {
-      "allOf": [
-        {
-          "$ref": "../../core/flow.json"
-        }
-      ]
+    "support": {
+      "$ref": "../../meta/support.json"
     },
     "initiallyAbsent": {
       "type": "boolean",
@@ -45,20 +41,7 @@
       "default": true
     },
     "is": {
-      "$ref": "../../meta/is-statement.json"
-    },
-    "asSupportIntent": {
-      "oneOf": [
-        {
-          "$ref": "../../meta/as-intent.json"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "../../meta/as-intent.json"
-          }
-        }
-      ]
+      "$ref": "../../meta/statement/is-statement/is-statement.json"
     }
   },
   "required": []

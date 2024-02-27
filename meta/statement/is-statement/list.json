@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": [
+    {
+      "$ref": "./verbs/list.json"
+    }
+  ],
+  "additionalItems": {
+    "$ref": "./is-statement.json#/$defs/statement"
+  },
+  "minItems": 1,
+  "examples": [
+    [
+      "collection",
+      "",
+      "",
+      ""
+    ]
+  ]
+}

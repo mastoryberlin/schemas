@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": [
+    {
+      "$ref": "./verbs/binary.json"
+    },
+    {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "./is-statement.json#/$defs/statement"
+        }
+      ]
+    },
+    {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "./is-statement.json#/$defs/statement"
+        }
+      ]
+    }
+  ],
+  "minItems": 3,
+  "maxItems": 3,
+  "examples": [
+    [
+      "childOf",
+      "",
+      ""
+    ],
+    [
+      "partOf",
+      "",
+      ""
+    ]
+  ]
+}

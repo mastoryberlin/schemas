@@ -2,7 +2,30 @@
   "$schema": "./learnable.json",
   "defines": "church",
   "as": [
-    "nameOf",
-    "an interesting building"
+    "pictorialInstanceOf",
+    [
+      "schematicInstanceOf",
+      {
+        "anyOf": [
+          [
+            "theTwoParentsOf",
+            [
+              "unique",
+              ""
+            ],
+            "",
+            ""
+          ],
+          [
+            "unique",
+            [
+              "partOf",
+              "",
+              ""
+            ]
+          ]
+        ]
+      }
+    ]
   ]
 }

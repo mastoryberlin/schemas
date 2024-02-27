@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$defs": {
+    "statement": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "./unary.json"
+        },
+        {
+          "$ref": "./binary.json"
+        },
+        {
+          "$ref": "./ternary.json"
+        },
+        {
+          "$ref": "./list.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "allOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/statement"
+              },
+              "minItems": 1
+            },
+            "oneOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/statement"
+              },
+              "minItems": 1
+            },
+            "anyOf": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/statement"
+              },
+              "minItems": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$ref": "#/$defs/statement"
+}
