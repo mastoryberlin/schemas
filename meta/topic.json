@@ -63,32 +63,7 @@
       }
     },
     "human": {
-      "description": "Human-readable texts and media provided for broad or intuitive understanding of the topic.",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "definition": {
-          "type": "string"
-        },
-        "visualDescription": {
-          "type": "string"
-        },
-        "media": {
-          "oneOf": [
-            {
-              "$ref": "../core/asset.json"
-            },
-            {
-              "type": "array",
-              "items": {
-                "$ref": "../core/asset.json"
-              }
-            }
-          ]
-        }
-      },
-      "additionalProperties": false
+      "$ref": "./human.json"
     },
     "support": {
       "$ref": "./support.json"

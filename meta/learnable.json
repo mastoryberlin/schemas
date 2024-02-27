@@ -39,6 +39,9 @@
         "$schema": {
           "type": "string"
         },
+        "human": {
+          "$ref": "./human.json"
+        },
         "support": {
           "$ref": "./support.json"
         }
