@@ -39,21 +39,8 @@
         "$schema": {
           "type": "string"
         },
-        "supportFlow": {
-          "$ref": "../core/flow.json"
-        },
-        "asSupportIntent": {
-          "oneOf": [
-            {
-              "$ref": "./as-intent.json"
-            },
-            {
-              "type": "array",
-              "items": {
-                "$ref": "./as-intent.json"
-              }
-            }
-          ]
+        "support": {
+          "$ref": "./support.json"
         }
       }
     }

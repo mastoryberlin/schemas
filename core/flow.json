@@ -16,7 +16,7 @@
         "params": {
           "type": "object",
           "propertyNames": {
-            "$ref": "../../core/identifier.json"
+            "$ref": "./identifier.json"
           }
         }
       },

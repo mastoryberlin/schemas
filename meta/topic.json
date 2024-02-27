@@ -90,6 +90,9 @@
       },
       "additionalProperties": false
     },
+    "support": {
+      "$ref": "./support.json"
+    },
     "include": {
       "description": "A list of IDs of other topics which will be automatically introduced to the situation when this topic is added.",
       "type": "array",

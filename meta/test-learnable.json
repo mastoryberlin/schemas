@@ -4,9 +4,5 @@
   "as": [
     "nameOf",
     "an interesting building"
-  ],
-  "supportFlow": "someFile",
-  "asSupportIntent": {
-    "intent": ""
-  }
+  ]
 }

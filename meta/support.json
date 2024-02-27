@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "defaultFlow": {
+      "$ref": "../core/flow.json"
+    },
+    "intents": {
+      "type": "object",
+      "additionalProperties": {
+        "allOf": [
+          {
+            "type": "object",
+            "properties": {
+              "flow": {
+                "$ref": "../core/flow.json"
+              }
+            }
+          },
+          {
+            "$ref": "../genai/contextual/intent.json"
+          }
+        ]
+      },
+      "minProperties": 1
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "intents"
+  ]
+}
