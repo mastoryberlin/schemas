@@ -108,6 +108,9 @@
               "$ref": "./classes/Selector.json"
             },
             {
+              "$ref": "./classes/SolvableActivity.json"
+            },
+            {
               "$ref": "./classes/TextInput.json"
             },
             {
@@ -213,6 +216,9 @@
             },
             {
               "class": "Selector"
+            },
+            {
+              "class": "SolvableActivity"
             },
             {
               "class": "TextInput"

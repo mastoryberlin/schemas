@@ -91,9 +91,14 @@
           "type": "string"
         },
         "is": {
-          "$ref": "../../meta/statement/is-statement.json"
+          "$ref": "../../meta/statement/is-statement/is-statement.json"
         }
-      }
+      },
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "is"
+      ]
     }
   },
   "required": [
