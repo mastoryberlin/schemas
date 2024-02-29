@@ -83,6 +83,17 @@
           "other": {}
         }
       ]
+    },
+    "learnedOnDone": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "type": "string"
+        },
+        "is": {
+          "$ref": "../../meta/statement/is-statement.json"
+        }
+      }
     }
   },
   "required": [
