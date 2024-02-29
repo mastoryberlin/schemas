@@ -1,12 +1,10 @@
 {
   "properties": {
-    "sampleSolution": {},
     "watchedInput": {
       "$ref": "../../core/identifier.json"
     }
   },
   "required": [
-    "sampleSolution",
     "watchedInput"
   ]
 }

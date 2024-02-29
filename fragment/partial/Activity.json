@@ -39,6 +39,30 @@
     },
     "does": {
       "type": "array"
+    },
+    "intents": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9][a-z0-9+]*(?:[A-Z][a-z0-9+]*)*$": {
+          "type": "object",
+          "properties": {
+            "scope": {},
+            "reaction": {
+              "$ref": "../core/flow.json"
+            },
+            "human": {}
+          },
+          "additionalProperties": false,
+          "required": [
+            "scope"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "other": {}
+        }
+      ]
     }
   },
   "required": [
