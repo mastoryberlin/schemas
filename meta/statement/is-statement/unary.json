@@ -20,11 +20,31 @@
   "maxItems": 2,
   "examples": [
     [
-      "unique",
+      "person",
       ""
     ],
     [
-      "person",
+      "relatedTo",
+      ""
+    ],
+    [
+      "referenceFor",
+      ""
+    ],
+    [
+      "childOf",
+      ""
+    ],
+    [
+      "partOf",
+      ""
+    ],
+    [
+      "elementOf",
+      ""
+    ],
+    [
+      "instanceOf",
       ""
     ],
     [
@@ -41,6 +61,10 @@
     ],
     [
       "verbalInstanceOf",
+      ""
+    ],
+    [
+      "equalTo",
       ""
     ]
   ]

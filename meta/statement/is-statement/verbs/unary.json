@@ -2,11 +2,24 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "string",
   "enum": [
-    "unique",
     "person",
+    "relatedTo",
+    "referenceFor",
+    "childOf",
+    "partOf",
+    "elementOf",
+    "instanceOf",
     "pictorialInstanceOf",
     "schematicInstanceOf",
     "symbolicInstanceOf",
-    "verbalInstanceOf"
+    "verbalInstanceOf",
+    "numericInstanceOf",
+    "equalTo",
+    "toolTo",
+    "locationOf",
+    "locationToMapPoint",
+    "checkOut",
+    "number",
+    "numberInputFor"
   ]
 }

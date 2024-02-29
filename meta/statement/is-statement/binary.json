@@ -30,12 +30,12 @@
   "maxItems": 3,
   "examples": [
     [
-      "childOf",
+      "with",
       "",
       ""
     ],
     [
-      "partOf",
+      "unique",
       "",
       ""
     ]
