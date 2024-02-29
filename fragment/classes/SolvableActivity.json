@@ -3,9 +3,6 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/SampleSolve.json"
-    },
-    {
       "$ref": "../partial/SolvableActivity.json"
     },
     {
@@ -17,7 +14,7 @@
     {
       "properties": {
         "class": {
-          "const": "SampleSolve"
+          "const": "SolvableActivity"
         }
       }
     }

@@ -1,8 +1,5 @@
 {
   "properties": {
-    "text": {
-      "type": "string"
-    },
     "generalContext": {
       "type": "string"
     },
@@ -132,7 +129,6 @@
     }
   },
   "required": [
-    "text",
     "generalContext",
     "intents",
     "sampleSolution"

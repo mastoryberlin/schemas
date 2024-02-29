@@ -6,13 +6,7 @@
       "$ref": "../partial/OpenQuestion.json"
     },
     {
-      "$ref": "../partial/OpenQuestion.json"
-    },
-    {
-      "$ref": "../partial/SampleSolve.json"
-    },
-    {
-      "$ref": "../partial/Activity.json"
+      "$ref": "../partial/SolvableActivity.json"
     },
     {
       "$ref": "../partial/Activity.json"

@@ -27,5 +27,13 @@
         ]
       }
     ]
-  ]
+  ],
+  "support": {
+    "intents": {
+      "Tüske": {
+        "flow": "drjk3u89",
+        "description": "Everything that doesn't fit into any of the other intent categories."
+      }
+    }
+  }
 }

@@ -20,13 +20,12 @@
           {
             "$ref": "../genai/contextual/intent.json"
           }
-        ]
+        ],
+        "unevaluatedProperties": false
       },
       "minProperties": 1
     }
   },
   "additionalProperties": false,
-  "required": [
-    "intents"
-  ]
+  "required": []
 }
