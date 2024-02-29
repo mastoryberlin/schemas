@@ -48,9 +48,29 @@
           "properties": {
             "scope": {},
             "reaction": {
-              "$ref": "../core/flow.json"
+              "$ref": "../../core/flow.json"
             },
-            "human": {}
+            "human": {
+              "$ref": "../../meta/human.json"
+            },
+            "evaluation": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "description": "this could be sampleSolution or a mistake type",
+                  "type": "string"
+                },
+                "demonstratesProficiencyIn": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                },
+                "showsPossibleProblemsWith": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "additionalProperties": false,
           "required": [

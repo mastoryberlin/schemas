@@ -42,6 +42,9 @@
     },
     "is": {
       "$ref": "../../meta/statement/is-statement/is-statement.json"
+    },
+    "human": {
+      "$ref": "../../meta/human.json"
     }
   },
   "required": []
