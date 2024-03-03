@@ -4,132 +4,32 @@
       "type": "string"
     },
     "intents": {
-      "oneOf": [
-        {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9][a-z0-9+]*(?:[A-Z][a-z0-9+]*)*$": {
           "type": "object",
           "properties": {
-            "intent": {
-              "type": "string"
-            },
-            "requireTopics": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "excludeTopics": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "relevantActions": {
-              "type": "array"
-            },
-            "description": {
-              "type": "string"
-            },
-            "examples": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "evaluation": {
-              "type": "object",
-              "properties": {
-                "category": {
-                  "type": "string"
-                },
-                "demonstratesProficiencyIn": {
-                  "type": "array",
-                  "items": {
-                    "type": "object"
-                  }
-                },
-                "showsPossibleProblemsWith": {
-                  "type": "string"
-                }
-              }
+            "scope": {
+              "$ref": "../../genai/contextual/intent.json"
             },
             "reaction": {
-              "type": "string"
+              "$ref": "../../core/flow.json"
+            },
+            "human": {
+              "$ref": "../../meta/human.json"
             }
           },
           "required": [
-            "intent",
-            "description"
-          ],
-          "additionalProperties": false
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "intent": {
-                "type": "string"
-              },
-              "requireTopics": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "excludeTopics": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "relevantActions": {
-                "type": "array"
-              },
-              "description": {
-                "type": "string"
-              },
-              "examples": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "evaluation": {
-                "type": "object",
-                "properties": {
-                  "category": {
-                    "type": "string"
-                  },
-                  "demonstratesProficiencyIn": {
-                    "type": "array",
-                    "items": {
-                      "type": "object"
-                    }
-                  },
-                  "showsPossibleProblemsWith": {
-                    "type": "string"
-                  }
-                }
-              },
-              "reaction": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "intent",
-              "description"
-            ],
-            "additionalProperties": false
-          }
+            "scope"
+          ]
         }
-      ]
+      }
     },
     "sampleSolution": {
       "type": "string"
     }
   },
   "required": [
-    "generalContext",
     "intents",
     "sampleSolution"
   ]
