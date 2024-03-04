@@ -1,1 +1,14 @@
-{}
+{
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "color"
+  ]
+}
