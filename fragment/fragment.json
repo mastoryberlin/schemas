@@ -24,9 +24,6 @@
               "$ref": "./classes/Activity.json"
             },
             {
-              "$ref": "./classes/Basey.json"
-            },
-            {
               "$ref": "./classes/Button.json"
             },
             {
@@ -39,9 +36,6 @@
               "$ref": "./classes/CoordinatesInput.json"
             },
             {
-              "$ref": "./classes/Derived.json"
-            },
-            {
               "$ref": "./classes/DetachedInput.json"
             },
             {
@@ -49,9 +43,6 @@
             },
             {
               "$ref": "./classes/Flow.json"
-            },
-            {
-              "$ref": "./classes/Fraggy.json"
             },
             {
               "$ref": "./classes/Fragment.json"
@@ -134,9 +125,6 @@
               "class": "Activity"
             },
             {
-              "class": "Basey"
-            },
-            {
               "class": "Button"
             },
             {
@@ -149,9 +137,6 @@
               "class": "CoordinatesInput"
             },
             {
-              "class": "Derived"
-            },
-            {
               "class": "DetachedInput"
             },
             {
@@ -159,9 +144,6 @@
             },
             {
               "class": "Flow"
-            },
-            {
-              "class": "Fraggy"
             },
             {
               "class": "Fragment"

@@ -1,15 +1,12 @@
 {
   "properties": {
-    "order": {
-      "type": "number"
-    },
     "title": {
       "type": "string"
     },
     "introFlow": {
       "type": "string"
     },
-    "currentlyFocusedObjective": {
+    "generalSupportContext": {
       "type": "string"
     }
   },

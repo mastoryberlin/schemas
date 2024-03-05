@@ -6,9 +6,6 @@
       "$ref": "../partial/Flow.json"
     },
     {
-      "$ref": "../partial/Flow.json"
-    },
-    {
       "$ref": "../partial/Fragment.json"
     },
     {
