@@ -2,6 +2,9 @@
   "properties": {
     "multiSelect": {
       "type": "boolean"
+    },
+    "allowEmptySelection": {
+      "type": "boolean"
     }
   },
   "required": []

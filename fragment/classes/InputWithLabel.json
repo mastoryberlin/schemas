@@ -3,6 +3,15 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "../partial/InputWithLabel.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
       "$ref": "../partial/UiElement.json"
     },
     {
@@ -11,7 +20,7 @@
     {
       "properties": {
         "class": {
-          "const": "UiElement"
+          "const": "InputWithLabel"
         }
       }
     }

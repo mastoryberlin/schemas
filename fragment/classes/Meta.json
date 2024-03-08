@@ -3,7 +3,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/UiElement.json"
+      "$ref": "../partial/Meta.json"
     },
     {
       "$ref": "../partial/Fragment.json"
@@ -11,7 +11,7 @@
     {
       "properties": {
         "class": {
-          "const": "UiElement"
+          "const": "Meta"
         }
       }
     }

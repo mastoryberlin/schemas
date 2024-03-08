@@ -33,9 +33,6 @@
               "$ref": "./classes/Component.json"
             },
             {
-              "$ref": "./classes/CoordinatesInput.json"
-            },
-            {
               "$ref": "./classes/DetachedInput.json"
             },
             {
@@ -48,19 +45,7 @@
               "$ref": "./classes/Fragment.json"
             },
             {
-              "$ref": "./classes/Fragment.json"
-            },
-            {
               "$ref": "./classes/Image.json"
-            },
-            {
-              "$ref": "./classes/Input.json"
-            },
-            {
-              "$ref": "./classes/Input.json"
-            },
-            {
-              "$ref": "./classes/InteractiveUiElement.json"
             },
             {
               "$ref": "./classes/Layout.json"
@@ -69,10 +54,7 @@
               "$ref": "./classes/Level.json"
             },
             {
-              "$ref": "./classes/Level.json"
-            },
-            {
-              "$ref": "./classes/Navigation.json"
+              "$ref": "./classes/Meta.json"
             },
             {
               "$ref": "./classes/Navigation.json"
@@ -134,9 +116,6 @@
               "class": "Component"
             },
             {
-              "class": "CoordinatesInput"
-            },
-            {
               "class": "DetachedInput"
             },
             {
@@ -149,19 +128,7 @@
               "class": "Fragment"
             },
             {
-              "class": "Fragment"
-            },
-            {
               "class": "Image"
-            },
-            {
-              "class": "Input"
-            },
-            {
-              "class": "Input"
-            },
-            {
-              "class": "InteractiveUiElement"
             },
             {
               "class": "Layout"
@@ -170,10 +137,7 @@
               "class": "Level"
             },
             {
-              "class": "Level"
-            },
-            {
-              "class": "Navigation"
+              "class": "Meta"
             },
             {
               "class": "Navigation"

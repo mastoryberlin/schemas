@@ -6,6 +6,9 @@
       "$ref": "../partial/Input.json"
     },
     {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
       "$ref": "../partial/UiElement.json"
     },
     {

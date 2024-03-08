@@ -1,8 +1,5 @@
 {
   "properties": {
-    "generalContext": {
-      "type": "string"
-    },
     "intents": {
       "type": "object",
       "patternProperties": {

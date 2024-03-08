@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "state": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/definitions/state"
+          }
+        }
+      ]
+    }
+  },
+  "$ref": "#/definitions/state"
+}

@@ -6,11 +6,25 @@
     "introFlow": {
       "type": "string"
     },
-    "generalSupportContext": {
-      "type": "string"
+    "context": {
+      "type": "object",
+      "properties": {
+        "whileActive": {
+          "type": "string"
+        },
+        "afterDone": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "whileActive",
+        "afterDone"
+      ]
     }
   },
   "required": [
-    "title"
+    "title",
+    "context"
   ]
 }

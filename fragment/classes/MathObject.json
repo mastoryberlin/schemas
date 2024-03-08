@@ -3,15 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/UiElement.json"
-    },
-    {
-      "$ref": "../partial/Fragment.json"
+      "$ref": "../partial/MathObject.json"
     },
     {
       "properties": {
         "class": {
-          "const": "UiElement"
+          "const": "MathObject"
         }
       }
     }

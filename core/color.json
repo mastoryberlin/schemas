@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "oneOf": [
+    {
+      "type": "string",
+      "pattern": "^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$"
+    },
+    {
+      "type": "string",
+      "enum": [
+        "black",
+        "white",
+        "transparent",
+        "orange-1",
+        "orange-2",
+        "orange-3",
+        "orange-4",
+        "orange-5",
+        "orange-6",
+        "orange-7",
+        "purple-1",
+        "purple-2",
+        "purple-3",
+        "purple-4",
+        "purple-5",
+        "purple-6",
+        "purple-7",
+        "green-1",
+        "red-1",
+        "pink-1",
+        "blue-1"
+      ]
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 255
+      },
+      "minItems": 3,
+      "maxItems": 4
+    },
+    {
+      "type": "object",
+      "properties": {
+        "r": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "g": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "b": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 255
+        },
+        "a": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 255
+        }
+      },
+      "required": [
+        "r",
+        "g",
+        "b"
+      ]
+    }
+  ],
+  "examples": [
+    "purple-1",
+    "#fc268d",
+    [
+      255,
+      34,
+      168
+    ],
+    {
+      "r": 23,
+      "g": 0,
+      "b": 20,
+      "a": 255
+    }
+  ]
+}

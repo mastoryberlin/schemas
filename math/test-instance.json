@@ -1,0 +1,17 @@
+{
+  "$schema": "./test.json",
+  "sampleSolution": [
+    "Point",
+    {
+      "id": "a",
+      "value": [
+        35,
+        2,
+        12
+      ],
+      "meta": {
+        "color": "purple-1"
+      }
+    }
+  ]
+}

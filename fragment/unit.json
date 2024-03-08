@@ -141,16 +141,7 @@
           ]
         },
         "self": {
-          "type": "object",
-          "properties": {
-            "class": {
-              "const": "UnitRoot"
-            }
-          },
-          "required": [
-            "class"
-          ],
-          "additionalProperties": false
+          "$ref": "./classes/UnitRoot.json"
         },
         "children": {
           "type": "array",

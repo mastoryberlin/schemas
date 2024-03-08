@@ -1,25 +1,15 @@
 {
-  "type": "object",
   "properties": {
-    "myProperty1": {
+    "direction": {
       "type": "string",
-      "maxLength": 120,
-      "$title": "An interesting property"
-    },
-    "anotherProp": {
-      "type": "boolean",
-      "$title": "Another Property"
-    },
-    "coolNumber": {
-      "type": "number",
-      "$title": "A numeric value"
-    },
-    "hello": {
-      "type": "string",
-      "$title": "Greeting message"
+      "enum": [
+        "auto",
+        "horizontal",
+        "vertical"
+      ]
     }
   },
   "required": [
-    "myProperty1"
+    "direction"
   ]
 }

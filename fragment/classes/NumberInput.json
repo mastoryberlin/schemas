@@ -1,25 +1,35 @@
-  {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$comment": "A number input field in the UI.",
-    "type": "object",
-    "allOf": [
-      {
-        "$ref": "../partial/NumberInput.json"
-      },
-      {
-        "$ref": "../../meta/statement/is-statement/is-statement.json"
-      },
-      {
-        "properties": {
-          "class": {
-            "const": "NumberInput",
-            "description": "A number input field in the UI."
-          }
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/NumberInput.json"
+    },
+    {
+      "$ref": "../partial/InputWithLabel.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "NumberInput"
         }
       }
-    ],
-    "unevaluatedProperties": false,
-    "required": [
-      "class"
-    ]
-  }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}

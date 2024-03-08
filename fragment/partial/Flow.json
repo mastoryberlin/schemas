@@ -2,6 +2,12 @@
   "properties": {
     "path": {
       "type": "string"
+    },
+    "runWhenParentReachesState": {
+      "$ref": "./state.json"
+    },
+    "runAfterSeconds": {
+      "type": "number"
     }
   },
   "required": [

@@ -6,7 +6,10 @@
       "$ref": "../partial/Layout.json"
     },
     {
-      "$ref": "../../meta/statement/is-statement/is-statement.json"
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {

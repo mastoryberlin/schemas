@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "allOf": [
+    {
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "../core/identifier.json"
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "value": true,
+            "meta": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "id"
+          ]
+        }
+      ],
+      "additionalItems": false,
+      "minItems": 2
+    },
+    {
+      "$ref": "./classes/Point.json"
+    }
+  ]
+}

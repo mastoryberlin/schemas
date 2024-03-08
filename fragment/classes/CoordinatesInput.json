@@ -6,7 +6,19 @@
       "$ref": "../partial/CoordinatesInput.json"
     },
     {
-      "$ref": "../../meta/statement/is-statement/is-statement.json"
+      "$ref": "../partial/InputWithLabel.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {
