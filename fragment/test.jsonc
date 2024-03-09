@@ -27,21 +27,10 @@
       "children": [
         {
           "self": {
-            "class": "Image",
-            "src": "bla.jpg",
-            "asSupportIntent": [
-              {
-                "intent": "susu",
-                "requireIntentions": [
-                  {
-                    "oneOf": [
-                      "shareFeelings",
-                      "howTo"
-                    ]
-                  }
-                ]
-              }
-            ]
+            "class": "Card",
+            "src": "https://bla.jpg",
+            "text": "Hi there!",
+            "color": "blue-1"
           },
           "include": []
         }
