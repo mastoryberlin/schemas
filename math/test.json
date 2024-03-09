@@ -1,9 +1,157 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "actionPlanItem": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "children": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/actionPlanItem"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ]
+    }
+  },
   "type": "object",
   "properties": {
-    "sampleSolution": {
-      "$ref": "./instance.json"
+    "$schema": {
+      "type": "string"
+    },
+    "constants": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "$ref": "../core/data-field.json"
+        }
+      },
+      "default": {}
+    },
+    "variables": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "$ref": "../core/data-field.json"
+        }
+      },
+      "unevaluatedProperties": false,
+      "default": {}
+    },
+    "symbols": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "type": "string",
+          "pattern": "^[a-zA-Z_][a-zA-Z_0-9]*$"
+        }
+      },
+      "unevaluatedProperties": false,
+      "default": {}
+    },
+    "mission": {
+      "type": "object",
+      "properties": {
+        "sosVideo": {
+          "$ref": "../core/url.json"
+        },
+        "sosThumbnail": {
+          "$ref": "../core/url.json"
+        },
+        "statement": {
+          "type": "string",
+          "maxLength": 120
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "sosVideo",
+        "sosThumbnail",
+        "statement"
+      ]
+    },
+    "skeleton": {
+      "type": "object",
+      "properties": {
+        "whatWeFound": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "image": {
+                "$ref": "../core/url.json"
+              }
+            }
+          }
+        },
+        "whatItMeans": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "actionPlan": {
+          "$ref": "#/definitions/actionPlanItem"
+        },
+        "toDos": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "icons": {
+              "type": "array",
+              "items": {
+                "$ref": "../core/url.json"
+              }
+            }
+          }
+        },
+        "results": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "conclusions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "actionPlan"
+      ]
+    },
+    "self": {
+      "$ref": "../fragment/classes/UnitRoot.json"
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "$ref": "../fragment/fragment.json"
+      }
+    },
+    "include": {
+      "$ref": "../fragment/include.json"
     }
-  }
+  },
+  "required": [
+    "self"
+  ],
+  "additionalProperties": false
 }

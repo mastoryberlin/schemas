@@ -1,0 +1,64 @@
+{
+  "properties": {
+    "zoom": {
+      "type": "number"
+    },
+    "zoomBehavior": {
+      "type": "object",
+      "properties": {
+        "allowed": {
+          "type": "boolean"
+        },
+        "allowedRange": {
+          "$ref": "../../core/range.json"
+        },
+        "speed": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "panBehavior": {
+      "type": "object",
+      "properties": {
+        "allowed": {
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": [
+                "x",
+                "y"
+              ]
+            }
+          ]
+        },
+        "allowedRange": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "$ref": "../../core/range.json"
+            },
+            "y": {
+              "$ref": "../../core/range.json"
+            }
+          }
+        }
+      }
+    },
+    "gridLines": {
+      "type": "object",
+      "properties": {
+        "visible": {
+          "type": "boolean"
+        },
+        "color": {
+          "$ref": "../../core/color.json"
+        }
+      }
+    }
+  },
+  "required": []
+}

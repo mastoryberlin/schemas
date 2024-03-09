@@ -1,0 +1,31 @@
+{
+  "$schema": "./test.json",
+  "constants": {
+    "sami83j_Solution": [
+      "Point2",
+      {
+        "id": "a",
+        "components": [
+          35,
+          2
+        ],
+        "color": "purple-1"
+      }
+    ]
+  },
+  "variables": {
+    "bubu": [
+      "Point2",
+      {
+        "id": "a",
+        "groups": [
+          "hey"
+        ]
+      }
+    ]
+  },
+  "self": {
+    "class": "UnitRoot",
+    "context": "This is a dev unit"
+  }
+}

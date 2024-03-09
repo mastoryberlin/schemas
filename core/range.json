@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
-  "oneOf": [
-    {
-      "$ref": "./classes/Point2.json"
-    }
-  ]
+  "items": {
+    "type": "number"
+  },
+  "minItems": 2,
+  "maxItems": 2
 }

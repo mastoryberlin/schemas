@@ -2,14 +2,11 @@
   "properties": {
     "childrenLayout": {
       "type": "string",
-      "enum": {
-        "type": "string",
-        "enum": [
-          "auto",
-          "horizontal",
-          "vertical"
-        ]
-      }
+      "enum": [
+        "auto",
+        "horizontal",
+        "vertical"
+      ]
     },
     "span": {
       "type": "number"

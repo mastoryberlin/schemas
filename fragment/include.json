@@ -6,20 +6,15 @@
       "pattern": "^(?:\\./)?[\\w\\d-_]+(?:/[\\w\\d-_]+)?(?:\\.jsonc?)?$"
     }
   },
-  "type": "object",
-  "properties": {
-    "include": {
-      "oneOf": [
-        {
-          "$ref": "#/$defs/jsoncFile"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/jsoncFile"
-          }
-        }
-      ]
+  "oneOf": [
+    {
+      "$ref": "#/$defs/jsoncFile"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/jsoncFile"
+      }
     }
-  }
+  ]
 }
