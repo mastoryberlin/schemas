@@ -58,6 +58,9 @@
           "$ref": "../../core/color.json"
         }
       }
+    },
+    "selectedTool": {
+      "type": "string"
     }
   },
   "required": []

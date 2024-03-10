@@ -4,6 +4,9 @@
   "oneOf": [
     {
       "$ref": "./classes/Point2.json"
+    },
+    {
+      "$ref": "./classes/Sprite.json"
     }
   ]
 }

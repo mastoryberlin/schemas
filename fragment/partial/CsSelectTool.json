@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "allowedSelection": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "default": true
+    }
+  },
+  "required": []
+}

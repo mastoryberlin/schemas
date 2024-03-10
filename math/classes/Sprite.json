@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": [
+    {
+      "const": "Sprite"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "../../core/identifier.json"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "showPoint": {
+          "type": "boolean"
+        },
+        "pointColor": {
+          "$ref": "../../core/color.json"
+        },
+        "src": {
+          "$ref": "../../core/url.json"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "src"
+      ]
+    }
+  ],
+  "minItems": 2,
+  "maxItems": 2
+}

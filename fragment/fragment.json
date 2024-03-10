@@ -37,6 +37,12 @@
           "$ref": "./classes/CoordinateSystem.json"
         },
         {
+          "$ref": "./classes/CsSelectTool.json"
+        },
+        {
+          "$ref": "./classes/CsTool.json"
+        },
+        {
           "$ref": "./classes/DetachedInput.json"
         },
         {
@@ -124,6 +130,12 @@
         },
         {
           "class": "CoordinateSystem"
+        },
+        {
+          "class": "CsSelectTool"
+        },
+        {
+          "class": "CsTool"
         },
         {
           "class": "DetachedInput"

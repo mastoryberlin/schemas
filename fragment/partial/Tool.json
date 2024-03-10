@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "$ref": "../../core/url.json"
+    }
+  },
+  "required": [
+    "text"
+  ]
+}
