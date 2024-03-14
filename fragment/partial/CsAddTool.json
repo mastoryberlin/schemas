@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "addObjectPrototype": {
+      "$ref": "../../math/instance.json"
+    }
+  },
+  "required": []
+}

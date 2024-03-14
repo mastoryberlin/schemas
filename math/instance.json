@@ -7,6 +7,9 @@
     },
     {
       "$ref": "./classes/Sprite.json"
+    },
+    {
+      "$ref": "./classes/Flag.json"
     }
   ]
 }

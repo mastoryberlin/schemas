@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "spriteSrc": {
+      "type": "string"
+    },
+    "flagColor": {
+      "$ref": "../../core/color.json"
+    }
+  },
+  "required": []
+}

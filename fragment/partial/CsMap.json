@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "flat": {
+      "type": "boolean"
+    },
+    "unit": {
+      "type": "string",
+      "enum": {
+        "type": "string",
+        "enum": [
+          "meter",
+          "kilometer",
+          "mile",
+          "foot"
+        ]
+      }
+    },
+    "coordinatesCenter": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "lonLat",
+            "mapCoords"
+          ]
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "value"
+      ]
+    },
+    "worldDistancePerCoordinateUnit": {
+      "type": "number"
+    }
+  },
+  "required": []
+}
