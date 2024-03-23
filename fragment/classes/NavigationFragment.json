@@ -3,9 +3,6 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Level.json"
-    },
-    {
       "$ref": "../partial/NavigationFragment.json"
     },
     {
@@ -14,7 +11,7 @@
     {
       "properties": {
         "class": {
-          "const": "Level"
+          "const": "NavigationFragment"
         }
       }
     }

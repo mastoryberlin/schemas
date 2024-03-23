@@ -9,12 +9,6 @@
         "type": "string"
       }
     },
-    "introFlow": {
-      "$ref": "../../core/flow.json"
-    },
-    "outroFlow": {
-      "$ref": "../../core/flow.json"
-    },
     "slot": {
       "type": "string"
     },

@@ -8,6 +8,22 @@
         "training"
       ]
     },
+    "context": {
+      "type": "object",
+      "properties": {
+        "whileActive": {
+          "type": "string"
+        },
+        "afterDone": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "whileActive",
+        "afterDone"
+      ]
+    },
     "relatedUi": {
       "oneOf": [
         {

@@ -6,6 +6,9 @@
       "$ref": "../partial/SelectImagePart.json"
     },
     {
+      "$ref": "../partial/SelectOneOfSeveralOptions.json"
+    },
+    {
       "$ref": "../partial/SampleSolve.json"
     },
     {

@@ -3,10 +3,16 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Level.json"
+      "$ref": "../partial/SelectOneOfSeveralOptions.json"
     },
     {
-      "$ref": "../partial/NavigationFragment.json"
+      "$ref": "../partial/SampleSolve.json"
+    },
+    {
+      "$ref": "../partial/SolvableActivity.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
     },
     {
       "$ref": "../partial/Fragment.json"
@@ -14,7 +20,7 @@
     {
       "properties": {
         "class": {
-          "const": "Level"
+          "const": "SelectOneOfSeveralOptions"
         }
       }
     }

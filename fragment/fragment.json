@@ -16,6 +16,12 @@
           "$ref": "./classes/Accordion.json"
         },
         {
+          "$ref": "./classes/AccordionButton.json"
+        },
+        {
+          "$ref": "./classes/AccordionContent.json"
+        },
+        {
           "$ref": "./classes/AccordionTab.json"
         },
         {
@@ -67,6 +73,9 @@
           "$ref": "./classes/Fragment.json"
         },
         {
+          "$ref": "./classes/Handheld.json"
+        },
+        {
           "$ref": "./classes/Image.json"
         },
         {
@@ -80,6 +89,9 @@
         },
         {
           "$ref": "./classes/Navigation.json"
+        },
+        {
+          "$ref": "./classes/NavigationFragment.json"
         },
         {
           "$ref": "./classes/NumberInput.json"
@@ -100,10 +112,16 @@
           "$ref": "./classes/SelectImagePart.json"
         },
         {
+          "$ref": "./classes/SelectOneOfSeveralOptions.json"
+        },
+        {
           "$ref": "./classes/Selector.json"
         },
         {
           "$ref": "./classes/SolvableActivity.json"
+        },
+        {
+          "$ref": "./classes/StubActivity.json"
         },
         {
           "$ref": "./classes/TextInput.json"
@@ -121,6 +139,12 @@
       "examples": [
         {
           "class": "Accordion"
+        },
+        {
+          "class": "AccordionButton"
+        },
+        {
+          "class": "AccordionContent"
         },
         {
           "class": "AccordionTab"
@@ -174,6 +198,9 @@
           "class": "Fragment"
         },
         {
+          "class": "Handheld"
+        },
+        {
           "class": "Image"
         },
         {
@@ -187,6 +214,9 @@
         },
         {
           "class": "Navigation"
+        },
+        {
+          "class": "NavigationFragment"
         },
         {
           "class": "NumberInput"
@@ -207,10 +237,16 @@
           "class": "SelectImagePart"
         },
         {
+          "class": "SelectOneOfSeveralOptions"
+        },
+        {
           "class": "Selector"
         },
         {
           "class": "SolvableActivity"
+        },
+        {
+          "class": "StubActivity"
         },
         {
           "class": "TextInput"

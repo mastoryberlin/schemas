@@ -3,10 +3,13 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Level.json"
+      "$ref": "../partial/AccordionButton.json"
     },
     {
-      "$ref": "../partial/NavigationFragment.json"
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
     },
     {
       "$ref": "../partial/Fragment.json"
@@ -14,7 +17,7 @@
     {
       "properties": {
         "class": {
-          "const": "Level"
+          "const": "AccordionButton"
         }
       }
     }

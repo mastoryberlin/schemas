@@ -3,77 +3,18 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../../meta/statement/is-statement/is-statement.json"
+      "$ref": "../partial/Handheld.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {
         "class": {
           "const": "Handheld"
-        },
-        "visible": {
-          "type": "boolean"
-        },
-        "collapsible": {
-          "type": "boolean"
-        },
-        "initiallyCollapsed": {
-          "type": "boolean"
-        },
-        "collapsedHeight": {
-          "type": [
-            "number",
-            "string"
-          ]
-        },
-        "width": {
-          "type": [
-            "number",
-            "string"
-          ]
-        },
-        "height": {
-          "type": [
-            "number",
-            "string"
-          ]
-        },
-        "align": {
-          "type": "string",
-          "values": [
-            "left",
-            "right",
-            "center"
-          ]
-        },
-        "marginBottom": {
-          "type": [
-            "number",
-            "string"
-          ]
-        },
-        "marginHorizontal": {
-          "type": [
-            "number",
-            "string"
-          ]
-        },
-        "handVerticalAlign": {
-          "type": "string",
-          "values": [
-            "top",
-            "center"
-          ]
-        },
-        "handHorizontalAlign": {
-          "type": "string",
-          "values": [
-            "left",
-            "right",
-            "center"
-          ]
-        },
-        "handSrc": {
-          "type": "string"
         }
       }
     }
