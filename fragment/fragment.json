@@ -91,7 +91,10 @@
           "$ref": "./classes/Navigation.json"
         },
         {
-          "$ref": "./classes/NavigationFragment.json"
+          "$ref": "./classes/NavigationElement.json"
+        },
+        {
+          "$ref": "./classes/NavigationElementWithImpactOnUi.json"
         },
         {
           "$ref": "./classes/NumberInput.json"
@@ -216,7 +219,10 @@
           "class": "Navigation"
         },
         {
-          "class": "NavigationFragment"
+          "class": "NavigationElement"
+        },
+        {
+          "class": "NavigationElementWithImpactOnUi"
         },
         {
           "class": "NumberInput"

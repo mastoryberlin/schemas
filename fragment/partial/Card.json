@@ -6,9 +6,6 @@
     "tip": {
       "type": "string"
     },
-    "src": {
-      "$ref": "../../core/url.json"
-    },
     "color": {
       "$ref": "../../core/color.json"
     }

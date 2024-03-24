@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "uiChangesOnStart": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+          "type": "string",
+          "enum": [
+            "MOUNT",
+            "UNMOUNT",
+            "HIDE",
+            "SHOW",
+            "FREEZE",
+            "UNFREEZE",
+            "FADE_IN",
+            "FADE_OUT"
+          ]
+        }
+      }
+    },
+    "uiChangesOnDone": {
+      "oneOf": [
+        {
+          "const": "revert"
+        },
+        {
+          "type": "object",
+          "patternProperties": {
+            "^[a-zA-Z_][a-zA-Z_0-9]*$": {
+              "type": "string",
+              "enum": [
+                "MOUNT",
+                "UNMOUNT",
+                "HIDE",
+                "SHOW",
+                "FREEZE",
+                "UNFREEZE",
+                "FADE_IN",
+                "FADE_OUT"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": []
+}

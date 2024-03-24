@@ -9,6 +9,9 @@
       "$ref": "../partial/NavigationFragment.json"
     },
     {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
       "$ref": "../partial/Fragment.json"
     },
     {
