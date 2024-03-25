@@ -3,17 +3,49 @@
   "$defs": {
     "jsoncFile": {
       "type": "string",
-      "pattern": "^(?:\\./)?[\\w\\d-_]+(?:/[\\w\\d-_]+)?(?:\\.jsonc?)?$"
+      "pattern": "^(?:\\.\\.?/)?[\\w\\d-_]+(?:/[\\w\\d-_]+)?(?:\\.jsonc)?$"
+    },
+    "include": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/jsoncFile"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "#/$defs/jsoncFile"
+            },
+            "idPrefix": {
+              "type": "string"
+            },
+            "idSuffix": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            }
+          },
+          "required": [
+            "src"
+          ],
+          "additionalProperties": false
+        }
+      ]
     }
   },
   "oneOf": [
     {
-      "$ref": "#/$defs/jsoncFile"
+      "$ref": "#/$defs/include"
     },
     {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/jsoncFile"
+        "$ref": "#/$defs/include"
       }
     }
   ]

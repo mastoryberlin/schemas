@@ -6,7 +6,7 @@
       "$ref": "../partial/Objective.json"
     },
     {
-      "$ref": "../partial/NavigationFragment.json"
+      "$ref": "../partial/NavigationElement.json"
     },
     {
       "$ref": "../partial/UiElement.json"
