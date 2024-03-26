@@ -9,6 +9,15 @@
         "type": "string"
       }
     },
+    "introFlow": {
+      "$ref": "../../core/flow.json"
+    },
+    "outroFlow": {
+      "$ref": "../../core/flow.json"
+    },
+    "slot": {
+      "type": "string"
+    },
     "stopEventPropagation": {
       "oneOf": [
         {
@@ -49,6 +58,3479 @@
     },
     "human": {
       "$ref": "../../meta/human.json"
+    },
+    "onStartedReached": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onDoneReached": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onUnblockedReached": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onAbandonedReached": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onIAmDoneEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onMountEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onUnmountEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onHideEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onShowEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onFreezeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onUnfreezeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onFadeOutEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onFadeInEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onMinimizeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onToggleMinimizeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onMaximizeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onToggleMaximizeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onStandardSizeEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onExpandEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onCollapseEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onToggleExpandCollapseEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onSelectEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onClickEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "\\w+": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "let"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "\\w+": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "let"
+            ],
+            "additionalProperties": false
+          }
+        }
+      ]
     }
   },
   "required": []

@@ -41,7 +41,12 @@
       ]
     },
     "worldDistancePerCoordinateUnit": {
-      "type": "number"
+      "type": "number",
+      "default": 1
+    },
+    "scaleLineVisible": {
+      "type": "boolean",
+      "default": true
     }
   },
   "required": []

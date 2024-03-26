@@ -3,6 +3,15 @@
   "type": "object",
   "allOf": [
     {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "ClickableElement"

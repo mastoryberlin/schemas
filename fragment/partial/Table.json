@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "gap": {
+      "type": "number"
+    }
+  },
+  "required": []
+}

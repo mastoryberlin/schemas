@@ -3,19 +3,19 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/SelectOneOfSeveralOptions.json"
+      "$ref": "../partial/CoordinatesInput2.json"
     },
     {
-      "$ref": "../partial/SampleSolve.json"
+      "$ref": "../partial/CoordinatesInput.json"
     },
     {
-      "$ref": "../partial/SolvableActivity.json"
+      "$ref": "../partial/InputWithLabel.json"
     },
     {
-      "$ref": "../partial/Activity.json"
+      "$ref": "../partial/Input.json"
     },
     {
-      "$ref": "../partial/NavigationElement.json"
+      "$ref": "../partial/ClickableElement.json"
     },
     {
       "$ref": "../partial/UiElement.json"
@@ -26,7 +26,7 @@
     {
       "properties": {
         "class": {
-          "const": "SelectOneOfSeveralOptions"
+          "const": "CoordinatesInput2"
         }
       }
     }

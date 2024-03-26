@@ -1,1 +1,16 @@
-{}
+{
+  "properties": {
+    "hoverStyle": {
+      "type": "string",
+      "enum": {
+        "type": "string",
+        "enum": [
+          "none",
+          "background",
+          "border"
+        ]
+      }
+    }
+  },
+  "required": []
+}

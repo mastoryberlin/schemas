@@ -6,9 +6,6 @@
       "$ref": "../partial/Activity.json"
     },
     {
-      "$ref": "../partial/NavigationElementWithImpactOnUi.json"
-    },
-    {
       "$ref": "../partial/NavigationElement.json"
     },
     {
