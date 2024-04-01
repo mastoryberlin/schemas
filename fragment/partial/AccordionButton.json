@@ -59,7 +59,7 @@
     "human": {
       "$ref": "../../meta/human.json"
     },
-    "onStartedReached": {
+    "whenStarted": {
       "oneOf": [
         {
           "type": "object",
@@ -70,7 +70,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -126,11 +126,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -144,7 +161,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -200,17 +217,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onDoneReached": {
+    "whenDone": {
       "oneOf": [
         {
           "type": "object",
@@ -221,7 +255,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -277,11 +311,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -295,7 +346,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -351,17 +402,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onUnblockedReached": {
+    "whenUnblocked": {
       "oneOf": [
         {
           "type": "object",
@@ -372,7 +440,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -428,11 +496,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -446,7 +531,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -502,17 +587,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onAbandonedReached": {
+    "whenAbandoned": {
       "oneOf": [
         {
           "type": "object",
@@ -523,7 +625,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -579,11 +681,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -597,7 +716,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -653,17 +772,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onIAmDoneEvent": {
+    "onIAmDone": {
       "oneOf": [
         {
           "type": "object",
@@ -674,7 +810,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -730,11 +866,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -748,7 +901,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -804,17 +957,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onMountEvent": {
+    "onMount": {
       "oneOf": [
         {
           "type": "object",
@@ -825,7 +995,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -881,11 +1051,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -899,7 +1086,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -955,17 +1142,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onUnmountEvent": {
+    "onUnmount": {
       "oneOf": [
         {
           "type": "object",
@@ -976,7 +1180,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1032,11 +1236,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1050,7 +1271,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -1106,17 +1327,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onHideEvent": {
+    "onHide": {
       "oneOf": [
         {
           "type": "object",
@@ -1127,7 +1365,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1183,11 +1421,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1201,7 +1456,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -1257,17 +1512,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onShowEvent": {
+    "onShow": {
       "oneOf": [
         {
           "type": "object",
@@ -1278,7 +1550,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1334,11 +1606,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1352,7 +1641,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -1408,17 +1697,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onFreezeEvent": {
+    "onFreeze": {
       "oneOf": [
         {
           "type": "object",
@@ -1429,7 +1735,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1485,11 +1791,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1503,7 +1826,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -1559,17 +1882,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onUnfreezeEvent": {
+    "onUnfreeze": {
       "oneOf": [
         {
           "type": "object",
@@ -1580,7 +1920,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1636,11 +1976,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1654,7 +2011,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -1710,17 +2067,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onFadeOutEvent": {
+    "onFadeOut": {
       "oneOf": [
         {
           "type": "object",
@@ -1731,7 +2105,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1787,11 +2161,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1805,7 +2196,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -1861,17 +2252,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onFadeInEvent": {
+    "onFadeIn": {
       "oneOf": [
         {
           "type": "object",
@@ -1882,7 +2290,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -1938,11 +2346,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -1956,7 +2381,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2012,17 +2437,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onMinimizeEvent": {
+    "onMinimize": {
       "oneOf": [
         {
           "type": "object",
@@ -2033,7 +2475,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2089,11 +2531,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -2107,7 +2566,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2163,17 +2622,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onToggleMinimizeEvent": {
+    "onToggleMinimize": {
       "oneOf": [
         {
           "type": "object",
@@ -2184,7 +2660,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2240,11 +2716,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -2258,7 +2751,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2314,17 +2807,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onMaximizeEvent": {
+    "onMaximize": {
       "oneOf": [
         {
           "type": "object",
@@ -2335,7 +2845,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2391,11 +2901,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -2409,7 +2936,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2465,17 +2992,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onToggleMaximizeEvent": {
+    "onToggleMaximize": {
       "oneOf": [
         {
           "type": "object",
@@ -2486,7 +3030,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2542,11 +3086,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -2560,7 +3121,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2616,17 +3177,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onStandardSizeEvent": {
+    "onStandardSize": {
       "oneOf": [
         {
           "type": "object",
@@ -2637,7 +3215,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2693,11 +3271,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -2711,7 +3306,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2767,17 +3362,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onExpandEvent": {
+    "onExpand": {
       "oneOf": [
         {
           "type": "object",
@@ -2788,7 +3400,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2844,11 +3456,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -2862,7 +3491,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -2918,17 +3547,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onCollapseEvent": {
+    "onCollapse": {
       "oneOf": [
         {
           "type": "object",
@@ -2939,7 +3585,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -2995,11 +3641,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -3013,7 +3676,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -3069,17 +3732,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onToggleExpandCollapseEvent": {
+    "onToggleExpandCollapse": {
       "oneOf": [
         {
           "type": "object",
@@ -3090,7 +3770,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -3146,11 +3826,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -3164,7 +3861,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -3220,17 +3917,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onSelectEvent": {
+    "onSelect": {
       "oneOf": [
         {
           "type": "object",
@@ -3241,7 +3955,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -3297,11 +4011,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -3315,7 +4046,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -3371,17 +4102,34 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
       ]
     },
-    "onClickEvent": {
+    "onClick": {
       "oneOf": [
         {
           "type": "object",
@@ -3392,7 +4140,7 @@
             "let": {
               "type": "object",
               "patternProperties": {
-                "\\w+": {
+                "": {
                   "oneOf": [
                     {
                       "type": "string",
@@ -3448,11 +4196,28 @@
                   ]
                 }
               }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
             }
           },
-          "required": [
-            "let"
-          ],
+          "required": [],
           "additionalProperties": false
         },
         {
@@ -3466,7 +4231,7 @@
               "let": {
                 "type": "object",
                 "patternProperties": {
-                  "\\w+": {
+                  "": {
                     "oneOf": [
                       {
                         "type": "string",
@@ -3522,11 +4287,28 @@
                     ]
                   }
                 }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
               }
             },
-            "required": [
-              "let"
-            ],
+            "required": [],
             "additionalProperties": false
           }
         }
