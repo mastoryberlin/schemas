@@ -53,6 +53,14 @@
       "type": "boolean",
       "default": true
     },
+    "initiallySwitchedOff": {
+      "type": "boolean",
+      "default": true
+    },
+    "initiallyClosed": {
+      "type": "boolean",
+      "default": true
+    },
     "is": {
       "$ref": "../../meta/statement/is-statement/is-statement.json"
     },
@@ -92,6 +100,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -118,6 +133,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -183,6 +205,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -209,6 +238,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -277,6 +313,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -303,6 +346,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -368,6 +418,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -394,6 +451,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -462,6 +526,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -488,6 +559,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -553,6 +631,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -579,6 +664,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -647,6 +739,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -673,6 +772,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -738,6 +844,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -764,6 +877,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -832,6 +952,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -858,6 +985,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -923,6 +1057,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -949,6 +1090,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -1017,6 +1165,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -1043,6 +1198,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1108,6 +1270,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1134,6 +1303,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -1202,6 +1378,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -1228,6 +1411,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1293,6 +1483,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1319,6 +1516,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -1387,6 +1591,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -1413,6 +1624,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1478,6 +1696,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1504,6 +1729,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -1572,6 +1804,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -1598,6 +1837,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1663,6 +1909,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1689,6 +1942,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -1757,6 +2017,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -1783,6 +2050,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1848,6 +2122,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -1874,6 +2155,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -1942,6 +2230,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -1968,6 +2263,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2033,6 +2335,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2059,6 +2368,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -2127,6 +2443,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -2153,6 +2476,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2218,6 +2548,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2244,6 +2581,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -2312,6 +2656,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -2338,6 +2689,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2403,6 +2761,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2429,6 +2794,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -2497,6 +2869,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -2523,6 +2902,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2588,6 +2974,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2614,6 +3007,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -2682,6 +3082,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -2708,6 +3115,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2773,6 +3187,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2799,6 +3220,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -2867,6 +3295,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -2893,6 +3328,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2958,6 +3400,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -2984,6 +3433,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -3052,6 +3508,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -3078,6 +3541,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3143,6 +3613,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3169,6 +3646,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -3237,6 +3721,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -3263,6 +3754,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3328,6 +3826,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3354,6 +3859,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -3422,6 +3934,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -3448,6 +3967,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3513,6 +4039,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3539,6 +4072,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -3607,6 +4147,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -3633,6 +4180,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3698,6 +4252,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3724,6 +4285,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -3792,6 +4360,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -3818,6 +4393,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3883,6 +4465,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -3909,6 +4498,1504 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onSwitchOn": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onSwitchOff": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onToggleOnOff": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onOpen": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onHasOpened": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onClose": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
+                            "SELECT",
+                            "CLICK"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onHasClosed": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "const": "NOT YET IMPLEMENTED!"
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_DONE",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
+                        "SELECT",
+                        "CLICK"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_DONE",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
+                          "SELECT",
+                          "CLICK"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_DONE",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -3977,6 +6064,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -4003,6 +6097,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -4068,6 +6169,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -4094,6 +6202,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
@@ -4162,6 +6277,13 @@
                         "EXPAND",
                         "COLLAPSE",
                         "TOGGLE_EXPAND_COLLAPSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "OPEN",
+                        "HAS_OPENED",
+                        "CLOSE",
+                        "HAS_CLOSED",
                         "SELECT",
                         "CLICK"
                       ]
@@ -4188,6 +6310,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -4253,6 +6382,13 @@
                           "EXPAND",
                           "COLLAPSE",
                           "TOGGLE_EXPAND_COLLAPSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "OPEN",
+                          "HAS_OPENED",
+                          "CLOSE",
+                          "HAS_CLOSED",
                           "SELECT",
                           "CLICK"
                         ]
@@ -4279,6 +6415,13 @@
                             "EXPAND",
                             "COLLAPSE",
                             "TOGGLE_EXPAND_COLLAPSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "OPEN",
+                            "HAS_OPENED",
+                            "CLOSE",
+                            "HAS_CLOSED",
                             "SELECT",
                             "CLICK"
                           ]
