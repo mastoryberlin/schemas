@@ -3,12 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Scene.json"
+      "$ref": "../partial/Embed.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Scene"
+          "const": "Embed"
         }
       }
     }
