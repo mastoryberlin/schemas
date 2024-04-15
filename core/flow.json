@@ -1,17 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
+  "$defs": {
+    "maybeScopedFlow": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(\\w*/)?\\w+(\\.flow)?$"
+    }
+  },
   "oneOf": [
     {
-      "$ref": "./file.json"
+      "$ref": "#/$defs/maybeScopedFlow"
     },
     {
       "type": "object",
       "properties": {
         "src": {
-          "$ref": "./file.json"
-        },
-        "alt": {
-          "type": "string"
+          "$ref": "#/$defs/maybeScopedFlow"
         },
         "params": {
           "type": "object",
@@ -20,8 +24,22 @@
           }
         }
       },
+      "additionalProperties": false,
       "required": [
         "src"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "inline": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "inline"
       ]
     }
   ]
