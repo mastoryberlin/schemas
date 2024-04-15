@@ -3,12 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/ClickableMesh.json"
+      "$ref": "../partial/Label3.json"
     },
     {
       "properties": {
         "class": {
-          "const": "ClickableMesh"
+          "const": "Label3"
         }
       }
     }

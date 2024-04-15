@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "watchedInput": {
+      "$ref": "../../core/identifier.json"
+    }
+  },
+  "required": [
+    "watchedInput"
+  ]
+}

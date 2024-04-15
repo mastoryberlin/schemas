@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "flow": {
+      "$ref": "../../core/flow.json"
+    },
+    "force": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "flow"
+  ]
+}

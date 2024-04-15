@@ -6,6 +6,21 @@
       "$ref": "../partial/Embed.json"
     },
     {
+      "$ref": "../partial/Mesh2.json"
+    },
+    {
+      "$ref": "../partial/Mesh.json"
+    },
+    {
+      "$ref": "../partial/Transformable32.json"
+    },
+    {
+      "$ref": "../partial/Transformable3.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Embed"

@@ -12,6 +12,9 @@
       "$ref": "../partial/SampleSolve.json"
     },
     {
+      "$ref": "../partial/InputSolve.json"
+    },
+    {
       "$ref": "../partial/SolvableActivity.json"
     },
     {

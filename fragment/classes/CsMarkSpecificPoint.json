@@ -3,7 +3,10 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/SampleSolve.json"
+      "$ref": "../partial/CsMarkSpecificPoint.json"
+    },
+    {
+      "$ref": "../partial/SampleSolveArrayElement.json"
     },
     {
       "$ref": "../partial/InputSolve.json"
@@ -26,7 +29,7 @@
     {
       "properties": {
         "class": {
-          "const": "SampleSolve"
+          "const": "CsMarkSpecificPoint"
         }
       }
     }

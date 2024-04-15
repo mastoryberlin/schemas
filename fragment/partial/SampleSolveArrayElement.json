@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "sampleElement": {},
+    "atIndex": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "sampleElement"
+  ]
+}
