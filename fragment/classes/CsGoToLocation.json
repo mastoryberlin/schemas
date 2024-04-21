@@ -3,12 +3,12 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Embed.json"
+      "$ref": "../partial/CsGoToLocation.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Embed"
+          "const": "CsGoToLocation"
         }
       }
     }

@@ -1,7 +1,7 @@
 {
   "properties": {
-    "path": {
-      "type": "string"
+    "flow": {
+      "$ref": "../../core/flow.json"
     },
     "runWhenParentReachesState": {
       "$ref": "./state.json"
@@ -11,6 +11,6 @@
     }
   },
   "required": [
-    "path"
+    "flow"
   ]
 }

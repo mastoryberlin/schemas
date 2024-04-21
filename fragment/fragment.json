@@ -58,6 +58,9 @@
           "$ref": "./classes/CsAddTool.json"
         },
         {
+          "$ref": "./classes/CsGoToLocation.json"
+        },
+        {
           "$ref": "./classes/CsGoToLocationTool.json"
         },
         {
@@ -214,6 +217,9 @@
         },
         {
           "class": "CsAddTool"
+        },
+        {
+          "class": "CsGoToLocation"
         },
         {
           "class": "CsGoToLocationTool"

@@ -28,6 +28,13 @@
                   "type": "number"
                 }
               ]
+            },
+            "insertionOrder": {
+              "type": "string",
+              "enum": [
+                "beforeOtherChildren",
+                "afterOtherChildren"
+              ]
             }
           },
           "required": [
