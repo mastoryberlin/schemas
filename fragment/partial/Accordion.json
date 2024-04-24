@@ -1,14 +1,4 @@
 {
-  "properties": {
-    "tabsPosition": {
-      "type": "string",
-      "enum": [
-        "top",
-        "left",
-        "right",
-        "bottom"
-      ]
-    }
-  },
+  "properties": {},
   "required": []
 }

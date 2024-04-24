@@ -6,6 +6,18 @@
       "$ref": "../partial/CsGoToLocation.json"
     },
     {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/NavigationElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "CsGoToLocation"

@@ -1,1 +1,40 @@
-{}
+{
+  "properties": {
+    "tool": {
+      "type": "string",
+      "examples": [
+        "myToolId"
+      ]
+    },
+    "targetLocation": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      ],
+      "examples": [
+        [
+          -2,
+          3.5
+        ],
+        "myUnitVariable"
+      ]
+    },
+    "unmountToolWhenDone": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "tool",
+    "targetLocation"
+  ]
+}

@@ -59,6 +59,35 @@
         }
       }
     },
+    "axes": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "$ref": "../../core/color.json"
+        },
+        "width": {
+          "type": "number"
+        },
+        "labels": {
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "show": {
+                  "type": "boolean"
+                },
+                "color": {
+                  "$ref": "../../core/color.json"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
     "selectedTool": {
       "type": "string"
     }
