@@ -3,16 +3,10 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Mesh.json"
+      "$ref": "../partial/Text.json"
     },
     {
-      "$ref": "../partial/Mesh2.json"
-    },
-    {
-      "$ref": "../partial/Transformable32.json"
-    },
-    {
-      "$ref": "../partial/Transformable3.json"
+      "$ref": "../partial/UiElement.json"
     },
     {
       "$ref": "../partial/Fragment.json"
@@ -20,7 +14,7 @@
     {
       "properties": {
         "class": {
-          "const": "Mesh"
+          "const": "Text"
         }
       }
     }

@@ -1,4 +1,16 @@
 {
-  "properties": {},
-  "required": []
+  "properties": {
+    "tool": {
+      "type": "string",
+      "examples": [
+        "myToolId"
+      ]
+    },
+    "allowAddingMorePoints": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "tool"
+  ]
 }

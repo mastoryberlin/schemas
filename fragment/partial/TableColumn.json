@@ -1,4 +1,8 @@
 {
-  "properties": {},
+  "properties": {
+    "title": {
+      "type": "string"
+    }
+  },
   "required": []
 }

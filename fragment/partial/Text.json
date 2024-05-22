@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string",
+      "enum": {
+        "type": "string",
+        "enum": [
+          "small",
+          "medium",
+          "large"
+        ]
+      }
+    },
+    "align": {
+      "type": "string",
+      "enum": {
+        "type": "string",
+        "enum": [
+          "left",
+          "center",
+          "right"
+        ]
+      }
+    }
+  },
+  "required": [
+    "text"
+  ]
+}

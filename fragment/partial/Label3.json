@@ -1,1 +1,51 @@
-{}
+{
+  "properties": {
+    "templateUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "number",
+      "default": 1
+    },
+    "height": {
+      "type": "number",
+      "default": 1
+    },
+    "faceCameraAlways": {
+      "type": "boolean",
+      "default": true
+    },
+    "labelTextSlotIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "labelSlotTexts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "labelSlotColors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "labelSlotFontSizes": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": []
+    }
+  },
+  "required": [
+    "templateUrl"
+  ]
+}

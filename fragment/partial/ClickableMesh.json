@@ -1,1 +1,37 @@
-{}
+{
+  "properties": {
+    "selectedHighlightColor": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hoverCursor": {
+      "type": "string",
+      "default": "pointer"
+    },
+    "hoverHighlightColor": {
+      "type": "array",
+      "default": [
+        0,
+        1,
+        0
+      ]
+    },
+    "lockedCursor": {
+      "type": "string",
+      "default": "not-allowed"
+    },
+    "lockedHighlightColor": {
+      "type": "array",
+      "default": [
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "required": []
+}

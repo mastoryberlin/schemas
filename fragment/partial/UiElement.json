@@ -8,8 +8,13 @@
         "vertical"
       ]
     },
-    "span": {
-      "type": "number"
+    "minimal": {
+      "type": "boolean",
+      "default": true
+    },
+    "maximal": {
+      "type": "boolean",
+      "default": true
     },
     "absolute": {
       "type": "object",

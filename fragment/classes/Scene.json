@@ -6,6 +6,12 @@
       "$ref": "../partial/Scene.json"
     },
     {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Scene"

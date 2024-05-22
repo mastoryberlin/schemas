@@ -4,7 +4,7 @@
       "type": "string"
     },
     "color": {
-      "type": "string"
+      "$ref": "../../core/color.json"
     }
   },
   "required": [

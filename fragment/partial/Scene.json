@@ -1,1 +1,60 @@
-{}
+{
+  "properties": {
+    "src": {
+      "type": "string",
+      "examples": [
+        "https://storage.googleapis.com/mastory-content/test-ue-export/Nick's%20Room/SM_MERGED_Nicks_Room.gltf"
+      ]
+    },
+    "clearColor": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "environmentTextureUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "enviromentLightIntensity": {
+      "type": "number",
+      "default": 1
+    },
+    "enableToneMapping": {
+      "type": "boolean",
+      "default": false
+    },
+    "contrast": {
+      "type": "number",
+      "default": 1
+    },
+    "exposure": {
+      "type": "number",
+      "default": 1
+    },
+    "walkable": {
+      "type": "boolean",
+      "default": true
+    },
+    "initialCameraPosition": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialCameraTarget": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "required": []
+}

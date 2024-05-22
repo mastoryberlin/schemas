@@ -1,1 +1,59 @@
-{}
+{
+  "properties": {
+    "currentPosition": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0
+      ]
+    },
+    "currentRotation": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "currentScale": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0
+      ]
+    },
+    "targetPosition": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0
+      ]
+    },
+    "targetRotation": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "targetScale": {
+      "type": "array",
+      "default": [
+        0,
+        0,
+        0
+      ]
+    },
+    "animationSpeed": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "required": []
+}

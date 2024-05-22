@@ -3,16 +3,19 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Mesh.json"
+      "$ref": "../partial/CsZoomInTool.json"
     },
     {
-      "$ref": "../partial/Mesh2.json"
+      "$ref": "../partial/CsZoomTool.json"
     },
     {
-      "$ref": "../partial/Transformable32.json"
+      "$ref": "../partial/CsTool.json"
     },
     {
-      "$ref": "../partial/Transformable3.json"
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
     },
     {
       "$ref": "../partial/Fragment.json"
@@ -20,7 +23,7 @@
     {
       "properties": {
         "class": {
-          "const": "Mesh"
+          "const": "CsZoomInTool"
         }
       }
     }

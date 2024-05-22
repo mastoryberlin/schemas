@@ -28,13 +28,22 @@
           "$ref": "./classes/Activity.json"
         },
         {
+          "$ref": "./classes/Box3.json"
+        },
+        {
           "$ref": "./classes/Button.json"
         },
         {
           "$ref": "./classes/Card.json"
         },
         {
+          "$ref": "./classes/Checkbox.json"
+        },
+        {
           "$ref": "./classes/ClickableElement.json"
+        },
+        {
+          "$ref": "./classes/ClickableMesh.json"
         },
         {
           "$ref": "./classes/Component.json"
@@ -76,7 +85,19 @@
           "$ref": "./classes/CsTool.json"
         },
         {
+          "$ref": "./classes/CsZoomInTool.json"
+        },
+        {
+          "$ref": "./classes/CsZoomOutTool.json"
+        },
+        {
+          "$ref": "./classes/CsZoomTool.json"
+        },
+        {
           "$ref": "./classes/DetachedInput.json"
+        },
+        {
+          "$ref": "./classes/Embed.json"
         },
         {
           "$ref": "./classes/EmptyArea.json"
@@ -91,6 +112,9 @@
           "$ref": "./classes/Fragment.json"
         },
         {
+          "$ref": "./classes/Group3.json"
+        },
+        {
           "$ref": "./classes/Handheld.json"
         },
         {
@@ -100,10 +124,16 @@
           "$ref": "./classes/InputSolve.json"
         },
         {
+          "$ref": "./classes/Label3.json"
+        },
+        {
           "$ref": "./classes/Layout.json"
         },
         {
           "$ref": "./classes/Level.json"
+        },
+        {
+          "$ref": "./classes/Mesh.json"
         },
         {
           "$ref": "./classes/Meta.json"
@@ -133,6 +163,9 @@
           "$ref": "./classes/SampleSolveArrayElement.json"
         },
         {
+          "$ref": "./classes/Scene.json"
+        },
+        {
           "$ref": "./classes/SelectImagePart.json"
         },
         {
@@ -160,7 +193,13 @@
           "$ref": "./classes/TableRow.json"
         },
         {
+          "$ref": "./classes/Text.json"
+        },
+        {
           "$ref": "./classes/TextInput.json"
+        },
+        {
+          "$ref": "./classes/Transformable3.json"
         },
         {
           "$ref": "./classes/UiElement.json"
@@ -189,13 +228,22 @@
           "class": "Activity"
         },
         {
+          "class": "Box3"
+        },
+        {
           "class": "Button"
         },
         {
           "class": "Card"
         },
         {
+          "class": "Checkbox"
+        },
+        {
           "class": "ClickableElement"
+        },
+        {
+          "class": "ClickableMesh"
         },
         {
           "class": "Component"
@@ -237,7 +285,19 @@
           "class": "CsTool"
         },
         {
+          "class": "CsZoomInTool"
+        },
+        {
+          "class": "CsZoomOutTool"
+        },
+        {
+          "class": "CsZoomTool"
+        },
+        {
           "class": "DetachedInput"
+        },
+        {
+          "class": "Embed"
         },
         {
           "class": "EmptyArea"
@@ -252,6 +312,9 @@
           "class": "Fragment"
         },
         {
+          "class": "Group3"
+        },
+        {
           "class": "Handheld"
         },
         {
@@ -261,10 +324,16 @@
           "class": "InputSolve"
         },
         {
+          "class": "Label3"
+        },
+        {
           "class": "Layout"
         },
         {
           "class": "Level"
+        },
+        {
+          "class": "Mesh"
         },
         {
           "class": "Meta"
@@ -294,6 +363,9 @@
           "class": "SampleSolveArrayElement"
         },
         {
+          "class": "Scene"
+        },
+        {
           "class": "SelectImagePart"
         },
         {
@@ -321,7 +393,13 @@
           "class": "TableRow"
         },
         {
+          "class": "Text"
+        },
+        {
           "class": "TextInput"
+        },
+        {
+          "class": "Transformable3"
         },
         {
           "class": "UiElement"
