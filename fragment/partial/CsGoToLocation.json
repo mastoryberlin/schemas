@@ -6,26 +6,12 @@
         "myToolId"
       ]
     },
-    "targetLocation": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "number"
-          },
-          "minItems": 2,
-          "maxItems": 2
-        }
-      ],
+    "targetFlow": {
+      "type": "string",
+      "pattern": "^\\w+(?:\\.flow)?$",
       "examples": [
-        [
-          -2,
-          3.5
-        ],
-        "myUnitVariable"
+        "myFlow",
+        "coolStory.flow"
       ]
     },
     "unmountToolWhenDone": {
@@ -35,6 +21,6 @@
   },
   "required": [
     "tool",
-    "targetLocation"
+    "targetFlow"
   ]
 }

@@ -46,6 +46,9 @@
           "$ref": "./classes/ClickableMesh.json"
         },
         {
+          "$ref": "./classes/ClosedQuestion.json"
+        },
+        {
           "$ref": "./classes/Component.json"
         },
         {
@@ -178,6 +181,9 @@
           "$ref": "./classes/SolvableActivity.json"
         },
         {
+          "$ref": "./classes/SolvableQuestion.json"
+        },
+        {
           "$ref": "./classes/StubActivity.json"
         },
         {
@@ -244,6 +250,9 @@
         },
         {
           "class": "ClickableMesh"
+        },
+        {
+          "class": "ClosedQuestion"
         },
         {
           "class": "Component"
@@ -376,6 +385,9 @@
         },
         {
           "class": "SolvableActivity"
+        },
+        {
+          "class": "SolvableQuestion"
         },
         {
           "class": "StubActivity"

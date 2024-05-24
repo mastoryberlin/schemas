@@ -27,6 +27,9 @@
           ]
         }
       ]
+    },
+    "supportByEnforcingAllSupportives": {
+      "type": "boolean"
     }
   },
   "required": [

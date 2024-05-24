@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "intents": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9][a-z0-9+]*(?:[A-Z][a-z0-9+]*)*$": {
+          "type": "object",
+          "properties": {
+            "scope": {
+              "type": "object",
+              "properties": {
+                "examples": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "examples"
+              ]
+            },
+            "reaction": {
+              "$ref": "../../core/flow.json"
+            },
+            "human": {
+              "$ref": "../../meta/human.json"
+            }
+          },
+          "required": [
+            "scope"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sampleSolution": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "intents",
+    "sampleSolution"
+  ]
+}

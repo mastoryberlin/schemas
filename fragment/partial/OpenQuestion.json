@@ -8,12 +8,6 @@
           "properties": {
             "scope": {
               "$ref": "../../genai/contextual/intent.json"
-            },
-            "reaction": {
-              "$ref": "../../core/flow.json"
-            },
-            "human": {
-              "$ref": "../../meta/human.json"
             }
           },
           "required": [

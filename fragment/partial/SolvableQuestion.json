@@ -1,9 +1,8 @@
 {
   "properties": {
-    "amount": {
+    "numericalTolerance": {
       "type": "number",
-      "exclusiveMinimum": 0,
-      "default": 100
+      "minimum": 0
     }
   },
   "required": []

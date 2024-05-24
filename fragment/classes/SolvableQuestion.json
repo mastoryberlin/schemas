@@ -3,9 +3,6 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/OpenQuestion.json"
-    },
-    {
       "$ref": "../partial/SolvableQuestion.json"
     },
     {
@@ -26,7 +23,7 @@
     {
       "properties": {
         "class": {
-          "const": "OpenQuestion"
+          "const": "SolvableQuestion"
         }
       }
     }

@@ -3,7 +3,7 @@
     "amount": {
       "type": "number",
       "exclusiveMinimum": 0,
-      "default": 120
+      "default": 100
     }
   },
   "required": []
