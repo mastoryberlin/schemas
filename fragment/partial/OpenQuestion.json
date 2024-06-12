@@ -14,7 +14,8 @@
             "scope"
           ]
         }
-      }
+      },
+      "additionalProperties": false
     },
     "sampleSolution": {
       "type": "string"

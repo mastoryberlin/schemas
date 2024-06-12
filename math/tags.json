@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "Collect here any tags that can be assigned to units and exercises, or mentioned in achievements.",
+  "type": "string",
+  "enum": [
+    "algebra"
+  ]
+}

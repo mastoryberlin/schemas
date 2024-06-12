@@ -106,6 +106,9 @@
           "$ref": "./classes/EmptyArea.json"
         },
         {
+          "$ref": "./classes/Exercise.json"
+        },
+        {
           "$ref": "./classes/ExpandableTableCell.json"
         },
         {
@@ -176,6 +179,9 @@
         },
         {
           "$ref": "./classes/Selector.json"
+        },
+        {
+          "$ref": "./classes/Slider.json"
         },
         {
           "$ref": "./classes/SolvableActivity.json"
@@ -312,6 +318,9 @@
           "class": "EmptyArea"
         },
         {
+          "class": "Exercise"
+        },
+        {
           "class": "ExpandableTableCell"
         },
         {
@@ -382,6 +391,9 @@
         },
         {
           "class": "Selector"
+        },
+        {
+          "class": "Slider"
         },
         {
           "class": "SolvableActivity"

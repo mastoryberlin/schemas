@@ -1,6 +1,9 @@
 {
   "properties": {
-    "sampleSolution": {}
+    "sampleSolution": {},
+    "model_sampleSolution": {
+      "type": "string"
+    }
   },
   "required": [
     "sampleSolution"

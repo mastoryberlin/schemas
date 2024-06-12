@@ -24,32 +24,6 @@
         "afterDone"
       ]
     },
-    "relatedUi": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      ]
-    },
-    "unrelatedUi": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      ]
-    },
     "instructions": {
       "type": "string"
     },
@@ -115,6 +89,63 @@
         "ref",
         "is"
       ]
+    },
+    "achievements": {
+      "type": "object",
+      "properties": {
+        "components": {
+          "type": "object",
+          "patternProperties": {
+            "[a-z][a-zA-Z_0-9]*": {
+              "type": "object",
+              "properties": {
+                "does": {},
+                "category": {
+                  "type": "string"
+                },
+                "complexity": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "scores": {
+                  "type": "object",
+                  "properties": {
+                    "performance": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "self-initiative": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "extraDifficulties": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "human": {
+          "type": "string"
+        },
+        "additionalProperties": false
+      }
     }
   },
   "required": [

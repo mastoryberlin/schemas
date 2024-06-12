@@ -44,6 +44,12 @@
       "unevaluatedProperties": false,
       "default": {}
     },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "../math/tags.json"
+      }
+    },
     "symbols": {
       "type": "object",
       "patternProperties": {

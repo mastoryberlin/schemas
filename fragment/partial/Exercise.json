@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "activities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": []
+}
