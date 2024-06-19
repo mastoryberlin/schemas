@@ -3,6 +3,23 @@
   "$comment": "Collect here any tags that can be assigned to units and exercises, or mentioned in achievements.",
   "type": "string",
   "enum": [
-    "algebra"
+    "algebra",
+    "coordinatePlane",
+    "xAxis",
+    "yAxis",
+    "origin",
+    "point",
+    "coordinates",
+    "sign",
+    "basics",
+    "plotPointsWithGivenCoordinates",
+    "markXAxis",
+    "markYAxis",
+    "markOrigin",
+    "readCoordinates",
+    "complex",
+    "compare",
+    "determinPointWithProperty",
+    "zero"
   ]
 }
