@@ -3,6 +3,9 @@
     "text": {
       "type": "string"
     },
+    "icon": {
+      "type": "string"
+    },
     "label": {
       "$ref": "./label.json"
     }

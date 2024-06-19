@@ -18,6 +18,31 @@
       "type": "boolean",
       "default": true
     },
+    "reentryPoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "object",
+            "properties": {
+              "levelFinished": {
+                "description": "The fragment ID of a Level that needs to be completed for this reentry point.",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "unit"
+        ],
+        "additionalProperties": false
+      }
+    },
     "title": {
       "type": "string",
       "minLength": 1

@@ -3,6 +3,9 @@
     "value": {},
     "model": {
       "$ref": "../../core/identifier.json"
+    },
+    "controllingActivity": {
+      "type": "string"
     }
   },
   "required": []

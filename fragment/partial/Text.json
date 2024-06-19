@@ -3,27 +3,25 @@
     "text": {
       "type": "string"
     },
+    "model_text": {
+      "type": "string"
+    },
     "size": {
       "type": "string",
-      "enum": {
-        "type": "string",
-        "enum": [
-          "small",
-          "medium",
-          "large"
-        ]
-      }
+      "enum": [
+        "small",
+        "medium",
+        "large",
+        "huge"
+      ]
     },
     "align": {
       "type": "string",
-      "enum": {
-        "type": "string",
-        "enum": [
-          "left",
-          "center",
-          "right"
-        ]
-      }
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
     }
   },
   "required": [

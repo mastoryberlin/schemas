@@ -9,6 +9,9 @@
         "type": "string"
       }
     },
+    "tutorial": {
+      "type": "string"
+    },
     "introFlow": {
       "$ref": "../../core/flow.json"
     },

@@ -16,16 +16,13 @@
           "$ref": "./classes/Accordion.json"
         },
         {
-          "$ref": "./classes/AccordionButton.json"
-        },
-        {
-          "$ref": "./classes/AccordionContent.json"
-        },
-        {
           "$ref": "./classes/AccordionTab.json"
         },
         {
           "$ref": "./classes/Activity.json"
+        },
+        {
+          "$ref": "./classes/Arrow.json"
         },
         {
           "$ref": "./classes/Box3.json"
@@ -228,16 +225,13 @@
           "class": "Accordion"
         },
         {
-          "class": "AccordionButton"
-        },
-        {
-          "class": "AccordionContent"
-        },
-        {
           "class": "AccordionTab"
         },
         {
           "class": "Activity"
+        },
+        {
+          "class": "Arrow"
         },
         {
           "class": "Box3"

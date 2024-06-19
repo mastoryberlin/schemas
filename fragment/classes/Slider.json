@@ -6,6 +6,21 @@
       "$ref": "../partial/Slider.json"
     },
     {
+      "$ref": "../partial/InputWithLabel.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
       "properties": {
         "class": {
           "const": "Slider"

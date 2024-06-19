@@ -1,0 +1,25 @@
+{
+  "properties": {
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "color": {
+      "$ref": "../../core/color.json"
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "up",
+        "down",
+        "left",
+        "right"
+      ]
+    }
+  },
+  "required": [
+    "direction"
+  ]
+}

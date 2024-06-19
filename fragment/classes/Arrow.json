@@ -3,10 +3,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/AccordionButton.json"
-    },
-    {
-      "$ref": "../partial/ClickableElement.json"
+      "$ref": "../partial/Arrow.json"
     },
     {
       "$ref": "../partial/UiElement.json"
@@ -17,7 +14,7 @@
     {
       "properties": {
         "class": {
-          "const": "AccordionButton"
+          "const": "Arrow"
         }
       }
     }
