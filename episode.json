@@ -54,6 +54,12 @@
     "thumbnailPosition": {
       "type": "string",
       "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "./math/tags.json"
+      }
     }
   },
   "additionalProperties": false,
