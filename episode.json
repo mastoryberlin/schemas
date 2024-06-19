@@ -60,6 +60,9 @@
       "items": {
         "$ref": "./math/tags.json"
       }
+    },
+    "mathTopic": {
+      "type": "string"
     }
   },
   "additionalProperties": false,
