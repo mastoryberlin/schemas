@@ -1,0 +1,27 @@
+on:
+  workflow_call:
+
+jobs:
+  ts-to-json-schemas:
+    name: Create JSON Schemas from Updated TS Definitions
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: git checkout
+      uses: actions/checkout@master
+      with:
+        fetch-depth: 0
+    - name: extract JSON schemas
+      run: |
+        find . -type f -exec bash -c 'mkdir -p "../$(dirname "$1")" && sed -E -e "s/^\s*export\s+default\s*|\s*as\s+const\s*$//" "$1" >"../${1:0:-3}.json"' sh {} \;
+    - name: GIT commit and push all changed files
+      env: 
+        CI_COMMIT_MESSAGE: 'chore: extract JSON schemas from updated TS defs'
+        CI_COMMIT_AUTHOR: Continuous Integration
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "username@users.noreply.github.com"
+        git add -A
+        git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push
