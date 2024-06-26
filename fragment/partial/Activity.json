@@ -101,7 +101,55 @@
               "properties": {
                 "does": {},
                 "category": {
-                  "type": "string"
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "makeSenseOfProblemsAndPersevereInSolvingThem",
+                        "reasonAbstractlyAndQuantitatively",
+                        "constructViableArgumentsAndCritiqueTheReasoningOfOthers",
+                        "modelWithMathematics",
+                        "useAppropriateToolsStrategically",
+                        "attendToPrecision",
+                        "lookForAndMakeUseOfStructure",
+                        "lookForAndExpressRegularityInRepeatedReasoning​",
+                        "translateBetweenRepresentationForms",
+                        "topicSpecificProficiency",
+                        "translateBetweenProblems",
+                        "selectiveAttention",
+                        "memory",
+                        "languageCompetency",
+                        "diligence",
+                        "motoricProficiency",
+                        "makeSenseOfTheSituation"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "makeSenseOfProblemsAndPersevereInSolvingThem",
+                          "reasonAbstractlyAndQuantitatively",
+                          "constructViableArgumentsAndCritiqueTheReasoningOfOthers",
+                          "modelWithMathematics",
+                          "useAppropriateToolsStrategically",
+                          "attendToPrecision",
+                          "lookForAndMakeUseOfStructure",
+                          "lookForAndExpressRegularityInRepeatedReasoning​",
+                          "translateBetweenRepresentationForms",
+                          "topicSpecificProficiency",
+                          "translateBetweenProblems",
+                          "selectiveAttention",
+                          "memory",
+                          "languageCompetency",
+                          "diligence",
+                          "motoricProficiency",
+                          "makeSenseOfTheSituation"
+                        ]
+                      }
+                    }
+                  ]
                 },
                 "complexity": {
                   "type": "number",
