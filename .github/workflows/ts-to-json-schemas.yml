@@ -13,6 +13,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: extract JSON schemas
+      working-directory: ts
       run: |
         find . -type f -exec bash -c 'mkdir -p "../$(dirname "$1")" && sed -E -e "s/^\s*export\s+default\s*|\s*as\s+const\s*$//" "$1" >"../${1:0:-3}.json"' sh {} \;
     - name: GIT commit and push all changed files

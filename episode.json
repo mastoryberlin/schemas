@@ -7,12 +7,27 @@
       "type": "string"
     },
     "unit": {
+      "description": "A reference to an existing unit that serves as this episode's challenge.",
       "type": "string",
       "pattern": "^\\w+$"
     },
     "public": {
-      "type": "boolean",
-      "default": true
+      "description": "Whether this episode is publicly accessible. If set to a date-string, the episode will be automatically released on that day, and announced accordingly beforehand.",
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "pattern": "^2\\d{3}-(?:(?:0[469]|11)-(?:0[1-9]|[12][0-9]|30)|(?:0[13578]|1[02])-(?:0[1-9]|[12][0-9]|3[01])|02-(?:0[1-9]|[12][0-9]))$"
+        }
+      ],
+      "default": true,
+      "examples": [
+        true,
+        "2024-11-30",
+        false
+      ]
     },
     "prepares": {
       "type": "boolean",

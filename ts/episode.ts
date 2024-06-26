@@ -34,6 +34,7 @@ export default {
       "default": true
     },
     "reentryPoints": {
+      "description": "A list of persistable points within the episode from where a user can restart it in a new session.",
       "type": "array",
       "items": {
         "type": "object",
