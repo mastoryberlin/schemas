@@ -71,6 +71,18 @@ export default {
       "type": "string",
       "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"
     },
+    "standards": {
+      "type": "object",
+      "properties": {
+        "ccss": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
     "tags": {
       "type": "array",
       "items": {
