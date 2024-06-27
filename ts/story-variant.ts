@@ -8,6 +8,10 @@ export default {
     },
     "title": {
       "type": "string"
+    },
+    "season": {
+      "type": "integer",
+      "minimum": 1
     }
   },
   "additionalProperties": false,
