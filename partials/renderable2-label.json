@@ -10,7 +10,6 @@
         "mode": {
           "type": "string",
           "enum": [
-            "none",
             "value",
             "name",
             "custom"
