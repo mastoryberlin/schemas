@@ -2,6 +2,9 @@
   "properties": {
     "watchedInput": {
       "$ref": "../../core/identifier.json"
+    },
+    "watchValueChanges": {
+      "type": "boolean"
     }
   },
   "required": [

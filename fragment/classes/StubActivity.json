@@ -6,15 +6,6 @@
       "$ref": "../partial/StubActivity.json"
     },
     {
-      "$ref": "../partial/SelectOneOfSeveralOptions.json"
-    },
-    {
-      "$ref": "../partial/SampleSolve.json"
-    },
-    {
-      "$ref": "../partial/InputSolve.json"
-    },
-    {
       "$ref": "../partial/SolvableActivity.json"
     },
     {

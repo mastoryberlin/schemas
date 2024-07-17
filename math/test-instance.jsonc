@@ -2,25 +2,25 @@
   "$schema": "./test.json",
   "constants": {
     "sami83j_Solution": [
-      "Point2",
+      "Sprite",
       {
         "id": "a",
         "components": [
           35,
           2
         ],
-        "color": "purple-1"
+        "allowedInteractions": {
+          "drag": true
+        }
       }
     ]
   },
   "variables": {
     "bubu": [
-      "Point2",
+      "Flag",
       {
-        "id": "a",
-        "groups": [
-          "hey"
-        ]
+        "id": "b",
+        "flagColor": "green1"
       }
     ]
   },
