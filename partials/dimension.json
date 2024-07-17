@@ -1,0 +1,9 @@
+{
+  "$id": "https://mastory.io/schemas/partials/dimension.json",
+  "type": "object",
+  "properties": {
+    "dimension": {
+      "type": "number"
+    }
+  }
+}

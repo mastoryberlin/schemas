@@ -1,0 +1,22 @@
+{
+  "$id": "https://mastory.io/schemas/partials/fragment-label.json",
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "allOf": [
+        {
+          "$ref": "./label.json"
+        },
+        {
+          "properties": {
+            "position": {
+              "$ref": "./label-position.json"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
