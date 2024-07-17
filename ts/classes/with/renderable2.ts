@@ -10,7 +10,7 @@ export default {
           "const": "Point2"
         },
         {
-          "$ref": "../classes/Point2.json"
+          "$ref": "../Point2.json"
         }
       ]
     },
@@ -20,7 +20,7 @@ export default {
           "const": "Sprite"
         },
         {
-          "$ref": "../classes/Sprite.json"
+          "$ref": "../Sprite.json"
         }
       ]
     },
@@ -30,12 +30,11 @@ export default {
           "const": "Flag"
         },
         {
-          "$ref": "../classes/Flag.json"
+          "$ref": "../Flag.json"
         }
       ]
     }
   ],
   "minItems": 2,
-  "maxItems": 2,
-  "unevaluatedProperties": false
+  "maxItems": 2
 } as const satisfies JSONSchema

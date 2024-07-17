@@ -5,6 +5,7 @@
       "Sprite",
       {
         "id": "a",
+        "pointColor": "green1",
         "components": [
           35,
           2

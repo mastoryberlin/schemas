@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "oneOf": [
     {
-      "$ref": "../math/instance.json"
+      "$ref": "../classes/with/renderable2.json"
     },
     {
       "type": "array",
@@ -16,7 +16,7 @@
         {
           "type": "array",
           "items": {
-            "$ref": "../math/instance.json"
+            "$ref": "../classes/with/renderable2.json"
           }
         }
       ]
