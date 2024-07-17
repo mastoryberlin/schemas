@@ -1,0 +1,8 @@
+{
+  "$schema": "../../classes/Point2.json",
+  "x": 0,
+  "label": {
+    "mode": "name"
+  },
+  "color": "orange4"
+}

@@ -3,13 +3,36 @@
   "type": "array",
   "oneOf": [
     {
-      "$ref": "./classes/Point2.json"
+      "items": [
+        {
+          "const": "Point2"
+        },
+        {
+          "$ref": "../classes/Point2.json"
+        }
+      ]
     },
     {
-      "$ref": "./classes/Sprite.json"
+      "items": [
+        {
+          "const": "Sprite"
+        },
+        {
+          "$ref": "../classes/Sprite.json"
+        }
+      ]
     },
     {
-      "$ref": "./classes/Flag.json"
+      "items": [
+        {
+          "const": "Flag"
+        },
+        {
+          "$ref": "../classes/Flag.json"
+        }
+      ]
     }
-  ]
+  ],
+  "minItems": 2,
+  "maxItems": 2
 }

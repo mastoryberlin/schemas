@@ -12,7 +12,6 @@ export default {
         "mode": {
           "type": "string",
           "enum": [
-            "none",
             "value",
             "name",
             "custom"

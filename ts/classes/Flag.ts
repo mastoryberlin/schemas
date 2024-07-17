@@ -2,7 +2,7 @@ import type { JSONSchema } from "json-schema-to-ts";
 
 export default {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://mastory.io/schemas/classes/Point2.json",
+  "$id": "https://mastory.io/schemas/classes/Sprite.json",
   "allOf": [
     {
       "type": "object",
@@ -19,10 +19,16 @@ export default {
       "$ref": "../partials/renderable2.json"
     },
     {
-      "$ref": "../partials/color.json"
+      "$ref": "../partials/Sprite.json"
+    },
+    {
+      "properties": {
+        "flagColor": {
+          "$ref": "../core/color.json"
+        }
+      }
     }
   ],
   "unevaluatedProperties": false,
-  "required": [
-  ]
+  "required": []
 } as const satisfies JSONSchema
