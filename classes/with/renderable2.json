@@ -1,17 +1,39 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "https://mastory.io/schemas/classes/Sprite.json",
-  "anyOf": [
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "oneOf": [
     {
-      "$ref": "../Flag.json"
+      "items": [
+        {
+          "const": "Point2"
+        },
+        {
+          "$ref": "../classes/Point2.json"
+        }
+      ]
     },
     {
-      "$ref": "../Point2.json"
+      "items": [
+        {
+          "const": "Sprite"
+        },
+        {
+          "$ref": "../classes/Sprite.json"
+        }
+      ]
     },
     {
-      "$ref": "../Sprite.json"
+      "items": [
+        {
+          "const": "Flag"
+        },
+        {
+          "$ref": "../classes/Flag.json"
+        }
+      ]
     }
   ],
-  "unevaluatedProperties": false,
-  "required": []
+  "minItems": 2,
+  "maxItems": 2,
+  "unevaluatedProperties": false
 }
