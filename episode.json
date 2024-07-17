@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/content/story.json",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "unit": {
+      "description": "A reference to an existing unit that serves as this episode's challenge.",
+      "type": "string",
+      "pattern": "^\\w+$"
+    },
+    "public": {
+      "description": "Whether this episode is publicly accessible. If set to a date-string, the episode will be automatically released on that day, and announced accordingly beforehand.",
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "pattern": "^2\\d{3}-(?:(?:0[469]|11)-(?:0[1-9]|[12][0-9]|30)|(?:0[13578]|1[02])-(?:0[1-9]|[12][0-9]|3[01])|02-(?:0[1-9]|[12][0-9]))$"
+        }
+      ],
+      "default": true,
+      "examples": [
+        true,
+        "2024-11-30",
+        false
+      ]
+    },
+    "prepares": {
+      "type": "boolean",
+      "default": true
+    },
+    "reentryPoints": {
+      "description": "A list of persistable points within the episode from where a user can restart it in a new session.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "unit": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "object",
+            "properties": {
+              "levelFinished": {
+                "description": "The fragment ID of a Level that needs to be completed for this reentry point.",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "unit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "thumbnailUrl": {
+      "type": "string",
+      "pattern": "\\w+://\\w+"
+    },
+    "thumbnailPosition": {
+      "type": "string",
+      "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"
+    },
+    "standards": {
+      "type": "object",
+      "properties": {
+        "ccss": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "./math/tags.json"
+      }
+    },
+    "mathTopic": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "unit",
+    "title",
+    "thumbnailUrl"
+  ]
+}
