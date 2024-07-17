@@ -1,15 +1,20 @@
 {
   "$id": "https://mastory.io/schemas/partials/tuple2.json",
+  "type": "object",
   "allOf": [
     {
-      "$ref": "./tuple1.json"
-    },
+      "$ref": "./tuple.json"
+    } as unknown as typeof Tuple,
     {
       "properties": {
+        "x": {
+          "type": "number"
+        },
         "y": {
           "type": "number"
         }
       }
     }
-  ]
+  ],
+  "unevaluatedProperties": true
 }
