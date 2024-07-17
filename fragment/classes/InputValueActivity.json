@@ -3,10 +3,19 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Card.json"
+      "$ref": "../partial/InputValueActivity.json"
     },
     {
-      "$ref": "../partial/ClickableElement.json"
+      "$ref": "../partial/InputSolve.json"
+    },
+    {
+      "$ref": "../partial/SolvableActivity.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/NavigationElement.json"
     },
     {
       "$ref": "../partial/UiElement.json"
@@ -17,7 +26,7 @@
     {
       "properties": {
         "class": {
-          "const": "Card"
+          "const": "InputValueActivity"
         }
       }
     }

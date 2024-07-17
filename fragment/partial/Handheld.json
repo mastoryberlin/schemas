@@ -52,6 +52,10 @@
       "type": "boolean",
       "default": true
     },
+    "initiallyFaded": {
+      "type": "boolean",
+      "default": true
+    },
     "initiallyLocked": {
       "type": "boolean",
       "default": true

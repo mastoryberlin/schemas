@@ -3,14 +3,40 @@
     "text": {
       "type": "string"
     },
-    "tip": {
+    "hint": {
       "type": "string"
     },
     "color": {
       "$ref": "../../core/color.json"
+    },
+    "image": {
+      "oneOf": [
+        {
+          "$ref": "../../core/url.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "src": {
+              "$ref": "../../core/url.json"
+            },
+            "position": {
+              "type": "string",
+              "examples": [
+                "center",
+                "213px -60px",
+                "calc(50% - 40px) calc(50% + 86px)"
+              ],
+              "default": "x-offset y-offset"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "src"
+          ]
+        }
+      ]
     }
   },
-  "required": [
-    "text"
-  ]
+  "required": []
 }

@@ -1,5 +1,11 @@
 {
   "properties": {
+    "value": {
+      "type": "array",
+      "items": {
+        "$ref": "../../math/instance.json"
+      }
+    },
     "zoom": {
       "type": "number"
     },

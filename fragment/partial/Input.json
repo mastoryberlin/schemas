@@ -6,6 +6,9 @@
     },
     "controllingActivity": {
       "type": "string"
+    },
+    "validationError": {
+      "type": "string"
     }
   },
   "required": []

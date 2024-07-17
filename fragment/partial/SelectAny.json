@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "allowEmptySelection": {
+      "type": "boolean"
+    }
+  },
+  "required": []
+}

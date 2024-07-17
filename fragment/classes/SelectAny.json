@@ -3,10 +3,22 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Card.json"
+      "$ref": "../partial/SelectAny.json"
     },
     {
-      "$ref": "../partial/ClickableElement.json"
+      "$ref": "../partial/InputActivity.json"
+    },
+    {
+      "$ref": "../partial/InputSolve.json"
+    },
+    {
+      "$ref": "../partial/SolvableActivity.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/NavigationElement.json"
     },
     {
       "$ref": "../partial/UiElement.json"
@@ -17,7 +29,7 @@
     {
       "properties": {
         "class": {
-          "const": "Card"
+          "const": "SelectAny"
         }
       }
     }

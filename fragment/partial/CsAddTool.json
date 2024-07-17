@@ -2,6 +2,9 @@
   "properties": {
     "addObjectPrototype": {
       "$ref": "../../math/instance.json"
+    },
+    "deselectAfterAdding": {
+      "type": "boolean"
     }
   },
   "required": []

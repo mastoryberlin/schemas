@@ -1,7 +1,11 @@
 {
   "properties": {
     "src": {
-      "type": "string"
+      "type": "string",
+      "examples": [
+        "https://storage.googleapis.com/mastory-content/images/myImage.png"
+      ],
+      "default": "https://storage.googleapis.com/mastory-content/images/"
     },
     "size": {
       "type": "string",

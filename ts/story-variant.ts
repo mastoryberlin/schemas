@@ -1,3 +1,5 @@
+import type { JSONSchema } from "json-schema-to-ts";
+
 export default {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://mastory.io/schemas/content/story-variant.json",
@@ -18,4 +20,4 @@ export default {
   "required": [
     "title"
   ]
-} as const
+} as const satisfies JSONSchema

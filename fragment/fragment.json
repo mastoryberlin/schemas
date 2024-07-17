@@ -37,6 +37,12 @@
           "$ref": "./classes/Checkbox.json"
         },
         {
+          "$ref": "./classes/ChoosePlayerAvatar.json"
+        },
+        {
+          "$ref": "./classes/ChoosePlayerNickname.json"
+        },
+        {
           "$ref": "./classes/ClickableElement.json"
         },
         {
@@ -94,9 +100,6 @@
           "$ref": "./classes/CsZoomTool.json"
         },
         {
-          "$ref": "./classes/DetachedInput.json"
-        },
-        {
           "$ref": "./classes/Embed.json"
         },
         {
@@ -122,6 +125,9 @@
         },
         {
           "$ref": "./classes/Image.json"
+        },
+        {
+          "$ref": "./classes/InputActivity.json"
         },
         {
           "$ref": "./classes/InputSolve.json"
@@ -169,6 +175,9 @@
           "$ref": "./classes/Scene.json"
         },
         {
+          "$ref": "./classes/SelectAny.json"
+        },
+        {
           "$ref": "./classes/SelectImagePart.json"
         },
         {
@@ -208,6 +217,9 @@
           "$ref": "./classes/TextInput.json"
         },
         {
+          "$ref": "./classes/TextInputActivity.json"
+        },
+        {
           "$ref": "./classes/Transformable3.json"
         },
         {
@@ -244,6 +256,12 @@
         },
         {
           "class": "Checkbox"
+        },
+        {
+          "class": "ChoosePlayerAvatar"
+        },
+        {
+          "class": "ChoosePlayerNickname"
         },
         {
           "class": "ClickableElement"
@@ -303,9 +321,6 @@
           "class": "CsZoomTool"
         },
         {
-          "class": "DetachedInput"
-        },
-        {
           "class": "Embed"
         },
         {
@@ -331,6 +346,9 @@
         },
         {
           "class": "Image"
+        },
+        {
+          "class": "InputActivity"
         },
         {
           "class": "InputSolve"
@@ -378,6 +396,9 @@
           "class": "Scene"
         },
         {
+          "class": "SelectAny"
+        },
+        {
           "class": "SelectImagePart"
         },
         {
@@ -415,6 +436,9 @@
         },
         {
           "class": "TextInput"
+        },
+        {
+          "class": "TextInputActivity"
         },
         {
           "class": "Transformable3"
