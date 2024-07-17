@@ -1,7 +1,7 @@
 import type { JSONSchema } from "json-schema-to-ts";
 
 export default {
-  "$id": "https://mastory.io/schemas/math/tuple1.json",
+  "$id": "https://mastory.io/schemas/partials/tuple1.json",
   "allOf": [
     {
       "$ref": "./tuple.json"

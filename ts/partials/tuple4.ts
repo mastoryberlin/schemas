@@ -1,14 +1,14 @@
 import type { JSONSchema } from "json-schema-to-ts";
 
 export default {
-  "$id": "https://mastory.io/schemas/math/tuple2.json",
+  "$id": "https://mastory.io/schemas/partials/tuple4.json",
   "allOf": [
     {
-      "$ref": "./tuple1.json"
+      "$ref": "./tuple3.json"
     },
     {
       "properties": {
-        "y": {
+        "w": {
           "type": "number"
         }
       }
