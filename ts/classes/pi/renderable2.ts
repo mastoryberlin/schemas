@@ -27,16 +27,16 @@ export default {
           "$ref": "../Sprite.json"
         } as unknown as typeof Sprite
       ]
-    },
-    {
-      "items": [
-        {
-          "const": "Flag"
-        },
-        {
-          "$ref": "../Flag.json"
-        } as unknown as typeof Flag
-      ]
+      // },
+      // {
+      //   "items": [
+      //     {
+      //       "const": "Flag"
+      //     },
+      //     {
+      //       "$ref": "../Flag.json"
+      //     } as unknown as typeof Flag
+      //   ]
     }
   ],
   "minItems": 2,
