@@ -4,7 +4,7 @@
   "properties": {
     "id": {
       "$ref": "../core/identifier.json"
-    },
+    } as unknown as typeof Identifier,
     "visible": {
       "type": "boolean"
     },
@@ -15,7 +15,7 @@
         },
         {
           "$ref": "./renderable2-label.json"
-        }
+        } as unknown as typeof Renderable2Label
       ]
     },
     "allowedInteractions": {

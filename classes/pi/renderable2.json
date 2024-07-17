@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "oneOf": [
+    {
+      "items": [
+        {
+          "const": "Point2"
+        },
+        {
+          "$ref": "../Point2.json"
+        } as unknown as typeof Point2
+      ]
+    },
+    {
+      "items": [
+        {
+          "const": "Sprite"
+        },
+        {
+          "$ref": "../Sprite.json"
+        } as unknown as typeof Sprite
+      ]
+    },
+    {
+      "items": [
+        {
+          "const": "Flag"
+        },
+        {
+          "$ref": "../Flag.json"
+        } as unknown as typeof Flag
+      ]
+    }
+  ],
+  "minItems": 2,
+  "maxItems": 2
+}
