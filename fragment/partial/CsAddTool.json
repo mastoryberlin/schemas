@@ -1,7 +1,14 @@
 {
   "properties": {
     "addObjectPrototype": {
-      "$ref": "../../math/instance.json"
+      "allOf": [
+        {
+          "$ref": "../../classes/pi/renderable2.json"
+        },
+        {
+          "description": "Use this property to define a Renderable2 \"prototype\" in PI syntax; this will be used by the tool to add a new instance to the CoordinateSystem fragment's `value` array, overwriting its `x` and `y` properties with the position clicked by the user."
+        }
+      ]
     },
     "deselectAfterAdding": {
       "type": "boolean"

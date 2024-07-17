@@ -1,4 +1,6 @@
-import type { JSONSchema } from "json-schema-to-ts";
+import type { FromSchema, JSONSchema } from "json-schema-to-ts";
+import Renderable2Label from './renderable2-label'
+import Identifier from '../core/identifier'
 
 export default {
   "$id": "https://mastory.io/schemas/partials/renderable2.json",
@@ -6,7 +8,7 @@ export default {
   "properties": {
     "id": {
       "$ref": "../core/identifier.json"
-    },
+    } as unknown as typeof Identifier,
     "visible": {
       "type": "boolean"
     },
@@ -17,7 +19,7 @@ export default {
         },
         {
           "$ref": "./renderable2-label.json"
-        }
+        } as unknown as typeof Renderable2Label
       ]
     },
     "allowedInteractions": {

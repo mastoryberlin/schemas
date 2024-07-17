@@ -3,7 +3,7 @@
     "value": {
       "type": "array",
       "items": {
-        "$ref": "../../classes/with/renderable2.json"
+        "$ref": "../../classes/pi/renderable2.json"
       }
     },
     "zoom": {

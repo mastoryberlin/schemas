@@ -9,6 +9,9 @@ export default {
     {
       "allOf": [
         {
+          "description": "A label displayed next to the fragment."
+        },
+        {
           "$ref": "./label.json"
         },
         {
