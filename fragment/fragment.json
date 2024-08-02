@@ -130,9 +130,6 @@
           "$ref": "./classes/InputActivity.json"
         },
         {
-          "$ref": "./classes/InputSolve.json"
-        },
-        {
           "$ref": "./classes/Label3.json"
         },
         {
@@ -161,6 +158,9 @@
         },
         {
           "$ref": "./classes/ObjectivesGroup.json"
+        },
+        {
+          "$ref": "./classes/OpenInputActivity.json"
         },
         {
           "$ref": "./classes/OpenQuestion.json"
@@ -351,9 +351,6 @@
           "class": "InputActivity"
         },
         {
-          "class": "InputSolve"
-        },
-        {
           "class": "Label3"
         },
         {
@@ -382,6 +379,9 @@
         },
         {
           "class": "ObjectivesGroup"
+        },
+        {
+          "class": "OpenInputActivity"
         },
         {
           "class": "OpenQuestion"

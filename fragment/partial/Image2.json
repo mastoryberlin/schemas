@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "src": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "src"
+  ]
+}

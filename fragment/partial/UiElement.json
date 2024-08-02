@@ -58,6 +58,12 @@
       "required": [
         "src"
       ]
+    },
+    "selectedBackgroundColor": {
+      "$ref": "../../core/color.json"
+    },
+    "selectedBorderColor": {
+      "$ref": "../../core/color.json"
     }
   },
   "required": []

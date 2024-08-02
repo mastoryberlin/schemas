@@ -3,16 +3,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/InputActivity.json"
-    },
-    {
-      "$ref": "../partial/SolvableActivity.json"
-    },
-    {
-      "$ref": "../partial/Activity.json"
-    },
-    {
-      "$ref": "../partial/NavigationElement.json"
+      "$ref": "../partial/Image2.json"
     },
     {
       "$ref": "../partial/UiElement.json"
@@ -23,7 +14,7 @@
     {
       "properties": {
         "class": {
-          "const": "InputActivity"
+          "const": "Image2"
         }
       }
     }

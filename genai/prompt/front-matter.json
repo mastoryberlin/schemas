@@ -85,6 +85,7 @@
           "items": {
             "type": "string",
             "enum": [
+              "check_numeric_input",
               "get_component_code",
               "get_components",
               "get_flow_syntax",
@@ -101,6 +102,21 @@
           "type": "array",
           "items": {
             "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "const": "check_numeric_input"
+                  },
+                  "parameters": {
+                    "$ref": "../functions/check_numeric_input/params.json"
+                  }
+                },
+                "required": [
+                  "name",
+                  "parameters"
+                ]
+              },
               {
                 "type": "object",
                 "properties": {

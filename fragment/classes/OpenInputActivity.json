@@ -3,13 +3,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/SelectImagePart.json"
-    },
-    {
-      "$ref": "../partial/SelectOneOfSeveralOptions.json"
-    },
-    {
-      "$ref": "../partial/SampleSolve.json"
+      "$ref": "../partial/OpenInputActivity.json"
     },
     {
       "$ref": "../partial/InputActivity.json"
@@ -32,7 +26,7 @@
     {
       "properties": {
         "class": {
-          "const": "SelectImagePart"
+          "const": "OpenInputActivity"
         }
       }
     }

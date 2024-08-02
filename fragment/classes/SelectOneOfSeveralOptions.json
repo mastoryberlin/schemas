@@ -9,7 +9,7 @@
       "$ref": "../partial/SampleSolve.json"
     },
     {
-      "$ref": "../partial/InputSolve.json"
+      "$ref": "../partial/InputActivity.json"
     },
     {
       "$ref": "../partial/SolvableActivity.json"
