@@ -53,6 +53,9 @@ export default {
               }
             },
             "additionalProperties": false
+          },
+          "upcomingVideo": {
+            "$ref": "./core/url.json"
           }
         },
         "required": [
