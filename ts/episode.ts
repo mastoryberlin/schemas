@@ -55,7 +55,20 @@ export default {
             "additionalProperties": false
           },
           "upcomingVideo": {
-            "$ref": "./core/url.json"
+            "type": "object",
+            "properties": {
+              "src": {
+                "$ref": "./core/url.json"
+              },
+              "toBeContinuedInVideo": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "required": [
+              "src"
+            ],
+            "additionalProperties": false
           }
         },
         "required": [
