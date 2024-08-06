@@ -1,11 +1,5 @@
 {
   "properties": {
-    "value": {
-      "type": "array",
-      "items": {
-        "$ref": "../../classes/pi/renderable2.json"
-      }
-    },
     "zoom": {
       "type": "number"
     },
