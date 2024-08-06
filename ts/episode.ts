@@ -1,4 +1,5 @@
 import type { JSONSchema } from "json-schema-to-ts";
+import url from './core/url'
 
 export default {
   "$schema": "http://json-schema.org/draft-07/schema",
@@ -59,7 +60,7 @@ export default {
             "properties": {
               "src": {
                 "$ref": "./core/url.json"
-              },
+              } as unknown as typeof url,
               "toBeContinuedInVideo": {
                 "type": "boolean",
                 "default": true
@@ -69,6 +70,10 @@ export default {
               "src"
             ],
             "additionalProperties": false
+          },
+          "letUserChooseToExit": {
+            "type": "boolean",
+            "default": true
           }
         },
         "required": [
