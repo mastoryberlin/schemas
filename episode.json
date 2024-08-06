@@ -57,7 +57,7 @@
             "properties": {
               "src": {
                 "$ref": "./core/url.json"
-              },
+              } as unknown as typeof url,
               "toBeContinuedInVideo": {
                 "type": "boolean",
                 "default": true
@@ -67,6 +67,10 @@
               "src"
             ],
             "additionalProperties": false
+          },
+          "letUserChooseToExit": {
+            "type": "boolean",
+            "default": true
           }
         },
         "required": [
