@@ -57,6 +57,7 @@ export default {
       ]
     },
     "title": {
+      "description": "A title for this worksheet.",
       "type": "string",
       "minLength": 1
     },
