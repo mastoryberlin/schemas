@@ -12,18 +12,18 @@
     },
     {
       "$ref": "../partials/tuple2.json"
-    } as unknown as typeof Tuple2,
+    },
     {
       "$ref": "../partials/renderable2.json"
-    } as unknown as typeof Renderable2,
+    },
     {
       "$ref": "../partials/Sprite.json"
-    } as unknown as typeof Sprite,
+    },
     {
       "properties": {
         "flagColor": {
           "$ref": "../core/color.json"
-        } as unknown as typeof Color
+        }
       }
     }
   ],

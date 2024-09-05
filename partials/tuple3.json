@@ -4,7 +4,7 @@
   "allOf": [
     {
       "$ref": "./tuple.json"
-    } as unknown as typeof Tuple,
+    },
     {
       "properties": {
         "x": {

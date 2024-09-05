@@ -13,13 +13,13 @@
         "oneOf": [
           {
             "$ref": "./core/identifier.json",
-          } as unknown as typeof identifier,
+          },
           {
             "type": "object",
             "properties": {
               "id": {
                 "$ref": "./core/identifier.json",
-              } as unknown as typeof identifier,
+              },
               "tags": {
                 "type": "array",
                 "items": {
@@ -53,12 +53,13 @@
       ]
     },
     "title": {
+      "description": "A title for this worksheet.",
       "type": "string",
       "minLength": 1
     },
     "thumbnailUrl": {
       "$ref": "./core/url.json"
-    } as unknown as typeof url,
+    },
     "thumbnailPosition": {
       "type": "string",
       "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"

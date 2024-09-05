@@ -9,7 +9,7 @@
         },
         {
           "$ref": "../Point2.json"
-        } as unknown as typeof Point2
+        }
       ]
     },
     {
@@ -19,7 +19,7 @@
         },
         {
           "$ref": "../Sprite.json"
-        } as unknown as typeof Sprite
+        }
       ]
     }
   ],

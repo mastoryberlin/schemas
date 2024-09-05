@@ -4,7 +4,7 @@
   "allOf": [
     {
       "$ref": "./dimension.json"
-    } as unknown as typeof Dimension,
+    },
     {
       "properties": {
         "components": {

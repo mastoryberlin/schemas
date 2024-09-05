@@ -8,10 +8,10 @@
     },
     "pointColor": {
       "$ref": "../core/color.json"
-    } as unknown as typeof Color,
+    },
     "src": {
       "$ref": "../core/url.json"
-    } as unknown as typeof Url
+    }
   },
   "unevaluatedProperties": false
 }

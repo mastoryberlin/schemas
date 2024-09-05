@@ -12,13 +12,13 @@
     },
     {
       "$ref": "../partials/tuple2.json"
-    } as unknown as typeof Tuple2,
+    },
     {
       "$ref": "../partials/renderable2.json"
-    } as unknown as typeof Renderable2,
+    },
     {
       "$ref": "../partials/color.json"
-    } as unknown as typeof Color
+    }
   ],
   "unevaluatedProperties": false,
   "required": []
