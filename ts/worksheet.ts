@@ -16,13 +16,13 @@ export default {
       "items": {
         "oneOf": [
           {
-            "$ref": "./core/identifier.json",
+            "$ref": "./core/identifier.json"
           } as unknown as typeof identifier,
           {
             "type": "object",
             "properties": {
               "id": {
-                "$ref": "./core/identifier.json",
+                "$ref": "./core/identifier.json"
               } as unknown as typeof identifier,
               "tags": {
                 "type": "array",
