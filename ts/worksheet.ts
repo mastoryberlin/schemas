@@ -36,7 +36,7 @@ export default {
           }
         ]
       },
-      "minimum": 1
+      "minItems": 1
     },
     "public": {
       "description": "Whether this worksheet is publicly accessible. If set to a date-string, the episode will be automatically released on that day, and announced accordingly beforehand.",
