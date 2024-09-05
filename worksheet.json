@@ -12,13 +12,13 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "./core/identifier.json",
+            "$ref": "./core/identifier.json"
           },
           {
             "type": "object",
             "properties": {
               "id": {
-                "$ref": "./core/identifier.json",
+                "$ref": "./core/identifier.json"
               },
               "tags": {
                 "type": "array",
