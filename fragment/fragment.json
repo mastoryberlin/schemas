@@ -196,6 +196,9 @@
           "$ref": "./classes/SolvableQuestion.json"
         },
         {
+          "$ref": "./classes/Step.json"
+        },
+        {
           "$ref": "./classes/StubActivity.json"
         },
         {

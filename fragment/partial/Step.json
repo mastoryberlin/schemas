@@ -1,6 +1,6 @@
 {
   "properties": {
-    "msg": {
+    "activityId": {
       "type": "string"
     }
   }

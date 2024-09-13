@@ -3,21 +3,24 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Fraggy.json"
+      "$ref": "../partial/shared.json"
     },
     {
-      "$ref": "../partial/Basey.json"
+      "$ref": "../partial/Step.json"
+    },
+    {
+      "$ref": "../../meta/statement/is-statement/is-statement.json"
     },
     {
       "properties": {
         "class": {
-          "const": "Fraggy"
+          "const": "Step"
         }
       }
     }
   ],
-  "unevaluatedProperties": false,
   "required": [
     "class"
-  ]
+  ],
+  "unevaluatedProperties": false
 }
