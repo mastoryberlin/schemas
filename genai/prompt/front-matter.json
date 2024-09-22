@@ -261,8 +261,12 @@
           "title": {
             "type": "string"
           },
-          "in": {},
-          "out": {}
+          "in": {
+            "type": "object"
+          },
+          "out": {
+            "type": "object"
+          }
         },
         "required": [
           "in",
