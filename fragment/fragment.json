@@ -420,6 +420,9 @@
           "class": "SolvableQuestion"
         },
         {
+          "class": "Step"
+        },
+        {
           "class": "StubActivity"
         },
         {

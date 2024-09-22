@@ -1,4 +1,6 @@
-{
+import type { JSONSchema } from "json-schema-to-ts";
+
+export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "oneOf": [
     {
@@ -97,4 +99,4 @@
       "type": "string"
     }
   ]
-}
+} as const satisfies JSONSchema
