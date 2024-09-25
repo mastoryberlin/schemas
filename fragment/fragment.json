@@ -223,6 +223,9 @@
           "$ref": "./classes/TextInputActivity.json"
         },
         {
+          "$ref": "./classes/Toggle.json"
+        },
+        {
           "$ref": "./classes/Transformable3.json"
         },
         {
@@ -445,6 +448,9 @@
         },
         {
           "class": "TextInputActivity"
+        },
+        {
+          "class": "Toggle"
         },
         {
           "class": "Transformable3"
