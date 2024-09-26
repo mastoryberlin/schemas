@@ -6,6 +6,12 @@
       "$ref": "../partial/Toggle.json"
     },
     {
+      "$ref": "../partial/InputWithLabel.json"
+    },
+    {
+      "$ref": "../partial/Input.json"
+    },
+    {
       "$ref": "../partial/ClickableElement.json"
     },
     {
