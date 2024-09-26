@@ -1,4 +1,13 @@
 {
-  "properties": {},
-  "required": []
+  "properties": {
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "options"
+  ]
 }
