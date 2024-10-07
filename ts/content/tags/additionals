@@ -1,0 +1,21 @@
+# adjectives for difficulty level
+advanced #3
+basic #1
+complex #4
+intermediate #2
+master #5
+# CS tool control tags
+negativeXTool
+negativeYTool
+nonNegativeXTool
+nonNegativeYTool
+nonPositiveXTool
+nonPositiveYTool
+originTool
+positiveXTool
+positiveYTool
+# number of solution control tags
+eachIsSolution
+noSolution
+oneSolution
+someSolution

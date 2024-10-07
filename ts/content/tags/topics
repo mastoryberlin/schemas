@@ -1,0 +1,64 @@
+#verbs
+add
+calculate
+describe
+divide
+find
+identify
+know concept
+know convention
+locate by setting a point
+mark
+multiply
+plot
+read coordinates
+subtract
+understand concept
+#general
+coordinatePlane
+lineSegment
+numberLine
+orderOfSomeThings
+point
+position
+sign
+unit
+vector
+# coordinates
+coordinateAxes
+coordinates
+independenceOfDimensions
+origin
+x-direction
+y-direction
+# numbers
+decimalNumbers
+integers
+neighboringIntegers
+positiveNumbers
+powersOfTen
+theNumberOne
+theNumberZero
+# measuring units
+foot
+# domain control
+integers
+rationalNumbers
+# range control
+absZeroToHundred
+absZeroToHundredTousand
+absZeroToMillion
+absZeroToTen
+absZeroToTenTousand
+absZeroToTousand
+# decimal digit control (after the dot) 
+manyDigit
+oneDigit
+threeDigit
+twoDigit
+# sign control
+allNegative
+allPositive # all involved numbers are positive
+mixedSigns # it's sure that both signs are involved
+randomSigns # sign is randomly assigned to the numbers
+
