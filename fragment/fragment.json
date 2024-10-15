@@ -109,6 +109,9 @@
           "$ref": "./classes/Exercise.json"
         },
         {
+          "$ref": "./classes/ExpressionInput.json"
+        },
+        {
           "$ref": "./classes/ExpandableTableCell.json"
         },
         {
@@ -334,6 +337,9 @@
         },
         {
           "class": "Exercise"
+        },
+        {
+          "class": "ExpressionInput"
         },
         {
           "class": "ExpandableTableCell"
