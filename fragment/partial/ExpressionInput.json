@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "template": {
+      "type": "string"
+    },
+  },
+  "required": []
+}
