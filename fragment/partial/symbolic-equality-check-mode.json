@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "formal identity",
+    "canonical",
+    "mathematical equivalence"
+  ]
+}
