@@ -76,6 +76,9 @@
           "$ref": "./classes/CsAddTool.json"
         },
         {
+          "$ref": "./classes/CsCircle.json"
+        },
+        {
           "$ref": "./classes/CsGoToLocation.json"
         },
         {
@@ -307,6 +310,9 @@
         },
         {
           "class": "CsAddTool"
+        },
+        {
+          "class": "CsCircle"
         },
         {
           "class": "CsGoToLocation"
