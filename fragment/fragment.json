@@ -31,6 +31,9 @@
           "$ref": "./classes/Button.json"
         },
         {
+          "$ref": "./classes/Canvas.json"
+        },
+        {
           "$ref": "./classes/Card.json"
         },
         {
@@ -259,6 +262,9 @@
         },
         {
           "class": "Button"
+        },
+        {
+          "class": "Canvas"
         },
         {
           "class": "Card"
