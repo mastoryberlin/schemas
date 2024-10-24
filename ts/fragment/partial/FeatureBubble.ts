@@ -36,8 +36,8 @@ export default {
     "pointsTo": {
       "type": "object",
       "properties": {
-        "x": { "type": "number" },
-        "y": { "type": "number" }
+        "x": { "oneOf": [{ "type": "number" }, { "type": "string" }], "examples": ["50%", 277] },
+        "y": { "oneOf": [{ "type": "number" }, { "type": "string" }], "examples": ["50%", 138] }
       },
       "required": [
         "x", "y"
