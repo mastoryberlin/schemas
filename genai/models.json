@@ -22,6 +22,12 @@
     },
     "gpt-4-1106-vision-preview": {
       "$ref": "#/$defs/modelInfo"
+    },
+    "gpt-4o": {
+      "$ref": "#/$defs/modelInfo"
+    },
+    "gpt-4o-mini": {
+      "$ref": "#/$defs/modelInfo"
     }
   },
   "$defs": {
@@ -32,7 +38,9 @@
         "gpt-4-0613",
         "gpt-4-32k-0613",
         "gpt-4-1106-preview",
-        "gpt-4-1106-vision-preview"
+        "gpt-4-1106-vision-preview",
+        "gpt-4o",
+        "gpt-4o-mini"
       ]
     },
     "modelInfo": {
@@ -75,6 +83,8 @@
     "gpt-4-0613",
     "gpt-4-32k-0613",
     "gpt-4-1106-preview",
-    "gpt-4-1106-vision-preview"
+    "gpt-4-1106-vision-preview",
+    "gpt-4o",
+    "gpt-4o-mini"
   ]
 }
