@@ -32,7 +32,18 @@ export default {
           "type": "null"
         }
       ]
+    },
+    "pointsTo": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      },
+      "required": [
+        "x", "y"
+      ],
+      "additionalProperties": false
     }
   },
-  "required": []
+  "required": ["pointsTo"]
 } as const satisfies JSONSchema
