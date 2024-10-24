@@ -121,6 +121,9 @@
           "$ref": "./classes/ExpandableTableCell.json"
         },
         {
+          "$ref": "./classes/FeatureBubble.json"
+        },
+        {
           "$ref": "./classes/Flow.json"
         },
         {
@@ -355,6 +358,9 @@
         },
         {
           "class": "ExpandableTableCell"
+        },
+        {
+          "class": "FeatureBubble"
         },
         {
           "class": "Flow"
