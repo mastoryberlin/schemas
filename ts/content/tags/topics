@@ -3,7 +3,7 @@ add
 calculate
 describe
 divide
-find
+spot
 identify
 know concept
 know convention
@@ -14,7 +14,18 @@ plot
 read coordinates
 subtract
 understand concept
+prove
+#abstraction
+any
+unknownNumber
+concreteNumbers
+concreteGraphs
+concreteFunctions
 #general
+primeFactorization
+divisibility
+HCF
+LCM
 coordinatePlane
 lineSegment
 numberLine
@@ -24,6 +35,10 @@ position
 sign
 unit
 vector
+polynomial
+graph
+#polynomials
+degreeOfPolynomial
 # coordinates
 coordinateAxes
 coordinates
@@ -31,7 +46,8 @@ independenceOfDimensions
 origin
 x-direction
 y-direction
-# numbers
+# domain control
+primeNumbers
 decimalNumbers
 integers
 neighboringIntegers
@@ -39,18 +55,30 @@ positiveNumbers
 powersOfTen
 theNumberOne
 theNumberZero
+rationalNumbers
+realNumbers
 # measuring units
 foot
-# domain control
-integers
-rationalNumbers
-# range control
-absZeroToHundred
-absZeroToHundredTousand
-absZeroToMillion
-absZeroToTen
-absZeroToTenTousand
-absZeroToTousand
+# range control (coefficients)
+coeffAbsZeroToHundred
+coeffAbsZeroToHundredTousand
+coeffAbsZeroToMillion
+coeffAbsZeroToTen
+coeffAbsZeroToTenTousand
+coeffAbsZeroToTousand
+# degree control (polynomial)
+degreeZero
+degreeOne
+degreeTwo
+degreeThree
+degreeHigher
+# range control (calculated results)
+resultAbsZeroToHundred
+resultAbsZeroToHundredTousand
+resultAbsZeroToMillion
+resultAbsZeroToTen
+resultAbsZeroToTenTousand
+resultAbsZeroToTousand
 # decimal digit control (after the dot) 
 manyDigit
 oneDigit
@@ -61,4 +89,6 @@ allNegative
 allPositive # all involved numbers are positive
 mixedSigns # it's sure that both signs are involved
 randomSigns # sign is randomly assigned to the numbers
+#theory
+fundamentalTheoremOfArithmetic
 
