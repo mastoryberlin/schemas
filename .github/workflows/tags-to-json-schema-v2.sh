@@ -24,7 +24,7 @@ process_files() {
                 # Trim whitespace first
                 line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
                 # Skip empty lines or lines starting with # or //
-                if [[ -z "$line" || "$line" =~ ^[#//] ]]; then
+                if [[ -z "$line" || "$line" =~ '^[#//]' ]]; then
                     continue
                 fi
                 # Remove inline comments (starting with # or //) and trim whitespace again
@@ -45,7 +45,7 @@ process_files "$input_folder"
 readarray -t sorted_tags < <(printf '%s\n' "${tags[@]}" | grep -v '^$' | sort -u)
 
 # Generate the JSON schema with proper comma handling
-schema='{\n  "$schema": "http://json-schema.org/draft-07/schema#",  "$comment": "DO NOT CHANGE THIS FILE MANUALLY AS IT WILL BE OVERWRITTEN BY A GITHUB ACTION. If you want to modify the list of tags, edit the files in (or add new files to) ts/content/tags instead!",\n  "type": "string",\n  "enum": ['
+schema='{\n  "$schema": "http://json-schema.org/draft-07/schema#",\n  "$comment": "DO NOT CHANGE THIS FILE MANUALLY AS IT WILL BE OVERWRITTEN BY A GITHUB ACTION. If you want to modify the list of tags, edit the files in (or add new files to) ts/content/tags instead!",\n  "type": "string",\n  "enum": ['
 
 # Add the tags with proper comma separation
 for i in "${!sorted_tags[@]}"; do
