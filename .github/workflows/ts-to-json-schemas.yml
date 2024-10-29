@@ -16,6 +16,9 @@ jobs:
       working-directory: ts
       run: |
         find . -type f -name '*.ts' -exec bash -c 'mkdir -p "../$(dirname "$1")" && sed -E -e "/^\s*import\s[^\n]*|^\s*(\/\/.*)?$/d;s/^\s*export\s+default\s*|\s*as\s+unknown\s+as\s+typeof\s+\w+|\s*as\s+const(\s+satisfies\s+\w+)?\s*$//" "$1" >"../${1:0:-3}.json"' sh {} \;
+    - name: collect an up-to-date tags list
+      run: |
+        ./.github/workflows/tags-to-json-schema-v2.sh ts/content/tags content/tags.json
     - name: GIT commit and push all changed files
       env: 
         CI_COMMIT_MESSAGE: 'chore: extract JSON schemas from updated TS defs'
