@@ -83,7 +83,7 @@ export default {
     "tags": {
       "type": "array",
       "items": {
-        "$ref": "./math/tags.json"
+        "$ref": "./content/tags.json"
       }
     },
     "mathTopic": {
