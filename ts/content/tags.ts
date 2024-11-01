@@ -1,4 +1,6 @@
-{
+import type { JSONSchema } from "json-schema-to-ts"
+
+export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$comment": "DO NOT CHANGE THIS FILE MANUALLY AS IT WILL BE OVERWRITTEN BY A GITHUB ACTION. If you want to modify the list of tags, edit the files in (or add new files to) ts/content/tags instead!",
   "type": "string",
@@ -144,4 +146,4 @@
     "x-direction",
     "y-direction"
   ]
-}
+} as const satisfies JSONSchema

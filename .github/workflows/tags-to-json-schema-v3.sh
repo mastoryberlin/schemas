@@ -60,6 +60,9 @@ schema+="\n  ]\n}"
 # Write the schema to the output file
 printf "$schema" > "$output_file"
 
+# Write TS version of the schema
+echo -e "import type { JSONSchema } from \"json-schema-to-ts\"\n\nexport default $schema as const satisfies JSONSchema" > ts/"${output_file/.json/.ts}"
+
 # Clean up
 rm "$tmp_file"
 
