@@ -1,0 +1,158 @@
+import type { JSONSchema } from "json-schema-to-ts"
+import contextInPastAndPresent from "./contextInPastAndPresent"
+import flow from "./flow-file"
+import human from "./human"
+
+export default {
+  "properties": {
+    "type": {
+      "enum": [
+        "problemSolving",
+        "exploration",
+        "training"
+      ]
+    },
+    "context": {
+      "$ref": "./contextInPastAndPresent.json"
+    } as unknown as typeof contextInPastAndPresent,
+    "instructions": {
+      "type": "string"
+    },
+    "does": {
+      "type": "array"
+    },
+    "intents": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z0-9][a-z0-9+]*(?:[A-Z][a-z0-9+]*)*$": {
+          "type": "object",
+          "properties": {
+            "scope": {},
+            "reaction": {
+              "$ref": "./flow-file.json"
+            } as unknown as typeof flow,
+            "human": {
+              "$ref": "./human.json"
+            } as unknown as typeof human,
+            "evaluation": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "description": "this could be sampleSolution or a mistake type",
+                  "type": "string"
+                },
+                "demonstratesProficiencyIn": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                },
+                "showsPossibleProblemsWith": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "scope"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "other": {}
+        }
+      ]
+    },
+    "learnedOnDone": {
+      "type": "object",
+      "properties": {
+        "ref": {
+          "type": "string"
+        },
+        "is": {
+          "$ref": "../../meta/statement/is-statement/is-statement.json"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "ref",
+        "is"
+      ]
+    },
+    "achievements": {
+      "type": "object",
+      "properties": {
+        "components": {
+          "type": "object",
+          "patternProperties": {
+            "[a-z][a-zA-Z_0-9]*": {
+              "type": "object",
+              "properties": {
+                "does": {},
+                "category": {
+                  "type": "string"
+                },
+                "complexity": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "scores": {
+                  "type": "object",
+                  "properties": {
+                    "performance": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "self-initiative": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "extraDifficulties": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "human": {
+          "type": "string"
+        },
+        "additionalProperties": false
+      }
+    },
+    "suggestedPractice": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "instructions"
+  ]
+} as const satisfies JSONSchema
