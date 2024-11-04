@@ -1,7 +1,6 @@
 {
   "properties": {
     "type": {
-      "type": "string",
       "enum": [
         "problemSolving",
         "exploration",
@@ -9,20 +8,7 @@
       ]
     },
     "context": {
-      "type": "object",
-      "properties": {
-        "whileActive": {
-          "type": "string"
-        },
-        "afterDone": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "whileActive",
-        "afterDone"
-      ]
+      "$ref": "./contextInPastAndPresent.json"
     },
     "instructions": {
       "type": "string"
@@ -38,10 +24,10 @@
           "properties": {
             "scope": {},
             "reaction": {
-              "$ref": "../../core/flow.json"
+              "$ref": "./flow-file.json"
             },
             "human": {
-              "$ref": "../../meta/human.json"
+              "$ref": "./human.json"
             },
             "evaluation": {
               "type": "object",
@@ -146,6 +132,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "suggestedPractice": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     }
   },
   "required": [
