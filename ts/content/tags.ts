@@ -403,6 +403,6 @@ export default {
     "zero to ten",
     "zero to ten million",
     "zero to ten thousand",
-    "zero to thousand""
+    "zero to thousand"
   ]
 } as const satisfies JSONSchema
