@@ -1,4 +1,7 @@
-{
+import type { JSONSchema } from "json-schema-to-ts";
+import cameraPreset from './camera-preset'
+
+export default {
   "properties": {
     "src": {
       "type": "string",
@@ -22,18 +25,29 @@
           "oneOf": [
             {
               "$ref": "./camera-preset.json"
-            },
+            } as unknown as typeof cameraPreset,
             {
               "type": "object",
               "properties": {
                 "preset": {
                   "$ref": "./camera-preset.json"
+                } as unknown as typeof cameraPreset,
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "UniversalCamera"
+                  ]
                 },
                 "allowWalk": {
                   "type": "boolean"
                 },
                 "position": {
                   "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3,
                   "default": [
                     0,
                     0,
@@ -42,6 +56,11 @@
                 },
                 "target": {
                   "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3,
                   "default": [
                     0,
                     0,
@@ -86,4 +105,4 @@
     }
   },
   "required": []
-}
+} as const satisfies JSONSchema
