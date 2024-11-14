@@ -106,6 +106,9 @@
           "$ref": "./classes/CsZoomTool.json"
         },
         {
+          "$ref": "./classes/DropDown.json"
+        },
+        {
           "$ref": "./classes/Embed.json"
         },
         {
@@ -346,6 +349,9 @@
         },
         {
           "class": "CsZoomTool"
+        },
+        {
+          "class": "DropDown"
         },
         {
           "class": "Embed"
