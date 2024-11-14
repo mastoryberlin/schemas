@@ -29,11 +29,22 @@
                 "preset": {
                   "$ref": "./camera-preset.json"
                 },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "UniversalCamera"
+                  ]
+                },
                 "allowWalk": {
                   "type": "boolean"
                 },
                 "position": {
                   "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3,
                   "default": [
                     0,
                     0,
@@ -42,6 +53,11 @@
                 },
                 "target": {
                   "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3,
                   "default": [
                     0,
                     0,
