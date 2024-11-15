@@ -18,13 +18,32 @@
       "default": "contain"
     },
     "position": {
-      "type": "string",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        }],
       "examples": [
         "center",
+        [213, -60],
         "213px -60px",
         "calc(50% - 40px) calc(50% + 86px)"
       ],
-      "default": "x-offset y-offset"
+      "default": [0, 0]
     },
     "repeat": {
       "type": "string",
