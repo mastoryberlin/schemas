@@ -72,6 +72,21 @@ export default {
                 },
                 "collisionChecks": {
                   "type": "boolean"
+                },
+                "postProcess": {
+                  "type": "object",
+                  "properties": {
+                    "parameters": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "shaderUrl": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
                 }
               }
             }
