@@ -61,30 +61,44 @@ export default {
               "type": "object",
               "properties": {
                 "x": {
-                  "type": "array",
-                  "items": [
+                  "oneOf": [
                     {
-                      "type": "number"
+                      "type": "boolean"
                     },
                     {
-                      "type": "number"
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "number"
+                        },
+                        {
+                          "type": "number"
+                        }
+                      ],
+                      "minItems": 2,
+                      "maxItems": 2
                     }
-                  ],
-                  "minItems": 2,
-                  "maxItems": 2
+                  ]
                 },
                 "y": {
-                  "type": "array",
-                  "items": [
+                  "oneOf": [
                     {
-                      "type": "number"
+                      "type": "boolean"
                     },
                     {
-                      "type": "number"
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "number"
+                        },
+                        {
+                          "type": "number"
+                        }
+                      ],
+                      "minItems": 2,
+                      "maxItems": 2
                     }
-                  ],
-                  "minItems": 2,
-                  "maxItems": 2
+                  ]
                 }
               },
               "additionalProperties": false
