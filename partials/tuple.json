@@ -1,20 +1,10 @@
 {
-  "$id": "https://mastory.io/schemas/partials/tuple.json",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "./dimension.json"
-    },
-    {
-      "properties": {
-        "components": {
-          "type": "array",
-          "items": {
-            "type": "number"
-          }
-        }
+  "properties": {
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "number"
       }
     }
-  ],
-  "unevaluatedProperties": false
+  }
 }

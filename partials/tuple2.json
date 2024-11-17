@@ -1,20 +1,7 @@
 {
-  "$id": "https://mastory.io/schemas/partials/tuple2.json",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "./tuple.json"
-    },
-    {
-      "properties": {
-        "x": {
-          "type": "number"
-        },
-        "y": {
-          "type": "number"
-        }
-      }
+  "properties": {
+    "y": {
+      "type": "number"
     }
-  ],
-  "unevaluatedProperties": true
+  }
 }
