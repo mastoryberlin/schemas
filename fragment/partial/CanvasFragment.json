@@ -1,4 +1,9 @@
 {
-  "properties": {},
+  "properties": {
+    "color": {
+"description": "The color of this element. * NOTE: Currently, the only format reliably supported is hexadecimal, for example `#a347bf`.",
+      "$ref": "../core/color.json"
+    }
+  },
   "required": []
 }
