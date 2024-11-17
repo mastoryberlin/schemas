@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/Point.json"
+    },
+    {
+      "$ref": "../../partials/tuple.json"
+    },
+    {
+      "$ref": "../../partials/tuple1.json"
+    },
+    {
+      "$ref": "../../partials/tuple2.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "Point"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}

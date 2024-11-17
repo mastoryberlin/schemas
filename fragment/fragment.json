@@ -34,6 +34,9 @@
           "$ref": "./classes/Canvas.json"
         },
         {
+          "$ref": "./classes/CanvasFragment.json"
+        },
+        {
           "$ref": "./classes/Card.json"
         },
         {
@@ -184,6 +187,9 @@
           "$ref": "./classes/OpenQuestion.json"
         },
         {
+          "$ref": "./classes/Point.json"
+        },
+        {
           "$ref": "./classes/SampleSolve.json"
         },
         {
@@ -277,6 +283,9 @@
         },
         {
           "class": "Canvas"
+        },
+        {
+          "class": "CanvasFragment"
         },
         {
           "class": "Card"
@@ -427,6 +436,9 @@
         },
         {
           "class": "OpenQuestion"
+        },
+        {
+          "class": "Point"
         },
         {
           "class": "SampleSolve"
