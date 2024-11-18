@@ -3,9 +3,6 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/CanvasFragment.json"
-    },
-    {
       "$ref": "../partial/UiFragment.json"
     },
     {
@@ -14,7 +11,7 @@
     {
       "properties": {
         "class": {
-          "const": "CanvasFragment"
+          "const": "UiFragment"
         }
       }
     }

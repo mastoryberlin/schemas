@@ -1,41 +1,48 @@
 {
   "$schema": "./unit.json",
   "self": {
-    "class": "UnitRoot"
+    "class": "UnitRoot",
+    "context": "dev"
   },
   "children": [
     {
       "self": {
-        "class": "Selector",
-        "is": {
-          "allOf": [
-            [
-              "nameOf",
-              "world"
-            ],
-            [
-              "symbolicInstanceOf",
-              "function"
-            ],
-            [
-              "verbalInstanceOf",
-              "myself"
-            ]
-          ]
-        }
-      },
-      "children": [
-        {
-          "self": {
-            "class": "Card",
-            "src": "https://bla.jpg",
-            "text": "Hi there!",
-            "color": "blue-1"
-          },
-          "include": []
-        }
-      ]
+        "class": "CsCircle",
+        "radius": 3
+      }
     }
+    // {
+    //   "self": {
+    //     "class": "Selector",
+    //     "is": {
+    //       "allOf": [
+    //         [
+    //           "nameOf",
+    //           "world"
+    //         ],
+    //         [
+    //           "symbolicInstanceOf",
+    //           "function"
+    //         ],
+    //         [
+    //           "verbalInstanceOf",
+    //           "myself"
+    //         ]
+    //       ]
+    //     }
+    //   },
+    //   "children": [
+    //     {
+    //       "self": {
+    //         "class": "Card",
+    //         "src": "https://bla.jpg",
+    //         "text": "Hi there!",
+    //         "color": "blue-1"
+    //       },
+    //       "include": []
+    //     }
+    //   ]
+    // }
   ],
   "include": "erblau/bla"
 }
