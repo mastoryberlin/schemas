@@ -10,7 +10,7 @@ export default {
        * NOTE: Currently, the only format reliably supported is
        * hexadecimal, for example `#a347bf`.
        */
-      "$ref": "../core/color.json"
+      "$ref": "../../core/color.json"
     } as unknown as typeof color
   },
   "required": []
