@@ -1,0 +1,17 @@
+{
+  "properties": {
+    "allow": {
+"description": "Sets behavioral policies, such as: can this element be clicked? selected? dragged away?",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "../../core/allow/click.json"
+        },
+        {
+          "$ref": "../../core/allow/select.json"
+        }
+      ]
+    }
+  },
+  "required": []
+}

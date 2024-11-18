@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "select": {
+"description": "Whether users can select this object.",
+      "oneOf": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "default": true
+    }
+  }
+}
