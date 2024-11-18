@@ -157,6 +157,9 @@
           "$ref": "./classes/Level.json"
         },
         {
+          "$ref": "./classes/LineSegment.json"
+        },
+        {
           "$ref": "./classes/MathFragment.json"
         },
         {
@@ -406,6 +409,9 @@
         },
         {
           "class": "Level"
+        },
+        {
+          "class": "LineSegment"
         },
         {
           "class": "MathFragment"
