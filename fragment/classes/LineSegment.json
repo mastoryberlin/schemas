@@ -6,6 +6,9 @@
       "$ref": "../partial/LineSegment.json"
     },
     {
+      "$ref": "../partial/CanvasFragment.json"
+    },
+    {
       "$ref": "../partial/Fragment.json"
     },
     {

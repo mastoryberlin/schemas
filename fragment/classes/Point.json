@@ -15,6 +15,9 @@
       "$ref": "../../partials/tuple2.json"
     },
     {
+      "$ref": "../partial/CanvasFragment.json"
+    },
+    {
       "$ref": "../partial/Fragment.json"
     },
     {
