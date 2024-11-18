@@ -1,4 +1,21 @@
 {
-  "properties": {},
+  "properties": {
+    "startPoint": {
+"description": "One of the two points that delimit the segment. * Currently, this must be a string matching the ID of an existing Point fragment.",
+      "oneOf": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "endPoint": {
+"description": "One of the two points that delimit the segment. * Currently, this must be a string matching the ID of an existing Point fragment.",
+      "oneOf": [
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
   "required": []
 }
