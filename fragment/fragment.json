@@ -266,6 +266,12 @@
         },
         {
           "$ref": "./classes/UnitRoot.json"
+        },
+        {
+          "$ref": "./classes/TriggerEvent.json"
+        },
+        {
+          "$ref": "./classes/Click.json"
         }
       ],
       "examples": [
@@ -523,6 +529,12 @@
         },
         {
           "class": "UnitRoot"
+        },
+        {
+          "class": "TriggerEvent"
+        },
+        {
+          "class": "Click"
         }
       ],
       "type": "object"

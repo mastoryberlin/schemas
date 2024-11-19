@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/TriggerEvent.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "TriggerEvent"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}
