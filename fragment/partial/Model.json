@@ -1,0 +1,10 @@
+{
+  "properties": {
+    "src": {
+      "$ref": "./url.json"
+    }
+  },
+  "required": [
+    "src"
+  ]
+}
