@@ -272,6 +272,9 @@
         },
         {
           "$ref": "./classes/Click.json"
+        },
+        {
+          "$ref": "./classes/Group.json"
         }
       ],
       "examples": [
@@ -535,6 +538,9 @@
         },
         {
           "class": "Click"
+        },
+        {
+          "class": "Group"
         }
       ],
       "type": "object"
