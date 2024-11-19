@@ -84,7 +84,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -417,7 +423,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -750,7 +762,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -1083,7 +1101,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -1416,7 +1440,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -1749,7 +1779,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -2082,7 +2118,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -2415,7 +2457,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -2748,7 +2796,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -3081,7 +3135,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -3414,7 +3474,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -3747,7 +3813,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -4080,7 +4152,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -4413,7 +4491,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -4746,7 +4830,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -5079,7 +5169,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -5412,7 +5508,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -5745,7 +5847,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -6078,7 +6186,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -6411,7 +6525,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -6744,7 +6864,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -7077,7 +7203,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -7410,7 +7542,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -7743,7 +7881,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -8076,7 +8220,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -8409,7 +8559,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -8742,7 +8898,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -9075,7 +9237,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -9408,7 +9576,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -9741,7 +9915,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -10074,7 +10254,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -10407,7 +10593,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -10740,7 +10932,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -11073,7 +11271,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -11406,7 +11610,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -11739,7 +11949,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -12072,7 +12288,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -12405,7 +12627,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -12738,7 +12966,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -13071,7 +13305,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -13404,7 +13644,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -13737,7 +13983,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -14070,7 +14322,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -14403,7 +14661,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -14736,7 +15000,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -15069,7 +15339,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -15402,7 +15678,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -15735,7 +16017,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -16068,7 +16356,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -16401,7 +16695,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
@@ -16734,7 +17034,13 @@
           "type": "object",
           "properties": {
             "if": {
-              "const": "NOT YET IMPLEMENTED!"
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                }
+              },
+              "additionalProperties": false
             },
             "let": {
               "type": "object",
