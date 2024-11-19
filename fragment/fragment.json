@@ -169,6 +169,9 @@
           "$ref": "./classes/Meta.json"
         },
         {
+          "$ref": "./classes/Model.json"
+        },
+        {
           "$ref": "./classes/Navigation.json"
         },
         {
@@ -421,6 +424,9 @@
         },
         {
           "class": "Meta"
+        },
+        {
+          "class": "Model"
         },
         {
           "class": "Navigation"

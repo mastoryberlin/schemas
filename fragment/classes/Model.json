@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/Model.json"
+    },
+    {
+      "$ref": "../partial/ClickableMesh.json"
+    },
+    {
+      "$ref": "../partial/Mesh.json"
+    },
+    {
+      "$ref": "../partial/Transformable3.json"
+    },
+    {
+      "$ref": "../partial/SceneFragment.json"
+    },
+    {
+      "$ref": "../partial/SceneFragment.json"
+    },
+    {
+      "$ref": "../partial/UiFragment.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "Model"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}
