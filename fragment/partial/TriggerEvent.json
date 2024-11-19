@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "event": {
+"description": "The event for which the activity listens.",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      ]
+    },
+    "target": {
+"description": "The ID(s) of one or more fragments on which the activity listens to the specified event(s).",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      ]
+    }
+  },
+  "required": [
+    "target"
+  ]
+}
