@@ -84,6 +84,45 @@
                     }
                   },
                   "additionalProperties": false
+                },
+                "model": {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "positionX": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "positionY": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "positionZ": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotation": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotationX": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotationY": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotationZ": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotationXReverse": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotationYReverse": {
+                      "$ref": "../../core/identifier.json"
+                    },
+                    "rotationZReverse": {
+                      "$ref": "../../core/identifier.json"
+                    }
+                  },
+                  "additionalProperties": false
                 }
               }
             }
