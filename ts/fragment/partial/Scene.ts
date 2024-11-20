@@ -1,5 +1,6 @@
 import type { JSONSchema } from "json-schema-to-ts";
 import cameraPreset from './camera-preset'
+import identifier from "../../core/identifier";
 
 export default {
   "properties": {
@@ -85,6 +86,45 @@ export default {
                     "shaderUrl": {
                       "type": "string"
                     }
+                  },
+                  "additionalProperties": false
+                },
+                "model": {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "positionX": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "positionY": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "positionZ": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotation": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotationX": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotationY": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotationZ": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotationXReverse": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotationYReverse": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier,
+                    "rotationZReverse": {
+                      "$ref": "../../core/identifier.json"
+                    } as unknown as typeof identifier
                   },
                   "additionalProperties": false
                 }
