@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "src": {
+      "$ref": "../../core/url.json"
+    },
+    "mode": {
+      "enum": [
+        "skybox",
+        "360° picture"
+      ],
+      "default": "skybox"
+    },
+"description": "Only in \"360° picture\" mode: The image resolution.",
+    "resolution": {
+      "type": "number"
+    },
+"description": "Only in \"360° picture\" mode: The size of the projection sphere.",
+    "size": {
+      "type": "number"
+    },
+"description": "Only in \"skybox\" mode: The scale applied to the projection cube.",
+    "scale": {
+      "type": "number"
+    },
+"description": "Only in \"skybox\" mode: The blur applied to the projected texture between 0 (sharp) and 1 (maximally blurred).",
+    "blur": {
+      "type": "number"
+    },
+  },
+  "required": [
+    "src"
+  ]
+}
