@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "content": {
+      "description": "Content-related settings in local development.",
+      "type": "object",
+      "properties": {
+        "scope": {
+          "description": "The default content scope associated with the user in local development.",
+          "type": "string",
+          "default": "dev"
+        },
+        "fullRefresh": {
+          "type": "boolean",
+          "default": false
+        },
+        "folders": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
