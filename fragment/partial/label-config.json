@@ -48,6 +48,36 @@
 "description": "The label color. For now, only hex values (#a34fce) are supported.",
           "type": "string",
           "default": "auto"
+        },
+        "position": {
+"description": "A policy or absolute position (2D or 3D) that defines where to place this label relatively to its target fragment.",
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "auto",
+                "left",
+                "right",
+                "above",
+                "below"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                },
+                "z": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
         }
       }
     }
