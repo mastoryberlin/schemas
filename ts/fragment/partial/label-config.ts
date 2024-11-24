@@ -57,6 +57,39 @@ export default {
            */
           "type": "string",
           "default": "auto"
+        },
+        "position": {
+          /**
+           * A policy or absolute position (2D or 3D) that defines where to place this label
+           * relatively to its target fragment.
+           */
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "auto",
+                "left",
+                "right",
+                "above",
+                "below"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                },
+                "z": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            }
+          ]
         }
       }
     }
