@@ -278,6 +278,12 @@
         },
         {
           "$ref": "./classes/SkyBox.json"
+        },
+        {
+          "$ref": "./classes/Markdown.json"
+        },
+        {
+          "$ref": "./classes/Markdown.json"
         }
       ],
       "examples": [
@@ -406,9 +412,6 @@
         },
         {
           "class": "Group3"
-        },
-        {
-          "class": "Handheld"
         },
         {
           "class": "Image"
@@ -547,6 +550,12 @@
         },
         {
           "class": "SkyBox"
+        },
+        {
+          "class": "Markdown"
+        },
+        {
+          "class": "Markdown"
         }
       ],
       "type": "object"

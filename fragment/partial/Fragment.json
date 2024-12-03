@@ -72,6 +72,23 @@
       "type": "boolean",
       "default": true
     },
+    "initiallyInInventory": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "enum": [
+            "held in hand (left)",
+            "held in hand (right)"
+          ]
+        }
+      ],
+      "default": true
+    },
+    "inventoryIcon": {
+      "type": "string"
+    },
     "is": {
       "$ref": "../../meta/statement/is-statement/is-statement.json"
     },
