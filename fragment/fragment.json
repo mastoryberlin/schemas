@@ -139,9 +139,6 @@
           "$ref": "./classes/Group3.json"
         },
         {
-          "$ref": "./classes/Handheld.json"
-        },
-        {
           "$ref": "./classes/Image.json"
         },
         {
@@ -287,6 +284,9 @@
         },
         {
           "$ref": "./classes/BooleanActivity.json"
+        },
+        {
+          "$ref": "./classes/RulerTool.json"
         }
       ],
       "examples": [
@@ -562,6 +562,9 @@
         },
         {
           "class": "BooleanActivity"
+        },
+        {
+          "class": "RulerTool"
         }
       ],
       "type": "object"
