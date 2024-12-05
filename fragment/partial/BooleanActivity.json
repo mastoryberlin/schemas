@@ -1,0 +1,11 @@
+{
+  "properties": {
+"description": "The name of a boolean unit variable which defines whether this activity is solved.",
+    "bind": {
+      "$ref": "./identifier.json"
+    }
+  },
+  "required": [
+    "bind"
+  ]
+}
