@@ -284,6 +284,9 @@
         },
         {
           "$ref": "./classes/Markdown.json"
+        },
+        {
+          "$ref": "./classes/BooleanActivity.json"
         }
       ],
       "examples": [
@@ -556,6 +559,9 @@
         },
         {
           "class": "Markdown"
+        },
+        {
+          "class": "BooleanActivity"
         }
       ],
       "type": "object"
