@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/RulerTool.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "RulerTool"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}
