@@ -1,6 +1,11 @@
 import type { JSONSchema } from "json-schema-to-ts";
+import identifier from './identifier'
+
 export default {
   "properties": {
+    "activeTool": {
+      "$ref": "./identifier.json"
+    } as unknown as typeof identifier,
     "zoom": {
       "type": "number",
       "exclusiveMinimum": 0
