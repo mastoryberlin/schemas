@@ -3,6 +3,11 @@ import identifier from './identifier'
 
 export default {
   "properties": {
+    /**
+     * The currently selected Canvas tool.
+     * 
+     * This must be the ID of a Tool which is also a direct child of the Canvas.
+     */
     "activeTool": {
       "$ref": "./identifier.json"
     } as unknown as typeof identifier,
