@@ -1,5 +1,8 @@
 {
   "properties": {
+    "activeTool": {
+      "$ref": "./identifier.json"
+    },
     "zoom": {
       "type": "number",
       "exclusiveMinimum": 0
