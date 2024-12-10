@@ -287,6 +287,15 @@
         },
         {
           "$ref": "./classes/RulerTool.json"
+        },
+        {
+          "$ref": "./classes/CanvasTool.json"
+        },
+        {
+          "$ref": "./classes/ToolbarButton.json"
+        },
+        {
+          "$ref": "./classes/Circle.json"
         }
       ],
       "examples": [
@@ -565,6 +574,15 @@
         },
         {
           "class": "RulerTool"
+        },
+        {
+          "class": "CanvasTool"
+        },
+        {
+          "class": "ToolbarButton"
+        },
+        {
+          "class": "Circle"
         }
       ],
       "type": "object"

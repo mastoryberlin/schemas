@@ -1,0 +1,16 @@
+{
+"description": "A tool to interact with a coordinate system. * Fragments of this class will only work when placed directly under a `CoordinateSystem` fragment. * @example ```jsonc { \"id\": \"myTool\", \"class\": \"CsTool\", \"text\": \"My New Tool\", \"icon\": \"https://mastory.io/my-tool-icon.png\" } ```",
+  "properties": {
+    "text": {
+"description": "The text to show on the toolbar button. If blank, only an icon will be shown.",
+      "type": "string"
+    },
+    "icon": {
+"description": "An icon to show on the toolbar button.",
+      "$ref": "../../core/url.json"
+    }
+  },
+  "required": [
+    "icon"
+  ]
+}

@@ -6,18 +6,15 @@
       "$ref": "../partial/Fragment.json"
     },
     {
-      "$ref": "../partial/UiElement.json"
+      "$ref": "../partial/CanvasFragment.json"
     },
     {
-      "$ref": "../partial/CanvasTool.json"
-    },
-    {
-      "$ref": "../partial/RulerTool.json"
+      "$ref": "../partial/Circle.json"
     },
     {
       "properties": {
         "class": {
-          "const": "RulerTool"
+          "const": "Circle"
         }
       }
     }

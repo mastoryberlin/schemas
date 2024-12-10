@@ -9,15 +9,15 @@
       "$ref": "../partial/UiElement.json"
     },
     {
-      "$ref": "../partial/CanvasTool.json"
+      "$ref": "../partial/ClickableElement.json"
     },
     {
-      "$ref": "../partial/RulerTool.json"
+      "$ref": "../partial/CanvasTool.json"
     },
     {
       "properties": {
         "class": {
-          "const": "RulerTool"
+          "const": "CanvasTool"
         }
       }
     }

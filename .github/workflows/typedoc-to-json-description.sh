@@ -35,7 +35,7 @@ sed -n '
     s/^[[:space:]]*\*\?[[:space:]]*\|[[:space:]]*$//
     # 4. Escape any existing double quotes
     s/"/\\"/g
-    # 5. Format as $comment property
+    # 5. Format as description property
     s/.*/"description": "&",/
     # Print result
     p
