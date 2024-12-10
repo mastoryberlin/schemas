@@ -1,0 +1,13 @@
+{
+  "properties": {
+    "model_center": {
+"description": "A unit variable modelling the center of the circle.",
+      "$ref": "./identifier.json"
+    },
+    "model_radius": {
+"description": "A unit variable modelling the radius of the circle.",
+      "$ref": "./identifier.json"
+    }
+  },
+  "required": []
+}

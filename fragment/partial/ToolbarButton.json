@@ -1,0 +1,8 @@
+{
+  "properties": {
+    "toolId": {
+      "type": "string"
+    }
+  },
+  "required": []
+}
