@@ -1,4 +1,5 @@
 {
+"description": "A skybox for a 3D scene, making it look as if the player was placed within an entire landscape.",
   "properties": {
     "src": {
       "$ref": "../../core/url.json"
@@ -10,20 +11,20 @@
       ],
       "default": "skybox"
     },
-"description": "Only in \"360° picture\" mode: The image resolution.",
     "resolution": {
+"description": "Only in \"360° picture\" mode: The image resolution.",
       "type": "number"
     },
-"description": "Only in \"360° picture\" mode: The size of the projection sphere.",
     "size": {
+"description": "Only in \"360° picture\" mode: The size of the projection sphere.",
       "type": "number"
     },
-"description": "Only in \"skybox\" mode: The scale applied to the projection cube.",
     "scale": {
+"description": "Only in \"skybox\" mode: The scale applied to the projection cube.",
       "type": "number"
     },
-"description": "Only in \"skybox\" mode: The blur applied to the projected texture between 0 (sharp) and 1 (maximally blurred).",
     "blur": {
+"description": "Only in \"skybox\" mode: The blur applied to the projected texture between 0 (sharp) and 1 (maximally blurred).",
       "type": "number"
     },
   },
