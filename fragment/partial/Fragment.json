@@ -72,19 +72,15 @@
       "type": "boolean",
       "default": true
     },
-    "initiallyInInventory": {
-      "oneOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "enum": [
-            "held in hand (left)",
-            "held in hand (right)"
-          ]
-        }
+    "initialRelation": {
+      "enum": [
+        "inventory",
+        "handheld",
+        "handheld (left)",
+        "handheld (right)",
+        "separate"
       ],
-      "default": true
+      "default": "separate"
     },
     "inventoryIcon": {
       "type": "string"
