@@ -2,6 +2,9 @@ import type { JSONSchema } from "json-schema-to-ts";
 import url from "../../core/url"
 
 export default {
+  /**
+   * A skybox for a 3D scene, making it look as if the player was placed within an entire landscape.
+   */
   "properties": {
     "src": {
       "$ref": "../../core/url.json"
@@ -13,33 +16,33 @@ export default {
       ],
       "default": "skybox"
     },
-    /**
-     * Only in "360° picture" mode:
-     * The image resolution.
-     */
     "resolution": {
+      /**
+       * Only in "360° picture" mode:
+       * The image resolution.
+       */
       "type": "number"
     },
-    /**
-     * Only in "360° picture" mode:
-     * The size of the projection sphere.
-     */
     "size": {
+      /**
+       * Only in "360° picture" mode:
+       * The size of the projection sphere.
+       */
       "type": "number"
     },
-    /**
-     * Only in "skybox" mode:
-     * The scale applied to the projection cube.
-     */
     "scale": {
+      /**
+       * Only in "skybox" mode:
+       * The scale applied to the projection cube.
+       */
       "type": "number"
     },
-    /**
-     * Only in "skybox" mode:
-     * The blur applied to the projected texture
-     * between 0 (sharp) and 1 (maximally blurred).
-     */
     "blur": {
+      /**
+       * Only in "skybox" mode:
+       * The blur applied to the projected texture
+       * between 0 (sharp) and 1 (maximally blurred).
+       */
       "type": "number"
     },
   },
