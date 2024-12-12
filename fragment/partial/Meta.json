@@ -68,7 +68,7 @@
       "type": "boolean",
       "default": true
     },
-    "initiallyClosed": {
+    "initiallyExpanded": {
       "type": "boolean",
       "default": true
     },
