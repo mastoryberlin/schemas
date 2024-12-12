@@ -296,6 +296,9 @@
         },
         {
           "$ref": "./classes/Circle.json"
+        },
+        {
+          "$ref": "./classes/AddTool.json"
         }
       ],
       "examples": [
@@ -583,6 +586,9 @@
         },
         {
           "class": "Circle"
+        },
+        {
+          "class": "AddTool"
         }
       ],
       "type": "object"
