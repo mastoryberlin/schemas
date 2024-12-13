@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "toolsById": {
+"description": "A list of fragment IDs representing specific tools  which the user might select to attempt the interaction.",
+      "type": "array",
+      "items": {
+        "$ref": "../identifier.json"
+      },
+      "examples": [
+        "myTool1"
+      ]
+    },
+    "toolClasses": {
+"description": "A list of fragment class names representing tool types  which the user might select to attempt the interaction.",
+      "type": "array",
+      "items": {
+        "$ref": "../identifier.json"
+      },
+      "examples": [
+        "AddTool",
+        "SelectTool"
+      ]
+    }
+  }
+}

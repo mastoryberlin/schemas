@@ -7,6 +7,9 @@
       "oneOf": [
         {
           "type": "boolean"
+        },
+        {
+          "$ref": "./only-except.json"
         }
       ],
       "default": true

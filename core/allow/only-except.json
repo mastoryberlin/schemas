@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "onlyWhen": {
+"description": "Lists conditions which must be fulfilled in order to perform the interaction.",
+      "$ref": "./when.json"
+    },
+    "exceptWhen": {
+"description": "Lists conditions which, if fulfilled, disallow the interaction.",
+      "$ref": "./when.json"
+    },
+    "onlyWith": {
+"description": "Lists tools or tool types which the user must select  in order to perform the interaction.",
+      "$ref": "./with.json"
+    },
+    "exceptWith": {
+"description": "Lists tools or tool types which, if selected,  disallow the interaction.",
+      "$ref": "./with.json"
+    }
+  }
+}
