@@ -3,7 +3,13 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Point.json"
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "$ref": "../partial/UiFragment.json"
+    },
+    {
+      "$ref": "../partial/CanvasFragment.json"
     },
     {
       "$ref": "../../partials/tuple.json"
@@ -15,10 +21,7 @@
       "$ref": "../../partials/tuple2.json"
     },
     {
-      "$ref": "../partial/CanvasFragment.json"
-    },
-    {
-      "$ref": "../partial/Fragment.json"
+      "$ref": "../partial/Point.json"
     },
     {
       "properties": {

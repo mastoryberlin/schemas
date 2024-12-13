@@ -5,9 +5,9 @@ export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "select": {
+    "drag": {
       /**
-       * Whether users can select this object.
+       * Whether users can drag this object.
        */
       "oneOf": [
         {

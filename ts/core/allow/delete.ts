@@ -5,9 +5,9 @@ export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "select": {
+    "delete": {
       /**
-       * Whether users can select this object.
+       * Whether users can delete this object.
        */
       "oneOf": [
         {

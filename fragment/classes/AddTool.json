@@ -3,13 +3,22 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "../partial/Fragment.json"
-    },
-    {
-      "$ref": "../partial/CanvasFragment.json"
-    },
-    {
       "$ref": "../partial/AddTool.json"
+    },
+    {
+      "$ref": "../partial/CanvasTool.json"
+    },
+    {
+      "$ref": "../partial/ClickableElement.json"
+    },
+    {
+      "$ref": "../partial/UiElement.json"
+    },
+    {
+      "$ref": "../partial/UiFragment.json"
+    },
+    {
+      "$ref": "../partial/Fragment.json"
     },
     {
       "properties": {
