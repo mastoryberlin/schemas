@@ -1,5 +1,5 @@
 {
-"description": "A tool to interact with a coordinate system. * Fragments of this class will only work when placed directly under a `CoordinateSystem` fragment. * @example ```jsonc { \"id\": \"myTool\", \"class\": \"CsTool\", \"text\": \"My New Tool\", \"icon\": \"https://mastory.io/my-tool-icon.png\" } ```",
+"description": "A tool to interact with a canvas. * Fragments of this class will only work when placed directly under a `Canvas` fragment. * @example ```jsonc { \"id\": \"myTool\", \"class\": \"CanvasTool\", \"text\": \"My New Tool\", \"icon\": \"https://mastory.io/my-tool-icon.png\" } ```",
   "properties": {
     "text": {
 "description": "The text to show on the toolbar button. If blank, only an icon will be shown.",
@@ -8,6 +8,10 @@
     "icon": {
 "description": "An icon to show on the toolbar button.",
       "$ref": "../../core/url.json"
+    },
+    "canvasActivityWhileSelected": {
+"description": "If set, the tool will temporarily replace its parent canvas's `controllingActivity` by the provided fragment ID  when selected, and reset it to the previous value when deselected. * This can be useful to bind more specific support and instructions to the parent canvas while it is being used with this tool.",
+      "$ref": "./identifier.json"
     }
   },
   "required": [
