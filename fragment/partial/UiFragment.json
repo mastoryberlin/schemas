@@ -1,5 +1,9 @@
 {
   "properties": {
+    "label": {
+"description": "The label shown next to this fragment. * - If `true`, always display a label with default text, visibility and style. - If `false`, always hide this label. - If set to a string, this defines the label text. - If set to an object, you can define text, visibility and style separately.",
+      "$ref": "./label-config.json"
+    },
     "allow": {
 "description": "Sets behavioral policies, such as: can this element be clicked? selected? dragged away?",
       "type": "object",
