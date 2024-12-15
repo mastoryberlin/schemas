@@ -3,6 +3,7 @@ import type unary from "./unary"
 import type binary from "./binary"
 
 export default {
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://mastory.io/schema/logic/binary.json",
   "title": "Logical Expression",
   "definitions": {
@@ -22,43 +23,35 @@ export default {
             }
           },
           "required": ["not"],
-          "additionalProperties": false
+          "unevaluatedProperties": false
         },
         {
           "type": "object",
           "properties": {
             "and": {
               "type": "array",
-              "items": [
-                {
-                  "$ref": "#/definitions/complex"
-                },
-                {
-                  "$ref": "#/definitions/complex"
-                }
-              ]
+              "items": {
+                "$ref": "#/definitions/complex"
+              },
+              "unevaluatedItems": false
             }
           },
           "required": ["and"],
-          "additionalProperties": false
+          "unevaluatedProperties": false
         },
         {
           "type": "object",
           "properties": {
             "or": {
               "type": "array",
-              "items": [
-                {
-                  "$ref": "#/definitions/complex"
-                },
-                {
-                  "$ref": "#/definitions/complex"
-                }
-              ]
+              "items": {
+                "$ref": "#/definitions/complex"
+              },
+              "unevaluatedItems": false
             }
           },
           "required": ["or"],
-          "additionalProperties": false
+          "unevaluatedProperties": false
         }
       ]
     }

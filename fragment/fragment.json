@@ -586,9 +586,6 @@
         },
         {
           "class": "Circle"
-        },
-        {
-          "class": "AddTool"
         }
       ],
       "type": "object"
