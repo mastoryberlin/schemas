@@ -193,6 +193,53 @@
       "type": "string",
       "pattern": "^\\w+$"
     },
+    "fog": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "linear",
+                "exp",
+                "exp2"
+              ]
+            },
+            "color": {
+              "$ref": "../../core/color.json",
+            },
+            "start": {
+              "type": "number"
+            },
+            "end": {
+              "type": "number"
+            },
+            "density": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "areas": {
+      "type": "object",
+      "patternProperties": {
+        "^\\w+$": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
     "environmentTextureUrl": {
       "type": "string",
       "default": ""

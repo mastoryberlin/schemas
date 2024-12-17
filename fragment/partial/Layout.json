@@ -1,7 +1,21 @@
 {
   "properties": {
+    "scrollable": {
+"description": "If true, the fragment's area can be vertically scrolled; if false, the area is fixed in height - based on the available space. * \"auto\" dynamically chooses the most appropriate behavior depending on the fragment's current Display and Player Relation state (default).",
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "const": "auto"
+        }
+      ]
+    },
+    "flex": {
+"description": "Whether to use CSS flexboxes to dynamically arrange children based on their size.",
+      "type": "boolean"
+    },
     "direction": {
-      "type": "string",
       "enum": [
         "auto",
         "horizontal",
@@ -9,7 +23,5 @@
       ]
     }
   },
-  "required": [
-    "direction"
-  ]
+  "required": []
 }

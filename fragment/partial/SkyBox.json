@@ -27,8 +27,9 @@
 "description": "Only in \"skybox\" mode: The blur applied to the projected texture between 0 (sharp) and 1 (maximally blurred).",
       "type": "number"
     },
+    "applyFog": {
+      "type": "boolean"
+    }
   },
-  "required": [
-    "src"
-  ]
+  "required": []
 }
