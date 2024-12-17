@@ -302,6 +302,9 @@
         },
         {
           "$ref": "./classes/SceneActivity.json"
+        },
+        {
+          "$ref": "./classes/GoToArea.json"
         }
       ],
       "examples": [
@@ -592,6 +595,9 @@
         },
         {
           "class": "SceneActivity"
+        },
+        {
+          "class": "GoToArea"
         }
       ],
       "type": "object"
