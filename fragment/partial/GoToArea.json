@@ -1,0 +1,17 @@
+{
+  "properties": {
+    "areaName": {
+"description": "The name of the area to which the user has to go in order to finish this activity. */",
+      "$ref": "../../core/identifier.json"
+    },
+    "mustStayInside": {
+"description": "Optionally, a timeout in seconds to wait after the user has entered the area. If they leave the area before the timeout, the activity will not finish.",
+      "type": "number"
+    },
+    "resetOnLeave": {
+"description": "Resets the activity automatically after it is done whenever the user leaves the trigger area.",
+      "type": "boolean"
+    }
+  },
+  "required": []
+}
