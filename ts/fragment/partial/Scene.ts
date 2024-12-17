@@ -1,6 +1,7 @@
 import type { JSONSchema } from "json-schema-to-ts";
 import cameraPreset from './camera-preset'
 import identifier from "../../core/identifier";
+import color from "../../core/color";
 
 export default {
   "properties": {
@@ -279,6 +280,53 @@ export default {
     "activeCamera": {
       "type": "string",
       "pattern": "^\\w+$"
+    },
+    "fog": {
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "linear",
+                "exp",
+                "exp2"
+              ]
+            },
+            "color": {
+              "$ref": "../../core/color.json",
+            } as unknown as typeof color,
+            "start": {
+              "type": "number"
+            },
+            "end": {
+              "type": "number"
+            },
+            "density": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "areas": {
+      "type": "object",
+      "patternProperties": {
+        "^\\w+$": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
     },
     "environmentTextureUrl": {
       "type": "string",

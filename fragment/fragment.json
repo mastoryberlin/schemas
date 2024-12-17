@@ -299,6 +299,9 @@
         },
         {
           "$ref": "./classes/AddTool.json"
+        },
+        {
+          "$ref": "./classes/SceneActivity.json"
         }
       ],
       "examples": [
@@ -586,6 +589,9 @@
         },
         {
           "class": "Circle"
+        },
+        {
+          "class": "SceneActivity"
         }
       ],
       "type": "object"

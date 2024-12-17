@@ -45,8 +45,9 @@ export default {
        */
       "type": "number"
     },
+    "applyFog": {
+      "type": "boolean"
+    }
   },
-  "required": [
-    "src"
-  ]
+  "required": []
 } as const satisfies JSONSchema
