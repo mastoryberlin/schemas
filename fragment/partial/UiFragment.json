@@ -5,14 +5,26 @@
       "$ref": "./label-config.json"
     },
     "allow": {
-"description": "Sets behavioral policies, such as: can this element be clicked? selected? dragged away?",
+"description": "Sets behavioral policies about this fragment: Can it be clicked? selected? removed? etc.",
       "type": "object",
       "allOf": [
         {
           "$ref": "../../core/allow/click.json"
         },
         {
+          "$ref": "../../core/allow/delete.json"
+        },
+        {
+          "$ref": "../../core/allow/keep.json"
+        },
+        {
+          "$ref": "../../core/allow/move.json"
+        },
+        {
           "$ref": "../../core/allow/select.json"
+        },
+        {
+          "$ref": "../../core/allow/use.json"
         }
       ]
     }
