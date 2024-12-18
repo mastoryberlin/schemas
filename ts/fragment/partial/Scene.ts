@@ -11,6 +11,14 @@ export default {
         "https://storage.googleapis.com/mastory-content/test-ue-export/Nick's%20Room/SM_MERGED_Nicks_Room.gltf"
       ]
     },
+    "groundName": {
+      /**
+       * The name of a Babylon mesh which will be considered the scene ground.
+       * This must be set in order to enable fragment placement within the
+       * camera's reach.
+       */
+      "type": "string"
+    },
     "clearColor": {
       "type": "array",
       "default": [
