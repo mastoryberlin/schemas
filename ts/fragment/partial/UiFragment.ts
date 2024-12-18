@@ -1,7 +1,11 @@
 import type { JSONSchema } from "json-schema-to-ts";
-import labelConfig from './label-config'
-import allowClick from '../../core/allow/click'
-import allowSelect from '../../core/allow/select'
+import type labelConfig from './label-config'
+import type allowClick from '../../core/allow/click'
+import type allowDelete from '../../core/allow/delete'
+import type allowKeep from '../../core/allow/keep'
+import type allowMove from '../../core/allow/move'
+import type allowSelect from '../../core/allow/select'
+import type allowUse from '../../core/allow/use'
 
 export default {
   "properties": {
@@ -18,7 +22,8 @@ export default {
     } as unknown as typeof labelConfig,
     "allow": {
       /**
-       * Sets behavioral policies, such as: can this element be clicked? selected? dragged away?
+       * Sets behavioral policies about this fragment: Can it be clicked? selected?
+       * removed? etc.
        */
       "type": "object",
       "allOf": [
@@ -26,8 +31,20 @@ export default {
           "$ref": "../../core/allow/click.json"
         } as unknown as typeof allowClick,
         {
+          "$ref": "../../core/allow/delete.json"
+        } as unknown as typeof allowDelete,
+        {
+          "$ref": "../../core/allow/keep.json"
+        } as unknown as typeof allowKeep,
+        {
+          "$ref": "../../core/allow/move.json"
+        } as unknown as typeof allowMove,
+        {
           "$ref": "../../core/allow/select.json"
-        } as unknown as typeof allowSelect
+        } as unknown as typeof allowSelect,
+        {
+          "$ref": "../../core/allow/use.json"
+        } as unknown as typeof allowUse
       ]
     }
   },

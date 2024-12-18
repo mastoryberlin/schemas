@@ -5,9 +5,13 @@ export default {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "drag": {
+    "move": {
       /**
-       * Whether users can drag this object.
+       * Whether users can move this fragment.
+       * 
+       * For DOM and canvas fragments, this typically involves dragging them
+       * to a new screen or canvas position. For 3D fragments, defines if the user
+       * may grab the object and place it somewhere else.
        */
       "oneOf": [
         {
