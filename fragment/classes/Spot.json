@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "$ref": "../partial/Activity.json"
+    },
+    {
+      "$ref": "../partial/SceneActivity.json"
+    },
+    {
+      "$ref": "../partial/Spot.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "Spot"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}

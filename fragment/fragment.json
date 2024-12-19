@@ -305,6 +305,9 @@
         },
         {
           "$ref": "./classes/GoToArea.json"
+        },
+        {
+          "$ref": "./classes/Spot.json"
         }
       ],
       "examples": [
@@ -598,6 +601,9 @@
         },
         {
           "class": "GoToArea"
+        },
+        {
+          "class": "Spot"
         }
       ],
       "type": "object"
