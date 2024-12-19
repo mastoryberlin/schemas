@@ -1,0 +1,14 @@
+{
+  "oneOf": [
+    {
+      "$ref": "./identifier.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "./identifier.json"
+      },
+      "minItems": 1
+    }
+  ]
+}
