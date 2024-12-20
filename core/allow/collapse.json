@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "click": {
+"description": "Whether users can collapse this fragment (if applicable).",
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "./only-except.json"
+        }
+      ],
+      "default": true
+    }
+  }
+}

@@ -12,7 +12,13 @@
           "$ref": "../../core/allow/click.json"
         },
         {
+          "$ref": "../../core/allow/collapse.json"
+        },
+        {
           "$ref": "../../core/allow/delete.json"
+        },
+        {
+          "$ref": "../../core/allow/expand.json"
         },
         {
           "$ref": "../../core/allow/keep.json"
