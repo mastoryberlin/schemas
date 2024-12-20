@@ -191,7 +191,7 @@ export default {
                           },
                           "required": ["x", "y"],
                           "additionalProperties": false
-                        },
+                        }
                       ]
                     }
                   }
