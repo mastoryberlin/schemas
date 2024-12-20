@@ -1,5 +1,4 @@
 import type { JSONSchema } from "json-schema-to-ts";
-import type maybeArrayOfIdentifiers from "../../core/maybe-array-of-identifiers";
 
 export default {
   "properties": {
@@ -7,8 +6,18 @@ export default {
       /** 
        * The name(s) of the area(s) to which the user has to go
        * in order to finish this activity. */
-      "$ref": "../../core/maybe-array-of-identifiers.json"
-    } as unknown as typeof maybeArrayOfIdentifiers,
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
     "mustStayInside": {
       /**
        * Optionally, a timeout in seconds to wait after the user
