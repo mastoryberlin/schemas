@@ -1,7 +1,9 @@
 import type { JSONSchema } from "json-schema-to-ts";
 import type labelConfig from './label-config'
 import type allowClick from '../../core/allow/click'
+import type allowCollapse from '../../core/allow/collapse'
 import type allowDelete from '../../core/allow/delete'
+import type allowExpand from '../../core/allow/expand'
 import type allowKeep from '../../core/allow/keep'
 import type allowMove from '../../core/allow/move'
 import type allowSelect from '../../core/allow/select'
@@ -31,8 +33,14 @@ export default {
           "$ref": "../../core/allow/click.json"
         } as unknown as typeof allowClick,
         {
+          "$ref": "../../core/allow/collapse.json"
+        } as unknown as typeof allowCollapse,
+        {
           "$ref": "../../core/allow/delete.json"
         } as unknown as typeof allowDelete,
+        {
+          "$ref": "../../core/allow/expand.json"
+        } as unknown as typeof allowExpand,
         {
           "$ref": "../../core/allow/keep.json"
         } as unknown as typeof allowKeep,
