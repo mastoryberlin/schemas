@@ -213,7 +213,7 @@
               ]
             },
             "color": {
-              "$ref": "../../core/color.json",
+              "$ref": "../../core/color.json"
             },
             "start": {
               "type": "number"
