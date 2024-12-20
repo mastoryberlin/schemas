@@ -2,7 +2,17 @@
   "properties": {
     "areaNames": {
 "description": "The name(s) of the area(s) to which the user has to go in order to finish this activity. */",
-      "$ref": "../../core/maybe-array-of-identifiers.json"
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     },
     "mustStayInside": {
 "description": "Optionally, a timeout in seconds to wait after the user has entered the area. If they leave the area before the timeout, the activity will not finish.",
