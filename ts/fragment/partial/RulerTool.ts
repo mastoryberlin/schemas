@@ -17,7 +17,7 @@ export default {
        * containing canvas's "defaultMapForChildren" property.
        */
       "type": "string"
-    },
+    }
   },
   "required": []
 } as const satisfies JSONSchema
