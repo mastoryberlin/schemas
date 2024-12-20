@@ -305,7 +305,7 @@ export default {
               ]
             },
             "color": {
-              "$ref": "../../core/color.json",
+              "$ref": "../../core/color.json"
             } as unknown as typeof color,
             "start": {
               "type": "number"
