@@ -15253,6 +15253,1450 @@
         }
       ]
     },
+    "onUse": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                },
+                "eventMatches": {
+                  "description": "Check if the event that triggered this handler has additional properties set as defined. Nested properties can be accessed using . as a separator, e.g. \"someProp.nested.prop\": 2. All given properties will be checked for, but the event may have additional properties which will be ignored.",
+                  "type": "object",
+                  "propertyNames": {
+                    "pattern": "^[a-zA-Z0-9_.]+$"
+                  }
+                },
+                "truthy": {
+                  "description": "Check if the specified condition is truthy. String values refer to unit variables (incl. computed properties), or to their (nested) properties, e.g. \"myVar.example.prop\". Use object values to build more complex statements.",
+                  "$ref": "../../logic/expression.json",
+                  "examples": [
+                    "myUnitVar.nested.property",
+                    {
+                      "and": [
+                        "varA",
+                        {
+                          "not": "varB"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_READY",
+                        "I_AM_DONE",
+                        "I_AM_READY",
+                        "I_WAS_ABANDONED",
+                        "I_HAVE_STARTED",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "LOCK",
+                        "UNLOCK",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "OPEN",
+                        "CLOSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "SELECT",
+                        "DESELECT",
+                        "TOGGLE_SELECTION",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "CLICK",
+                        "UPDATE",
+                        "SET",
+                        "CHANGE",
+                        "USER_CHOSE",
+                        "EVALUATION_SUCCESSFUL",
+                        "EVALUATION_ERROR",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "FLOW_READY",
+                        "FLOW_DONE"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            },
+            "runFlow": {
+              "$ref": "../../core/flow.json"
+            },
+            "runAction": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "once": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_READY",
+                            "I_AM_DONE",
+                            "I_AM_READY",
+                            "I_WAS_ABANDONED",
+                            "I_HAVE_STARTED",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "LOCK",
+                            "UNLOCK",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "OPEN",
+                            "CLOSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "SELECT",
+                            "DESELECT",
+                            "TOGGLE_SELECTION",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "CLICK",
+                            "UPDATE",
+                            "SET",
+                            "CHANGE",
+                            "USER_CHOSE",
+                            "EVALUATION_SUCCESSFUL",
+                            "EVALUATION_ERROR",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "FLOW_READY",
+                            "FLOW_DONE"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "runFlow": {
+                "$ref": "../../core/flow.json"
+              },
+              "runAction": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "once": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onStopUsing": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                },
+                "eventMatches": {
+                  "description": "Check if the event that triggered this handler has additional properties set as defined. Nested properties can be accessed using . as a separator, e.g. \"someProp.nested.prop\": 2. All given properties will be checked for, but the event may have additional properties which will be ignored.",
+                  "type": "object",
+                  "propertyNames": {
+                    "pattern": "^[a-zA-Z0-9_.]+$"
+                  }
+                },
+                "truthy": {
+                  "description": "Check if the specified condition is truthy. String values refer to unit variables (incl. computed properties), or to their (nested) properties, e.g. \"myVar.example.prop\". Use object values to build more complex statements.",
+                  "$ref": "../../logic/expression.json",
+                  "examples": [
+                    "myUnitVar.nested.property",
+                    {
+                      "and": [
+                        "varA",
+                        {
+                          "not": "varB"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_READY",
+                        "I_AM_DONE",
+                        "I_AM_READY",
+                        "I_WAS_ABANDONED",
+                        "I_HAVE_STARTED",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "LOCK",
+                        "UNLOCK",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "OPEN",
+                        "CLOSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "SELECT",
+                        "DESELECT",
+                        "TOGGLE_SELECTION",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "CLICK",
+                        "UPDATE",
+                        "SET",
+                        "CHANGE",
+                        "USER_CHOSE",
+                        "EVALUATION_SUCCESSFUL",
+                        "EVALUATION_ERROR",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "FLOW_READY",
+                        "FLOW_DONE"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            },
+            "runFlow": {
+              "$ref": "../../core/flow.json"
+            },
+            "runAction": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "once": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_READY",
+                            "I_AM_DONE",
+                            "I_AM_READY",
+                            "I_WAS_ABANDONED",
+                            "I_HAVE_STARTED",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "LOCK",
+                            "UNLOCK",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "OPEN",
+                            "CLOSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "SELECT",
+                            "DESELECT",
+                            "TOGGLE_SELECTION",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "CLICK",
+                            "UPDATE",
+                            "SET",
+                            "CHANGE",
+                            "USER_CHOSE",
+                            "EVALUATION_SUCCESSFUL",
+                            "EVALUATION_ERROR",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "FLOW_READY",
+                            "FLOW_DONE"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "runFlow": {
+                "$ref": "../../core/flow.json"
+              },
+              "runAction": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "once": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onEnterArea": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                },
+                "eventMatches": {
+                  "description": "Check if the event that triggered this handler has additional properties set as defined. Nested properties can be accessed using . as a separator, e.g. \"someProp.nested.prop\": 2. All given properties will be checked for, but the event may have additional properties which will be ignored.",
+                  "type": "object",
+                  "propertyNames": {
+                    "pattern": "^[a-zA-Z0-9_.]+$"
+                  }
+                },
+                "truthy": {
+                  "description": "Check if the specified condition is truthy. String values refer to unit variables (incl. computed properties), or to their (nested) properties, e.g. \"myVar.example.prop\". Use object values to build more complex statements.",
+                  "$ref": "../../logic/expression.json",
+                  "examples": [
+                    "myUnitVar.nested.property",
+                    {
+                      "and": [
+                        "varA",
+                        {
+                          "not": "varB"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_READY",
+                        "I_AM_DONE",
+                        "I_AM_READY",
+                        "I_WAS_ABANDONED",
+                        "I_HAVE_STARTED",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "LOCK",
+                        "UNLOCK",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "OPEN",
+                        "CLOSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "SELECT",
+                        "DESELECT",
+                        "TOGGLE_SELECTION",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "CLICK",
+                        "UPDATE",
+                        "SET",
+                        "CHANGE",
+                        "USER_CHOSE",
+                        "EVALUATION_SUCCESSFUL",
+                        "EVALUATION_ERROR",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "FLOW_READY",
+                        "FLOW_DONE"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            },
+            "runFlow": {
+              "$ref": "../../core/flow.json"
+            },
+            "runAction": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "once": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_READY",
+                            "I_AM_DONE",
+                            "I_AM_READY",
+                            "I_WAS_ABANDONED",
+                            "I_HAVE_STARTED",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "LOCK",
+                            "UNLOCK",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "OPEN",
+                            "CLOSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "SELECT",
+                            "DESELECT",
+                            "TOGGLE_SELECTION",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "CLICK",
+                            "UPDATE",
+                            "SET",
+                            "CHANGE",
+                            "USER_CHOSE",
+                            "EVALUATION_SUCCESSFUL",
+                            "EVALUATION_ERROR",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "FLOW_READY",
+                            "FLOW_DONE"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "runFlow": {
+                "$ref": "../../core/flow.json"
+              },
+              "runAction": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "once": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
+    "onLeaveArea": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "if": {
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "description": "Check if this fragment has finished with the specified outcome. If set to a primitive, checks for exact equality. If set to an object or array, checks if the fragment's outcome contains all keys resp. items defined here, and proceeds likewise in the case of nested objects. This condition only makes sense when checked in a \"whenDone\" handler, as a fragment only has its outcome defined when it is done. "
+                },
+                "eventMatches": {
+                  "description": "Check if the event that triggered this handler has additional properties set as defined. Nested properties can be accessed using . as a separator, e.g. \"someProp.nested.prop\": 2. All given properties will be checked for, but the event may have additional properties which will be ignored.",
+                  "type": "object",
+                  "propertyNames": {
+                    "pattern": "^[a-zA-Z0-9_.]+$"
+                  }
+                },
+                "truthy": {
+                  "description": "Check if the specified condition is truthy. String values refer to unit variables (incl. computed properties), or to their (nested) properties, e.g. \"myVar.example.prop\". Use object values to build more complex statements.",
+                  "$ref": "../../logic/expression.json",
+                  "examples": [
+                    "myUnitVar.nested.property",
+                    {
+                      "and": [
+                        "varA",
+                        {
+                          "not": "varB"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "let": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "I_AM_READY",
+                        "I_AM_DONE",
+                        "I_AM_READY",
+                        "I_WAS_ABANDONED",
+                        "I_HAVE_STARTED",
+                        "MOUNT",
+                        "UNMOUNT",
+                        "HIDE",
+                        "SHOW",
+                        "FREEZE",
+                        "UNFREEZE",
+                        "FADE_OUT",
+                        "FADE_IN",
+                        "LOCK",
+                        "UNLOCK",
+                        "MINIMIZE",
+                        "TOGGLE_MINIMIZE",
+                        "MAXIMIZE",
+                        "TOGGLE_MAXIMIZE",
+                        "STANDARD_SIZE",
+                        "EXPAND",
+                        "COLLAPSE",
+                        "TOGGLE_EXPAND_COLLAPSE",
+                        "OPEN",
+                        "CLOSE",
+                        "SWITCH_ON",
+                        "SWITCH_OFF",
+                        "TOGGLE_ON_OFF",
+                        "SELECT",
+                        "DESELECT",
+                        "TOGGLE_SELECTION",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "CLICK",
+                        "UPDATE",
+                        "SET",
+                        "CHANGE",
+                        "USER_CHOSE",
+                        "EVALUATION_SUCCESSFUL",
+                        "EVALUATION_ERROR",
+                        "START_ANIMATION",
+                        "STOP_ANIMATION",
+                        "ANIMATION_DONE",
+                        "FLOW_READY",
+                        "FLOW_DONE"
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "set": {
+              "type": "object",
+              "patternProperties": {
+                "": {
+                  "type": "object",
+                  "examples": [
+                    {
+                      "value": 2.4
+                    },
+                    {
+                      "title": "newText"
+                    },
+                    {
+                      "someProperty": true
+                    }
+                  ]
+                }
+              }
+            },
+            "runFlow": {
+              "$ref": "../../core/flow.json"
+            },
+            "runAction": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "once": {
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "if": {
+                "const": "NOT YET IMPLEMENTED!"
+              },
+              "let": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "I_AM_READY",
+                          "I_AM_DONE",
+                          "I_AM_READY",
+                          "I_WAS_ABANDONED",
+                          "I_HAVE_STARTED",
+                          "MOUNT",
+                          "UNMOUNT",
+                          "HIDE",
+                          "SHOW",
+                          "FREEZE",
+                          "UNFREEZE",
+                          "FADE_OUT",
+                          "FADE_IN",
+                          "LOCK",
+                          "UNLOCK",
+                          "MINIMIZE",
+                          "TOGGLE_MINIMIZE",
+                          "MAXIMIZE",
+                          "TOGGLE_MAXIMIZE",
+                          "STANDARD_SIZE",
+                          "EXPAND",
+                          "COLLAPSE",
+                          "TOGGLE_EXPAND_COLLAPSE",
+                          "OPEN",
+                          "CLOSE",
+                          "SWITCH_ON",
+                          "SWITCH_OFF",
+                          "TOGGLE_ON_OFF",
+                          "SELECT",
+                          "DESELECT",
+                          "TOGGLE_SELECTION",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "CLICK",
+                          "UPDATE",
+                          "SET",
+                          "CHANGE",
+                          "USER_CHOSE",
+                          "EVALUATION_SUCCESSFUL",
+                          "EVALUATION_ERROR",
+                          "START_ANIMATION",
+                          "STOP_ANIMATION",
+                          "ANIMATION_DONE",
+                          "FLOW_READY",
+                          "FLOW_DONE"
+                        ]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "I_AM_READY",
+                            "I_AM_DONE",
+                            "I_AM_READY",
+                            "I_WAS_ABANDONED",
+                            "I_HAVE_STARTED",
+                            "MOUNT",
+                            "UNMOUNT",
+                            "HIDE",
+                            "SHOW",
+                            "FREEZE",
+                            "UNFREEZE",
+                            "FADE_OUT",
+                            "FADE_IN",
+                            "LOCK",
+                            "UNLOCK",
+                            "MINIMIZE",
+                            "TOGGLE_MINIMIZE",
+                            "MAXIMIZE",
+                            "TOGGLE_MAXIMIZE",
+                            "STANDARD_SIZE",
+                            "EXPAND",
+                            "COLLAPSE",
+                            "TOGGLE_EXPAND_COLLAPSE",
+                            "OPEN",
+                            "CLOSE",
+                            "SWITCH_ON",
+                            "SWITCH_OFF",
+                            "TOGGLE_ON_OFF",
+                            "SELECT",
+                            "DESELECT",
+                            "TOGGLE_SELECTION",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "CLICK",
+                            "UPDATE",
+                            "SET",
+                            "CHANGE",
+                            "USER_CHOSE",
+                            "EVALUATION_SUCCESSFUL",
+                            "EVALUATION_ERROR",
+                            "START_ANIMATION",
+                            "STOP_ANIMATION",
+                            "ANIMATION_DONE",
+                            "FLOW_READY",
+                            "FLOW_DONE"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "set": {
+                "type": "object",
+                "patternProperties": {
+                  "": {
+                    "type": "object",
+                    "examples": [
+                      {
+                        "value": 2.4
+                      },
+                      {
+                        "title": "newText"
+                      },
+                      {
+                        "someProperty": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "runFlow": {
+                "$ref": "../../core/flow.json"
+              },
+              "runAction": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              },
+              "once": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        }
+      ]
+    },
     "onClick": {
       "oneOf": [
         {
