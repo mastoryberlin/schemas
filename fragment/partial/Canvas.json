@@ -98,7 +98,7 @@
                           },
                           "required": ["x", "y"],
                           "additionalProperties": false
-                        },
+                        }
                       ]
                     }
                   },
