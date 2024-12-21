@@ -18,6 +18,22 @@
       "required": [
         "value"
       ]
+    },
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "base": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/vector"
+      },
+      "minItems": 3,
+      "maxItems": 3
     }
   },
   "type": "object",
@@ -60,6 +76,25 @@
       },
       "unevaluatedProperties": false,
       "default": {}
+    },
+    "coordinateSystems": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "origin": {
+            "$ref": "#/definitions/vector"
+          },
+          "base": {
+            "$ref": "#/definitions/base"
+          }
+        },
+        "required": [
+          "origin",
+          "base"
+        ],
+        "additionalProperties": false
+      }
     },
     "mission": {
       "type": "object",
