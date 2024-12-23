@@ -60,7 +60,7 @@ export default {
             "properties": {
               "src": {
                 "$ref": "./core/url.json"
-              } as unknown as typeof url,
+              },
               "toBeContinuedInVideo": {
                 "type": "boolean",
                 "default": true
@@ -87,13 +87,15 @@ export default {
       "minLength": 1
     },
     "thumbnailUrl": {
-      "type": "string",
-      "pattern": "\\w+://\\w+"
-    },
+      "$ref": "./core/url.json"
+    } as unknown as typeof url,
     "thumbnailPosition": {
       "type": "string",
       "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"
     },
+    "introVideo": {
+      "$ref": "./core/url.json"
+    } as unknown as typeof url,
     "standards": {
       "type": "object",
       "properties": {
@@ -109,7 +111,7 @@ export default {
     "tags": {
       "type": "array",
       "items": {
-        "$ref": "./math/tags.json"
+        "$ref": "./content/tags.json"
       }
     },
     "mathTopic": {
