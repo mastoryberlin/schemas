@@ -84,12 +84,14 @@
       "minLength": 1
     },
     "thumbnailUrl": {
-      "type": "string",
-      "pattern": "\\w+://\\w+"
+      "$ref": "./core/url.json"
     },
     "thumbnailPosition": {
       "type": "string",
       "pattern": "(?:\\d+(?:%|px|em|in|cm)|left|center|right) (?:\\d+(?:%|px|em|in|cm)|top|center|bottom)"
+    },
+    "introVideo": {
+      "$ref": "./core/url.json"
     },
     "standards": {
       "type": "object",
