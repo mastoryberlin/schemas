@@ -60,7 +60,7 @@ export default {
             "properties": {
               "src": {
                 "$ref": "./core/url.json"
-              },
+              } as unknown as typeof url,
               "toBeContinuedInVideo": {
                 "type": "boolean",
                 "default": true
