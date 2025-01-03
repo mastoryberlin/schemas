@@ -22,6 +22,14 @@ export default {
        */
       "$ref": "./label-config.json"
     } as unknown as typeof labelConfig,
+    "zIndex": {
+      /**
+       * The z-index of this fragment. For non-3D fragments, this property determines
+       * the drawing order of fragments, similarly to how the CSS z-index property works.
+       */
+      "type": "integer",
+      "default": 0
+    },
     "allow": {
       /**
        * Sets behavioral policies about this fragment: Can it be clicked? selected?
