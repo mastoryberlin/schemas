@@ -1,5 +1,65 @@
 {
   "$schema": "./unit.json",
+  "coordinateMaps": {
+    "satellite": {
+      "from": {
+        "id": "satellite",
+        "unit": "pixels"
+      },
+      "to": {
+        "id": "babylon",
+        "unit": "m"
+      },
+      "transform": {
+        "fromAffineBases": {
+          "fromOrigin": [
+            1379.9862529459078,
+            1903.6875759047125,
+            0
+          ],
+          "toOrigin": [
+            0,
+            0,
+            0
+          ],
+          "fromBase": [
+            [
+              100,
+              0,
+              0
+            ],
+            [
+              0,
+              38,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "toBase": [
+            [
+              6.1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2.3
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  },
   "self": {
     "class": "UnitRoot",
     "context": "dev"
@@ -8,7 +68,14 @@
     {
       "self": {
         "class": "CsCircle",
-        "radius": 3
+        "radius": 3,
+        "onClick": {
+          "if": {
+            "eventMatches": {
+              "aba2.2.aer": true
+            }
+          }
+        }
       }
     }
     // {

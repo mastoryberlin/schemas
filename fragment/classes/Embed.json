@@ -6,19 +6,16 @@
       "$ref": "../partial/Embed.json"
     },
     {
-      "$ref": "../partial/Embed2.json"
-    },
-    {
-      "$ref": "../partial/Mesh2.json"
-    },
-    {
       "$ref": "../partial/Mesh.json"
     },
     {
-      "$ref": "../partial/Transformable32.json"
+      "$ref": "../partial/Transformable3.json"
     },
     {
-      "$ref": "../partial/Transformable3.json"
+      "$ref": "../partial/SceneFragment.json"
+    },
+    {
+      "$ref": "../partial/UiFragment.json"
     },
     {
       "$ref": "../partial/Fragment.json"
