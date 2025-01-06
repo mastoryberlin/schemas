@@ -1,5 +1,70 @@
 {
   "properties": {
+    "selectedHighlightColor": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "default": [
+        0,
+        0,
+        1
+      ]
+    },
+    "hoverCursor": {
+      "allOf": [
+        {
+          "$ref": "../../core/cursor.json"
+        },
+        {
+          "default": "pointer"
+        }
+      ]
+    },
+    "hoverHighlightColor": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "default": [
+        0,
+        1,
+        0
+      ]
+    },
+    "lockedCursor": {
+      "allOf": [
+        {
+          "$ref": "../../core/cursor.json"
+        },
+        {
+          "default": "not-allowed"
+        }
+      ]
+    },
+    "lockedHighlightColor": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "default": [
+        1,
+        0,
+        0
+      ]
+    },
     "checkCollisions": {
       "type": "boolean",
       "default": true
