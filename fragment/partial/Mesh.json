@@ -1,4 +1,9 @@
 {
-  "properties": {},
+  "properties": {
+    "checkCollisions": {
+      "type": "boolean",
+      "default": true
+    }
+  },
   "required": []
 }
