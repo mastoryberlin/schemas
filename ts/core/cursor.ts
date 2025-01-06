@@ -1,5 +1,6 @@
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
+import type { JSONSchema } from 'json-schema-to-ts'
+
+export default {
   "type": "string",
   "enum": [
     "auto",
@@ -17,26 +18,26 @@
     "alias",
     "copy",
     "move",
-    "no",
-    "not",
+    "no-drop",
+    "not-allowed",
     "grab",
     "grabbing",
-    "all-scroll",
-    "col-resize",
-    "row-resize",
-    "n-resize",
     "e-resize",
-    "s-resize",
-    "w-resize",
+    "n-resize",
     "ne-resize",
     "nw-resize",
+    "s-resize",
     "se-resize",
     "sw-resize",
+    "w-resize",
     "ew-resize",
     "ns-resize",
     "nesw-resize",
     "nwse-resize",
+    "col-resize",
+    "row-resize",
+    "all-scroll",
     "zoom-in",
     "zoom-out"
   ]
-}
+} as const satisfies JSONSchema
