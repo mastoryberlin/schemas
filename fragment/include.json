@@ -16,6 +16,12 @@
             "src": {
               "$ref": "#/$defs/jsoncFile"
             },
+            "params": {
+              "type": "object",
+              "propertyNames": {
+                "$ref": "../core/identifier.json"
+              }
+            },
             "idPrefix": {
               "type": "string"
             },
