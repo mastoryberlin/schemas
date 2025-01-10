@@ -1,13 +1,12 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://mastory.io/schemas/Text.json",
+  "type": "object",
   "properties": {
     "text": {
       "type": "string"
     },
-    "model_text": {
-      "type": "string"
-    },
     "size": {
-      "type": "string",
       "enum": [
         "small",
         "medium",
@@ -16,12 +15,14 @@
       ]
     },
     "align": {
-      "type": "string",
       "enum": [
         "left",
         "center",
         "right"
       ]
+    },
+    "color": {
+      "$ref": "../../core/color.json"
     }
   },
   "required": [
