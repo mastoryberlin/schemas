@@ -25,6 +25,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "params": {
+                "type": "object",
+                "propertyNames": {
+                  "$ref": "./core/identifier.json"
+                }
               }
             },
             "additionalProperties": false,
