@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "equation": {
+      "type": "string"
+    },
+    "variables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": []
+}
