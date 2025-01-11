@@ -15,6 +15,25 @@
           "type": "string"
         }
       ]
+    },
+    "thickness": {
+"description": "/** The thickness of the line in pixels. */
+      \"type\": \"number\",
+      \"exclusiveMinimum\": 0
+    },
+    \"extendToInfinity\": { Whether the line should infinitely extend beyond the startPoint, the endPoint, or both. * Setting this property to true is equivalent to \"both\", i.e. the segment becomes an infinite line connecting the start and end points.",
+      "oneOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "enum": [
+            "start",
+            "end",
+            "both"
+          ]
+        }
+      ]
     }
   },
   "required": []
