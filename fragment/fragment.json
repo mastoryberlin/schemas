@@ -311,6 +311,9 @@
         },
         {
           "$ref": "./classes/CoordinateAxis.json"
+        },
+        {
+          "$ref": "./classes/FindCoordinatesToSatisfyEquation.json"
         }
       ],
       "examples": [
@@ -610,6 +613,9 @@
         },
         {
           "class": "CoordinateAxis"
+        },
+        {
+          "class": "FindCoordinatesToSatisfyEquation"
         }
       ],
       "type": "object"
