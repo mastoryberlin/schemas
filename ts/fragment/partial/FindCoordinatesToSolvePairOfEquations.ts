@@ -1,8 +1,11 @@
 import type { JSONSchema } from "json-schema-to-ts";
 export default {
   "properties": {
-    "equation": {
-      "type": "string"
+    "equations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "variables": {
       "type": "array",
@@ -12,6 +15,6 @@ export default {
     }
   },
   "required": [
-    "equation"
+    "equations"
   ]
 } as const satisfies JSONSchema

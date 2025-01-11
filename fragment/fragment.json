@@ -314,6 +314,9 @@
         },
         {
           "$ref": "./classes/FindCoordinatesToSatisfyEquation.json"
+        },
+        {
+          "$ref": "./classes/FindCoordinatesToSolvePairOfEquations.json"
         }
       ],
       "examples": [
@@ -616,6 +619,9 @@
         },
         {
           "class": "FindCoordinatesToSatisfyEquation"
+        },
+        {
+          "class": "FindCoordinatesToSolvePairOfEquations"
         }
       ],
       "type": "object"
