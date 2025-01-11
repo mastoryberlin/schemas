@@ -308,6 +308,9 @@
         },
         {
           "$ref": "./classes/Spot.json"
+        },
+        {
+          "$ref": "./classes/CoordinateAxis.json"
         }
       ],
       "examples": [
@@ -604,6 +607,9 @@
         },
         {
           "class": "Spot"
+        },
+        {
+          "class": "CoordinateAxis"
         }
       ],
       "type": "object"

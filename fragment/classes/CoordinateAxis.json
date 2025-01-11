@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "../partial/Fragment.json"
+    },
+    {
+      "$ref": "../partial/CanvasFragment.json"
+    },
+    {
+      "$ref": "../partial/CoordinateAxis.json"
+    },
+    {
+      "properties": {
+        "class": {
+          "const": "CoordinateAxis"
+        }
+      }
+    }
+  ],
+  "unevaluatedProperties": false,
+  "required": [
+    "class"
+  ]
+}
