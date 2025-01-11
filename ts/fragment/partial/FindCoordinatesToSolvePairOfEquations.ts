@@ -5,7 +5,9 @@ export default {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "minItems": 2,
+      "maxItems": 2
     },
     "variables": {
       "type": "array",
