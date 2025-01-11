@@ -1,7 +1,10 @@
 {
   "properties": {
-    "equation": {
-      "type": "string"
+    "equations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "variables": {
       "type": "array",
@@ -11,6 +14,6 @@
     }
   },
   "required": [
-    "equation"
+    "equations"
   ]
 }
