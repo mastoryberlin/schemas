@@ -7,9 +7,10 @@
       "type": "string"
     },
     "label": {
-      "$ref": "./label.json"
-    }
+      "$ref": "./label-config.json"
+    },
   },
+  "additionalProperties": false,
   "required": [
     "text"
   ]
