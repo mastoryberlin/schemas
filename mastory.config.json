@@ -9,20 +9,46 @@
       "description": "Content organization in local development.",
       "type": "object",
       "properties": {
-        "scope": {
+        "useBlobStore": {
+          "description": "Use the local NuxtHub blob store instead of directly accessing the file system.",
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "const": "fullRefresh"
+            }
+          ],
+          "default": false
+        },
+        "scopeName": {
           "description": "The default content scope associated with the user in local development.",
           "type": "string",
           "default": "dev"
-        },
-        "fullRefresh": {
-          "type": "boolean",
-          "default": false
         },
         "folders": {
           "type": "array",
           "items": {
             "type": "string"
           }
+        },
+        "additionalScopes": {
+          "description": "A key-value map where keys denote additional scopes that the local dev user should have access to, and values are lists of string denoting the local folders from which that scope should be populated, similarly to the `folders` property is used to populate the default scope.",
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^\\w+$"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "ignoreHidden": {
+          "description": "Treat local files and folders starting with . as hidden, e.g. ignore them in queries.",
+          "type": "boolean",
+          "default": true
         }
       },
       "additionalProperties": false
