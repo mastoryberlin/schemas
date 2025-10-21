@@ -7,6 +7,16 @@ export default {
     "$schema": {
       "type": "string"
     },
+    "tools": {
+      "type": "object",
+      "properties": {
+        "generateEnglishLocale": {
+          "type": "boolean",
+          "description": "Auto-generate i18n/locales/tools-en.json based on tools' input schemas."
+        }
+      },
+      "additionalProperties": false
+    },
     "content": {
       "description": "Content organization in local development.",
       "type": "object",
