@@ -1,9 +1,26 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Generated schema for Root",
   "type": "object",
   "properties": {
-    "$schema": true,
+    "$schema": {
+      "const": "./.github-project/schema.json"
+    },
+    "labels": {
+      "type": "object",
+      "properties": {
+        "order_in_prompt": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "imply": {
+          "type": "object"
+        }
+      }
+    },
     "orca": {
       "type": "object",
       "properties": {
