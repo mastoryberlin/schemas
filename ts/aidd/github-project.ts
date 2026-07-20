@@ -5,9 +5,7 @@ export default {
   "title": "Generated schema for Root",
   "type": "object",
   "properties": {
-    "$schema": {
-      "const": "./.github-project/schema.json"
-    },
+    "$schema": true,
     "labels": {
       "type": "object",
       "properties": {
