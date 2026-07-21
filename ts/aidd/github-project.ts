@@ -25,8 +25,18 @@ export default {
       "type": "object",
       "patternProperties": {
         "\\S.*\\S": {
-          "type": "string",
-          "pattern": "\\w+"
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "pattern": "\\w+"
+            },
+            "include_value_in_prompt": {
+              "type": "boolean"
+            }
+          },
+          "required": ["slug"],
+          "additionalProperties": false
         }
       }
     },
