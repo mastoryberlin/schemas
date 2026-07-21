@@ -21,6 +21,15 @@ export default {
         }
       }
     },
+    "issue_structured_values": {
+      "type": "object",
+      "patternProperties": {
+        "\\S.*\\S": {
+          "type": "string",
+          "pattern": "\\w+"
+        }
+      }
+    },
     "orca": {
       "type": "object",
       "properties": {
